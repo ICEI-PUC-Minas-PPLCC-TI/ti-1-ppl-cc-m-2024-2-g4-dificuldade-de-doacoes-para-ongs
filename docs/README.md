@@ -173,27 +173,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-009 | O sistema deve fornecer incentivos, como relatórios de impacto e certificados, para motivar os doadores.                                 | ALTA          |
 | RF-010 | Doadores devem poder avaliar ONGs e deixar feedback sobre suas experiências.                                                             | ALTA          |
 | RF-011 | Os usuários poderão encontrar as respostas às dúvidas mais comuns.                                                                       | ALTA          |
-
-
-
-
-
-
-
-
-| ID     | Descrição do Requisito                                   | Prioridade |
-| ------ | ---------------------------------------------------------- | ---------- |
-| RF-001 | Permitir que o usuário cadastre tarefas ⚠️ EXEMPLO ⚠️ | ALTA       |
-| RF-002 | Emitir um relatório de tarefas no mês ⚠️ EXEMPLO ⚠️ | MÉDIA     
-
-| ID     | Descrição do Requisito                                   | Prioridade |
-| ------ | ---------------------------------------------------------- | ---------- |
-| RF-001 | Permitir que o usuário cadastre tarefas ⚠️ EXEMPLO ⚠️ | ALTA       |
-| RF-002 | Emitir um relatório de tarefas no mês ⚠️ EXEMPLO ⚠️ | MÉDIA     |
-| ID     | Descrição do Requisito                                   | Prioridade |
-| ------ | ---------------------------------------------------------- | ---------- |
-| RF-001 | Permitir que o usuário cadastre tarefas ⚠️ EXEMPLO ⚠️ | ALTA       |
-| RF-002 | Emitir um relatório de tarefas no mês ⚠️ EXEMPLO ⚠️ | MÉDIA     |
+| RF-012 | Possibilidade do usuário entrar em contato diretamente com o suporte por meio do e-mail e/ou Whatsapp.                                   | ALTA          |
 
 ### Requisitos não Funcionais
 
