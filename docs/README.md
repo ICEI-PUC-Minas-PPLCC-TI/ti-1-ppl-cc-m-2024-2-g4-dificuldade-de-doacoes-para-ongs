@@ -160,6 +160,27 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
+| ID     | Descrição do Requisito                                                                                                                   | Prioridade ⚠️ |
+| ------ | -----------------------------------------------------------------------------------------------------------------------------------------| --------------|
+| RF-001 | ONGs devem ser capazes de se cadastrar na plataforma, fornecendo informações como nome, descrição, categoria, e dados de contato.        | ALTA          |      
+| RF-002 | Doadores devem se cadastrar fornecendo informações pessoais e preferências de doação.                                                    | ALTA          |
+| RF-003 | ONGs devem poder criar e editar projetos, incluindo descrição, metas e prazo.                                                            | ALTA          |
+| RF-004 | ONGs devem ter acesso a um painel de controle que exiba doações em tempo real e histórico de transações                                  | ALTA          |
+| RF-005 | Doadores devem poder pesquisar e filtrar ONGs e projetos por categoria, localização e impacto.                                           | ALTA          |
+| RF-006 | Doadores devem realizar doações de forma simples e receber confirmação imediata.                                                         | ALTA          |
+| RF-007 | ONGs devem poder compartilhar histórias de sucesso de beneficiários para aumentar a credibilidade.                                       | ALTA          |
+| RF-008 | Doadores devem poder compartilhar perfis de ONGs em redes sociais para incentivar outras pessoas a doarem                                | ALTA          |
+| RF-009 | O sistema deve fornecer incentivos, como relatórios de impacto e certificados, para motivar os doadores.                                 | ALTA          |
+| RF-010 | Doadores devem poder avaliar ONGs e deixar feedback sobre suas experiências.                                                             | ALTA          |
+| RF-011 | Os usuários poderão encontrar as respostas às dúvidas mais comuns.                                                                       | ALTA          |
+
+
+
+
+
+
+
+
 | ID     | Descrição do Requisito                                   | Prioridade |
 | ------ | ---------------------------------------------------------- | ---------- |
 | RF-001 | Permitir que o usuário cadastre tarefas ⚠️ EXEMPLO ⚠️ | ALTA       |
