@@ -6,9 +6,11 @@ Informações básicas do projeto.
 * **Repositório GitHub:** [LINK PARA O REPOSITÓRIO NO GITHUB]
 * **Membros da equipe:**
 
-  * [Fulano](https://github.com/fulano) ⚠️ EXEMPLO ⚠️
-  * [Beltrano](https://github.com/beltrano) ⚠️ EXEMPLO ⚠️
-  * [Cicrano](https://github.com/cicrano) ⚠️ EXEMPLO ⚠️
+  * [David Cristhian Vieira Fonseca](https://github.com/DavidCristhian)
+  * [Samuel de Jesus Fernandes Mascarenhas](https://github.com/SamuellMascarenhas)
+  * [Samuel Vitor Vieira](https://github.com/cicrano)
+  * [Lucas Cabral Bicalho]()
+  * [Lucas Vinícius Pedroso Pereira](https://github.com/LucasVinip05)
 
 A documentação do projeto é estruturada da seguinte forma:
 
