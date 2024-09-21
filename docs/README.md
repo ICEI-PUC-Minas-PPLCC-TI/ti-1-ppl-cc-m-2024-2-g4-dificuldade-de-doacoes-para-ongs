@@ -44,15 +44,9 @@ Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa
 
 ## Objetivos
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+> O objetivo principal do projeto é criar uma solução para que as pessoas se sintam seguras ao realizarem doações a ONGs, aumentando, assim, a possibilidade de as ONGs receberem ajuda. Ademais, temos como objetivo claro ajudar as ONGs a disseminarem melhor sua imagem. Pretendemos fornecer uma aplicação com interface intuitiva, a fim de simplificar o processo de doação e alcançar um número maior de público-alvo, além de permitir que o usuário encontre as ONGs mais próximas.
 >
-> Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
->
-> **Orientações**:
->
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
