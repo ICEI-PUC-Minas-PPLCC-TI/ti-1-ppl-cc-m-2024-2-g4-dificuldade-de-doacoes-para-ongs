@@ -50,17 +50,9 @@ Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa
 
 ## Justificativa
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
->
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Orientações**:
->
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+> A criação deste projeto se justifica pela necessidade de ajudar ONGs e projetos sociais por meio da colaboração entre ONGs e doadores. Buscamos alcançar o maior número possível de pessoas dispostas a apoiar causas importantes na sociedade, além de gerar a oportunidade de conectar de maneira eficaz ONGs e potenciais doadores, aumentando, assim, a visibilidade da necessidade e importância das doações. Sabemos que o número de doações tem diminuído ao longo do tempo. O relatório "Giving USA" de 2023 revelou que, nos Estados Unidos, as doações de caridade caíram para cerca de 499,33 bilhões de dólares em 2022. Com base nisso, vemos dados alarmantes sobre o problema. Além disso, por meio de entrevistas realizadas, percebemos que ONGs, em geral, possuem dificuldade em sensibilizar as pessoas sobre a importância do coletivo. A principal barreira é a desconfiança dos potenciais doadores quanto ao uso dos recursos, mesmo que haja um histórico sólido de transparência.
+
 
 ## Público-Alvo
 
