@@ -226,16 +226,73 @@ Local: Santa Mônica
 
 **✳️✳️✳️ APRESENTE OS DIAGRAMAS DE PERSONAS ✳️✳️✳️**
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
->
-> **Orientações**:
->
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
+Persona 1:
+Nome: Helena Muniz
+Idade: 21
+Hobby: Assistir filmes
+Trabalho: Estudante
+Personalidade: Helena é uma pessoa descontraída e focada, estudante de veterinária. Se preocupa muito com as pessoas e durante sua adolescência se engajou bastante em causas sociais, com o tempo acabou perdendo o hábito.
+Sonhos: Helena sonha em se formar na área de veterinária e trabalhar com animais de grande porte, além de formar uma família.
+
+Objetos e Lugares:
+Helena sonha em se formar na área de veterinária e trabalhar com animais de grande porte, além de formar uma família.
+
+Objetivos chave:
+Helena continua tendo interesse em fazer doações, mesmo perdendo o hábito. Sua principal dúvida é quanto a transparência das ONGs e credibilidade que elas têm e passam. Ela gostaria de ter a tranquilidade de saber onde suas doações terão maior impacto, ja que quando doava, não tinha preferência por causa. Ela nao faz pesquisas ativamente buscando ONGs, porém estaria disposta a doar caso tivesse 100% de certeza sobre a confiabilidade dela. Ela não tem preferência de causas, porém tem sim a intenção de voltar a doar, essa intenção vem da sua vontade de construir uma família e ensinar esse tipo de valor aos seus filhos, a única coisa que ainda a incomoda é a transparência.
+
+Como devemos tratá-la:
+Helena prefere uma abordagem mais informal, alem de gostar um pouco mais de informações mais diretas.
+
+Persona 2:
+Nome: Gabriela Mena dos Santos Martinez
+Idade: 20
+Hobby: Gosta de dançar
+Trabalho: Analista Financeiro no setor de tecnologia
+Personalidade: Gabriela é uma pessoa extrovertida, com o humor bastante contagiante e responsável
+Sonhos: Gabriela sonha em ter uma casa própria, ter uma carreira profissional estabelecida e viajar pelo mundo
+
+Objetos e Lugares:
+Gabriela costuma usar bastante o seu celular que faz parte de seu dia-a-dia, de seu fone de ouvido companheiro de trabalho e seu notebook de trabalho. Os lugares que ela mais frequenta é a Academia, o trabalho e a sua casa.
+
+Objetivos chave:
+Gabriela tem o objetivo de conseguir conciliar o seu tempo e seu dinheiro para assim conseguir realizar doações para ONGs, no qual ela ainda não é doadora diretamente à ONGs, mas ela é doadora frequente de causas vistas no instagram por meio e influenciadores seguidos e ela realiza a doação diretamente para esse influenciador linha de frente da causa. E também doa diretamente para moradores de rua.
+
+Como devemos tratá-la:
+Gabriela gosta de conversar informalmente, e visa ser tratada com educação e simpatia.
+
+Persona 3:
+Nome: Casa dos Livros
+Idade:
+Hobby:
+Trabalho: Promove oficinas, cursos e doações, com foco em ampliar o acesso à educação e capacitação para comunidades de baixa renda.
+Personalidade: A Casa dos Livros é acolhedora, inclusiva e comprometida em apoiar o desenvolvimento educacional e social de forma confiável e proativa.
+Sonhos: Expandir suas atividades para alcançar mais comunidades e transformar vidas por meio da educação e capacitação profissional.
+
+Objetos e Lugares:
+Livros didáticos, apostilas, cadernos, tablets para leitura digital, materiais de oficina como papéis, tintas e ferramentas de artesanato, além de kits de material escolar para distribuição.Na própria Casa dos Livros, escolas públicas, centros culturais e espaços voltados para educação.
+
+Objetivos chave:
+Os usuários da Casa dos Livros buscam acesso a recursos educativos, oficinas e cursos profissionalizantes para ampliar seu conhecimento e melhorar suas oportunidades no mercado de trabalho. Além disso, o serviço promove inclusão social, oferecendo a quem precisa oportunidades de desenvolvimento pessoal e profissional. Eles precisam superar barreiras educacionais e sociais, obtendo materiais didáticos e capacitação profissional, especialmente em comunidades com menos oportunidades.
+
+Como devemos tratá-la:
+Devemos tratá-la com respeito, empatia e abertura. A comunicação deve ser clara e acessível, valorizando o aprendizado e a inclusão.
+
+Persona 4:
+Nome: Projeto K1
+Idade:
+Hobby:
+Trabalho: Oferece suporte para aprimorar habilidades esportivas e de liderança, engajando os jovens em atividades comunitárias através do esporte.
+Personalidade: Colaborativo e determinado, com foco em promover a inclusão social e desenvolver habilidades de liderança entre os participantes.
+Sonhos: Transformar a vida dos jovens da comunidade, ajudando-os a superar barreiras socioeconômicas e alcançar sucesso no esporte, enquanto se tornam agentes de mudança em suas próprias comunidades
+
+Objetos e Lugares:
+Equipamentos esportivos como bolas de futebol, redes, cones para treinos, uniformes e materiais de proteção (joelheiras, caneleiras).O próprio espaço K1, centros de treinamento comunitários, campos de futebol em bairros carentes e escolas que oferecem programas de incentivo ao esporte. Participa de eventos ao ar livre, campeonatos locais e atividades em praças públicas que envolvem a comunidade através do esporte.
+
+Objetivos chave:
+Os usuários do Projeto K1 buscam melhorar suas habilidades esportivas e de liderança, além de participar de atividades comunitárias que promovam inclusão social. Eles precisam superar barreiras socioeconômicas e obter apoio para avançar no esporte e em projetos sociais.
+
+Como devemos tratá-la:
+Devemos tratá-lo com uma comunicação direta e motivacional, incentivando-o a alcançar seus objetivos no esporte e na comunidade.
 
 # Product Design
 
