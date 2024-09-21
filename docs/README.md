@@ -187,24 +187,24 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 | EU COMO... | QUERO/PRECISO ...        | PARA ...              |
 | --------------------- | ------------------------------------------ | -------------------------------------- |
-| Eu como ONG |Preciso de um painel  que me mostre  doações em tempo  real | Para ter controle imediato sobre os  recursos disponíveis |
-| Eu como ONG |Preciso de um sistema  para categorizar os tipos  de doadores (frequentes,  ocasionais, etc.) | Para criar campanhas específicas para cada  perfil |
+| Eu como ONG |Preciso de um painel  que me mostre  doações em tempo  real | Para ter controle imediato sobre os  recursos disponíveis. |
+| Eu como ONG |Preciso de um sistema  para categorizar os tipos  de doadores (frequentes,  ocasionais, etc.) | Para criar campanhas específicas para cada  perfil. |
 | Eu como  doador | Preciso  de informações facilitadas sobre as ONGs | Para ter noção para  quem estou doando e  sobre a confiabilidade  dela. |
-| Eu como  doador | Compartilhar os  perfis das minhas ONGs preferidas  | Divulgar as ONGs e incentivar as  pessoas a doarem|
-| Eu como  ONG | Preciso de uma forma  de compartilhar  histórias de sucesso de nossos beneficiários   |Para aumentar a  credibilidade e inspirar  mais doadores a contribuir|
-| Eu como  doador | Preciso de incentivos,  como relatórios de impacto ou  certificações de doação      | Para me sentir  recompensado e  motivado a continuar  doando |
-| Eu como  doador | Preciso de a  possibilidade de doar anonimamente   |Para preservar  minha privacidade  ao contribuir|
-| Eu como  doador | Preciso de conhecer os projetos ou causas  disponíveis para  doação    | Para escolher onde  minha contribuição  será mais significativa |
-| Eu como  doador  | Preciso de uma  confirmação imediata e  detalhada após realizar  uma doação | Para ter certeza de que minha contribuição foi  recebida e está sendo  processada |
-| Eu como  doador | Preciso de uma  plataforma segura,  e transparente. | Permitir que possam administrar contas |
-| Eu como  ONG | Preciso de uma  solução para que  pessoas, conheçam o  nosso trabalho.| Para Viabilizar os  projetos da ONG. |
-| Eu como  doador | Preciso de receber  atualizações sobre  como minha doação  está sendo usada |Para saber o impacto que  estou gerando |
-| Eu como  ONG |Preciso de uma  ferramenta que me  ajude a gerenciar os  doadores | Para manter um  relacionamento  contínuo e  transparente com eles |
-| Eu como  doador| Preciso conhecer novas ONGS e  projetos | Conseguir ajudar mais  ONGs, gerar mais impacto e diversificar minhas doações |
-| Eu como   ONG  | Preciso de uma forma  facilitada para  comunicação com o  doador |Para manter a  transparência com os  doadores e dar  atualizações sobre a causa|
-| Eu como Doador | Preciso acompanhar  os resultados das  doações |Saber e acompanhar  os impactos sociais  que provém das  minhas doações|
-| Eu como ONG  | Preciso de uma plataforma que ofereça diferentes  métodos de pagamento  para doações| Para facilitar a  captação de recursos  de diversos perfis de  doadores|
-| Eu como  doador | Preciso de uma  forma fácil de doar,  com poucos cliques|Para poder contribuir  rapidamente em  campanhas que me interessam|
+| Eu como  doador | Compartilhar os  perfis das minhas ONGs preferidas  | Para divulgar as ONGs e incentivar as  pessoas a doarem.|
+| Eu como  ONG | Preciso de uma forma  de compartilhar  histórias de sucesso de nossos beneficiários   |Para aumentar a  credibilidade e inspirar  mais doadores a contribuir.|
+| Eu como  doador | Preciso de incentivos,  como relatórios de impacto ou  certificações de doação      | Para me sentir  recompensado e  motivado a continuar  doando. |
+| Eu como  doador | Preciso de a  possibilidade de doar anonimamente   |Para preservar  minha privacidade  ao contribuir.|
+| Eu como  doador | Preciso de conhecer os projetos ou causas  disponíveis para  doação    | Para escolher onde  minha contribuição  será mais significativa. |
+| Eu como  doador  | Preciso de uma  confirmação imediata e  detalhada após realizar  uma doação | Para ter certeza de que minha contribuição foi  recebida e está sendo  processada. |
+| Eu como  doador | Preciso de uma  plataforma segura,  e transparente. | Para permitir que possam administrar contas. |
+| Eu como  ONG | Preciso de uma  solução para que  pessoas, conheçam o  nosso trabalho.| Para viabilizar os  projetos da ONG. |
+| Eu como  doador | Preciso de receber  atualizações sobre  como minha doação  está sendo usada |Para saber o impacto que  estou gerando. |
+| Eu como  ONG |Preciso de uma  ferramenta que me  ajude a gerenciar os  doadores | Para manter um  relacionamento  contínuo e  transparente com eles. |
+| Eu como  doador| Preciso conhecer novas ONGS e  projetos | Para conseguir ajudar mais  ONGs, gerar mais impacto e diversificar minhas doações. |
+| Eu como   ONG  | Preciso de uma forma  facilitada para  comunicação com o  doador |Para manter a  transparência com os  doadores e dar  atualizações sobre a causa.|
+| Eu como Doador | Preciso acompanhar  os resultados das  doações |Para saber e acompanhar  os impactos sociais  que provém das  minhas doações.|
+| Eu como ONG  | Preciso de uma plataforma que ofereça diferentes  métodos de pagamento  para doações| Para facilitar a  captação de recursos  de diversos perfis de  doadores.|
+| Eu como  doador | Preciso de uma  forma fácil de doar,  com poucos cliques|Para poder contribuir  rapidamente em  campanhas que me interessam.|
 
 ## Proposta de Valor
 
