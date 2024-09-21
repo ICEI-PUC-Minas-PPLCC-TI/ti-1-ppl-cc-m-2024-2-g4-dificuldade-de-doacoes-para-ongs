@@ -126,7 +126,7 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 | Eu como ONG |Preciso de um painel  que me mostre  doações em tempo  real | Para ter controle imediato sobre os  recursos disponíveis |
 | Eu como ONG |Preciso de um sistema  para categorizar os tipos  de doadores (frequentes,  ocasionais, etc.) | Para criar campanhas específicas para cada  perfil |
 | Eu como  doador | Preciso  de informações facilitadas sobre as ONGs | Para ter noção para  quem estou doando e  sobre a confiabilidade  dela. |
-| Eu como  doador | Compartilhar os  perfis das minhas ONGs preferidas  | Divulgar as ONGs eincentivar as  pessoas a doarem|
+| Eu como  doador | Compartilhar os  perfis das minhas ONGs preferidas  | Divulgar as ONGs e incentivar as  pessoas a doarem|
 | Eu como  ONG | Preciso de uma forma  de compartilhar  histórias de sucesso de nossos beneficiários   |Para aumentar a  credibilidade e inspirar  mais doadores a contribuir|
 | Eu como  doador | Preciso de incentivos,  como relatórios de impacto ou  certificações de doação      | Para me sentir  recompensado e  motivado a continuar  doando |
 | Eu como  doador | Preciso de a  possibilidade de doar anonimamente   |Para preservar  minha privacidade  ao contribuir|
