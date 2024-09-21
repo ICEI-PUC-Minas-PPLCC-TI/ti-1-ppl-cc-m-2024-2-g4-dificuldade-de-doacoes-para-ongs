@@ -87,12 +87,56 @@ Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa
 
 **✳️✳️✳️ APRESENTE OS ARTEFATOS DA ETAPA  ✳️✳️✳️**
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nessa etapa, vamos trabalhar com a metdologia de Design Thinking para compreender com maior profundidade o problema a ser tratado. Nesse processo, vamos elaborar:
->
 > * **Matriz CSD**: também conhecida por Matriz de Alinhamento, é uma ferramenta utilizada no Design Thinking para organizar informações e facilitar o processo de tomada de decisão e solução de problemas;
+
+Dúvidas (O que ainda não sabemos sobre o problema):
+
+1. Quais instituições estariam participando do projeto?
+2. Como se conectar com os projetos socias?
+3. Como efetuar doações?
+4. Como aumentar o alcance da plataforma para divulgar as ONGS?
+5. O que deve ser feito para construir e manter a confiança dos doadores na plataforma?
+6. Quais funcionalidades específicas os doadores mais valorizam em uma plataforma de doações?
+7. Como garantir que as ONGs adotem a plataforma?
+8. Como podemos solucionar as dificuldades que as pessoas tem quanto a acessibilidade para doar?
+9. Como essa plataforma pode se diferenciar de outras já existentes?
+10. Como fazer com que os doadores façam doações recorrentes em vez de doações únicas?
+11. Quais desafios podem surgir ao tentar integrar uma nova plataforma?
+12. Como garantir que a plataforma seja acessível para pessoas com deficiência ou com limitações tecnológicas ?
+13. Qual é a melhor maneira de verificar a autenticidade e a legalidade das ONGs registradas na plataforma?
+
+Certezas (O que já sabemos):
+
+1. Redes sociais estimulam doações.
+2. Dificuldade em relação ao tempo
+3. Pessoas mais tocadas pelo assunto já viram alguém próximo passando por dificuldades.
+4. As pessoas se sentem mais motivadas para doar quando assistem algum vídeo/documentário sobre o assunto.
+5. As pessoas buscam cada vez mais todo o tipo de informações sobre quem estão doando, para ter certeza de confiança.
+6. Doadores estão cada vez mais preocupados com a transparência e querem saber exatamente como sua doação será utilizada.
+7. Uma boa experiência de usuário ajuda a reter doadores.
+8. As ONGS dependem fortemente de doações para continuar operando.
+9. A cada ano a porcentagem das doações vem diminuindo gradativamente.
+10. As ONGs enfrentam problemas para sustentar sua causa diariamente.
+
+Suposições (O que achamos, mas não temos certeza):
+
+1. Doadores preferem direcionar suas doações para causas específicas (por exemplo, doações para projeto de educação ou saúde).
+2. Baixa taxa de doações por desconfiança dos doadores sobre como a doação será utilizada.
+3. Doadores são mais propensos a doar se a plataforma oferecer informações claras.
+4. Pessoas não doam por falta de confiança em ongs não conhecidas.
+5. Falta de meios confiáveis para doações online.
+6. Falta de verba das ONGS para divulgarem e propagarem os meios de doação e o trabalho que fazem.
+7. Pessoas que não doam por falta de dinheiro podem não saber que podem ajudar de outras formas, como trabalho voluntario, etc...
+8. Se o doador fizer uma doação mensal recorrente (com cartão de credito por exemplo) ele acaba doando mais.
+9. As pessoas são mais propensas a doar para ONGS próximas que resolvem problemas que elas conhecem do que distantes.
+10. Muitas vezes pessoas deixam de doar pela falta de acessibilidade e divulgação, não sabem como e o processo.
+
 > * **Mapa de stakeholders**: ferramenta que nos permite compreender o grupo de pessoas e entidades que devemos estudar e conversar para entender mais sobre o problema
+
+
+
+
+
 > * **Entrevistas qualitativas**: série de entrevistas qualitativas para validar suposições e solucionar as dúvidas com as principais pessoas envolvidas;
 > * **Highlights de pesquisa**: um compilado do levantamento realizado por meio das entrevistas.
 
