@@ -183,6 +183,43 @@ Resposta: 1º: "Uma funcionalidade que permita você conhecer as pessoas para qu
 
 > * **Highlights de pesquisa**: um compilado do levantamento realizado por meio das entrevistas.
 
+Nome: Helena Muniz
+Data: 31 de agosto de 2024
+Local: Sion
+
+1. O que os participantes falaram ou fizeram que surpreendeu, ou falas mais significativas: O que nos surpreendeu foi o fato da Helena não doar para alguma causa específica, já que imaginávamos que as pessoas teriam em mente exatamente a causa que mais as comovem.
+
+2. Aspectos que importaram mais para os participantes: Em saber como o dinheiro seria utilizado e como ela iria receber atualizações sobre a causa no futuro.
+
+
+3. Principais temas ou aprendizados que surgiram desta entrevista: Os principais temas  que surgiram foram: "Sensibilizar", "Feedback", "Transparência" e "Desconfiança".
+
+4. Novos tópicos ou questões para explorar no futuro: Um modo para fazemos exatamente esta triagem de transparência das ONGs e dar o feedback aos doadores para que não fiquem passíveis de desconfiança no aplicativo ou site.
+
+Nome: Casa dos Livros
+Data: 28 de agosto de 2024
+Local: Ribeirão das Neves
+
+1. O que os participantes falaram ou fizeram que surpreendeu, ou falas mais significativas: Os participantes ressaltaram o impacto significativo que a Casa dos Livros tem na promoção da leitura entre jovens de comunidades carentes. Uma fala marcante foi: "É inspirador ver como gestos de afeto e atenção podem mudar a vida de uma criança. As doações aqui realmente fazem a diferença."
+
+2. Aspectos que importaram mais para os participantes: Transparência na utilização dos recursos, e a importância de manter os doadores informados sobre o impacto das doações. Também foi destacado o desejo de ver os resultados concretos, como a melhoria na educação das crianças.
+
+3. Principais temas ou aprendizados que surgiram desta entrevista: A necessidade de fortalecer a comunicação e a transparência para garantir a confiança dos doadores. Além disso, foi identificado que a educação é um grande motivador para quem deseja contribuir.
+
+4. Novos tópicos ou questões para explorar no futuro: Explorar como envolver mais os doadores no processo educativo, talvez através de programas de leitura conjunta ou eventos comunitários. Também, considerar a introdução de tecnologias que facilitem a doação e o acompanhamento do impacto.
+
+Nome: ONG Oportunidade
+Data: 29 de agosto de 2024
+Local: Santa Mônica
+
+1. O que os participantes falaram ou fizeram que surpreendeu, ou falas mais significativas: Um destaque foi como a ONG Oportunidade consegue não só oferecer apoio financeiro, mas também abrir portas para novas oportunidades de educação e emprego. "Aqui, não se trata apenas de dinheiro, mas de construir um futuro melhor," disse um participante.
+
+2. Aspectos que importaram mais para os participantes: Ver o impacto direto das doações na vida dos beneficiados, especialmente em termos de empregabilidade e acesso à educação. A continuidade do apoio e as histórias de sucesso foram aspectos altamente valorizados.
+
+3. Principais temas ou aprendizados que surgiram desta entrevista: Os doadores valorizam o impacto concreto e as histórias de transformação. Ver os beneficiados alcançando empregos e melhorando suas vidas reforça a importância das doações.
+
+4. Novos tópicos ou questões para explorar no futuro: Investir em parcerias com empresas para aumentar as oportunidades de emprego. Considerar a criação de uma plataforma onde os doadores possam acompanhar o progresso dos beneficiados ao longo do tempo.
+
 ## Etapa de Definição
 
 ### Personas
