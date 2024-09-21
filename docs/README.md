@@ -56,18 +56,9 @@ Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa
 
 ## Público-Alvo
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Descreva quais são as pessoas que usarão a sua aplicação indicando os diferentes perfis. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
->
-> **Orientações**:
->
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+>O público-alvo deste trabalho engloba tanto doadores potenciais quanto ONGs. Doadores potenciais incluem indivíduos de diferentes faixas etárias e perfis socioeconômicos, que têm interesse em apoiar causas sociais, ambientais, culturais ou educacionais, mas que podem sentir insegurança em relação ao processo de doação, seja por falta de transparência ou confiança. As ONGs, por outro lado, incluem organizações sem fins lucrativos que dependem de doações para manter suas atividades e que enfrentam desafios para alcançar e sensibilizar doadores. Além disso, o trabalho pode ser de interesse para profissionais do terceiro setor, captadores de recursos, voluntários e acadêmicos que estudam o comportamento filantrópico e a sustentabilidade de ONGs.
+
 
 # Product Discovery
 
