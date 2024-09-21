@@ -133,11 +133,31 @@ Suposições (O que achamos, mas não temos certeza):
 
 > * **Mapa de stakeholders**: ferramenta que nos permite compreender o grupo de pessoas e entidades que devemos estudar e conversar para entender mais sobre o problema
 
+Fundamentais:
+1. ONGs.
+2. Pessoas ajudadas pelas ONGS.
+3. Doadores.
 
+Importantes:
+1. Governo local.
+2. Redes sociais.
+3. Consultorias que ajuda a medir e comunicar o impacto social das doações realizadas.
+4. Parceiros financeiros.
+5. Instituições que podem certificar a plataforma como segura e confiável.
+6. Grupos e associações de ONGS que podem ajudar a divulgar a plataforma entre suas afiliadas.
+7. Familiares.
 
+Influenciadoras:
 
+1. Influenciadores digitais, televisão, propaganda.
+2. Mídia especializada em Filantropia.
+3. Organizações de pesquisa e avaliações de impactos.
+4. Organizações de certificações de Boas Práticas (exemplo: Charity Navigator, GuideStar etc).
+5. Agências de desenvolvimento econômico e social.
+6. Igrejas e cultos religiosos.
 
 > * **Entrevistas qualitativas**: série de entrevistas qualitativas para validar suposições e solucionar as dúvidas com as principais pessoas envolvidas;
+
 > * **Highlights de pesquisa**: um compilado do levantamento realizado por meio das entrevistas.
 
 ## Etapa de Definição
