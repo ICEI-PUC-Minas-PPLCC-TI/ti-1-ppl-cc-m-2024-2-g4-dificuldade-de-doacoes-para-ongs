@@ -206,7 +206,7 @@ Local: Santa Mônica
 **✳️✳️✳️ APRESENTE OS DIAGRAMAS DE PERSONAS ✳️✳️✳️**
 
 Persona 1:
-images/persona1.png
+(images/persona1.png)
 Persona 2:
 Nome: Gabriela Mena dos Santos Martinez
 Idade: 20
