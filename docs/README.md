@@ -206,22 +206,7 @@ Local: Santa Mônica
 **✳️✳️✳️ APRESENTE OS DIAGRAMAS DE PERSONAS ✳️✳️✳️**
 
 Persona 1:
-Nome: Helena Muniz
-Idade: 21
-Hobby: Assistir filmes
-Trabalho: Estudante
-Personalidade: Helena é uma pessoa descontraída e focada, estudante de veterinária. Se preocupa muito com as pessoas e durante sua adolescência se engajou bastante em causas sociais, com o tempo acabou perdendo o hábito.
-Sonhos: Helena sonha em se formar na área de veterinária e trabalhar com animais de grande porte, além de formar uma família.
-
-Objetos e Lugares:
-Helena sonha em se formar na área de veterinária e trabalhar com animais de grande porte, além de formar uma família.
-
-Objetivos chave:
-Helena continua tendo interesse em fazer doações, mesmo perdendo o hábito. Sua principal dúvida é quanto a transparência das ONGs e credibilidade que elas têm e passam. Ela gostaria de ter a tranquilidade de saber onde suas doações terão maior impacto, ja que quando doava, não tinha preferência por causa. Ela nao faz pesquisas ativamente buscando ONGs, porém estaria disposta a doar caso tivesse 100% de certeza sobre a confiabilidade dela. Ela não tem preferência de causas, porém tem sim a intenção de voltar a doar, essa intenção vem da sua vontade de construir uma família e ensinar esse tipo de valor aos seus filhos, a única coisa que ainda a incomoda é a transparência.
-
-Como devemos tratá-la:
-Helena prefere uma abordagem mais informal, alem de gostar um pouco mais de informações mais diretas.
-
+images/persona1.png
 Persona 2:
 Nome: Gabriela Mena dos Santos Martinez
 Idade: 20
