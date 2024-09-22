@@ -28,19 +28,12 @@ A documentação do projeto é estruturada da seguinte forma:
 
 Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa e público-alvo.
 
-## Problema
+# Problema
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
+ONGs enfrentam desafios significativos na arrecadação de fundos, resultando em dificuldades para manter o crescimento sustentável e construir a confiança dos doadores. Entre os principais obstáculos estão o acesso limitado a informações sobre as doações, a falta de transparência na gestão dos recursos arrecadados e experiências de usuário insatisfatórias em plataformas de doação, além de opções restritas para contribuir. Esses fatores fragilizam a relação entre doadores e ONGs, levando a uma baixa confiança na gestão dos recursos e dificultando o engajamento contínuo dos contribuintes.
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
->
-> **Orientações**:
->
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+A aplicação proposta visa resolver o problema da dificuldade de doação para ONGs, facilitando a conexão entre doadores e organizações. Ao atuar como uma “ponte” entre esses grupos, a plataforma promoverá a transparência e aumentará a confiança de todos os envolvidos, tornando o processo de doação mais acessível e eficaz.
+
 
 ## Objetivos
 
