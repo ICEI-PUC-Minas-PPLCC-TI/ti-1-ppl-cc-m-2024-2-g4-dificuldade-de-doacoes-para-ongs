@@ -2,7 +2,7 @@
 
 Informações básicas do projeto.
 
-* **Projeto:** DoaWeb
+* **Projeto:** Solidarize.com
 * **Repositório GitHub:** [LINK PARA O REPOSITÓRIO NO GITHUB](https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g4-dificuldade-de-doacoes-para-ongs)
 * **Membros da equipe:**
 
