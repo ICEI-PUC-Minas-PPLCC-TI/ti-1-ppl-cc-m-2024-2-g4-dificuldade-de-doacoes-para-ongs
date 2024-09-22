@@ -8,8 +8,8 @@ Informações básicas do projeto.
 
   * [David Cristhian Vieira Fonseca](https://github.com/DavidCristhian)
   * [Samuel de Jesus Fernandes Mascarenhas](https://github.com/SamuellMascarenhas)
-  * [Samuel Vitor Vieira](https://github.com/cicrano)
-  * [Lucas Cabral Bicalho]()
+  * [Samuel Vitor Vieira](https://github.com/svsamuel1912)
+  * [Lucas Cabral Bicalho](https://github.com/lucascabral1918)
   * [Lucas Vinícius Pedroso Pereira](https://github.com/LucasVinip05)
 
 A documentação do projeto é estruturada da seguinte forma:
