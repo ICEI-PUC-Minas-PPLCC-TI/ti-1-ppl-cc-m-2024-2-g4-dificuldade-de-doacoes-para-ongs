@@ -22,7 +22,7 @@ A documentação do projeto é estruturada da seguinte forma:
 6. Solução
 7. Referências Bibliográficas
 
-✅ [Documentação de Design Thinking (MIRO)]([files/processo-dt.pdf](https://miro.com/app/board/uXjVKn-RAgk=/))
+✅ [Documentação de Design Thinking (MIRO)](https://miro.com/app/board/uXjVKn-RAgk=/)
 
 # Contexto
 
