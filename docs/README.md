@@ -335,7 +335,7 @@ Relação de ferramentas empregadas pelo grupo durante o projeto.
 
 Divisão de papéis no grupo e apresentação da estrutura da ferramenta de controle de tarefas (Kanban).
 
-![DivisaoDePapeis](/images/imagem_2024-09-21_230022530.png)
+![DivisaoDePapeis](images/imagem_2024-09-21_230022530.png)
 
 > ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
