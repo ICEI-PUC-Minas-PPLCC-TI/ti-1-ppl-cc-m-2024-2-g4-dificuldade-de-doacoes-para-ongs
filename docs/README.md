@@ -134,33 +134,33 @@ Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa
 > 5. Agências de desenvolvimento econômico e social.
 > 6. Igrejas e cultos religiosos.
 
-> * ###**Entrevistas qualitativas**:### série de entrevistas qualitativas para validar suposições e solucionar as dúvidas com as principais pessoas envolvidas;
+> * **Entrevistas qualitativas**: série de entrevistas qualitativas para validar suposições e solucionar as dúvidas com as principais pessoas envolvidas;
 
-> ###Pergunta 1º:### Quais são os maiores desafios que a ONG enfrenta para conseguir doações?
+> Pergunta 1º: Quais são os maiores desafios que a ONG enfrenta para conseguir doações?
 
 > Resposta: "Nosso maior desafio é sensibilizar as pessoas sobre a importância do nosso coletivo e como isso pode transformar vidas. Muitos não veem a urgência de doar para algo que consideram secundário. A principal barreira é a desconfiança dos potenciais doadores sobre como o dinheiro será usado, mesmo que tenhamos um histórico sólido."
 
-> ###Pergunta 2º:### Quais práticas ou estratégias você acredita serem mais eficazes para incentivar doadores a arrecadar fundos?
+> Pergunta 2º: Quais práticas ou estratégias você acredita serem mais eficazes para incentivar doadores a arrecadar fundos?
 
 > Resposta: "Campanhas onde mostramos histórias reais de transformação através dos nossos projetos, têm sido muito eficazes para sensibilizar os doadores. Eventos presenciais, onde os doadores podem ver de perto o trabalho da ONG, sempre resultam em um aumento significativo nas doações."
 
-> ###Pergunta 3º:### Quais ferramentas você gostaria de implementar para melhorar a transparência e a confiança dos doadores?
+> Pergunta 3º: Quais ferramentas você gostaria de implementar para melhorar a transparência e a confiança dos doadores?
 
 > Resposta: "Gostaríamos de implementar um sistema onde o doador possa conhecer mais sobre o projeto específico que deseja apoiar e acompanhar o progresso em tempo real. Nós mesmo buscamos uma espécie de aplicativo, site, algo moderno e digital que permita aos doadores fazerem perguntas para nós e receberem respostas rápidas sobre como as doações estão sendo usadas, projetos ativos etc."
 
-> ###Pergunta 4º:### Quais informações foram cruciais para a sua decisão de doar para uma ONG?
+> Pergunta 4º: Quais informações foram cruciais para a sua decisão de doar para uma ONG?
 
 > Resposta: "As principais informações necessárias foram saber para onde o dinheiro estava indo, para onde os produtos iam, se a ONG era confiável e quais eram as necessidades das pessoas relacionadas a ONG"
 
-> ###Pergunta 5º:### Como você gostaria de ser informado sobre o impacto de sua contribuição?
+> Pergunta 5º: Como você gostaria de ser informado sobre o impacto de sua contribuição?
 
 > Resposta: "Gostaria de receber atualizações sobre as pessoas e causas que ajudo. Como vídeos, fotos e textos, para mostrar como a ajuda faz a diferença para a causa. Também de gostaria de receber um feedback relacionado às pessoas afetadas pela causa, quem recebe as doações."
 
-> ###Pergunta 5º:### Se você fosse criar um aplicativo para realizar doações para ONGs, quais funcionalidades não poderiam faltar?
+> Pergunta 5º: Se você fosse criar um aplicativo para realizar doações para ONGs, quais funcionalidades não poderiam faltar?
 
 > Resposta: "Uma funcionalidade que permita você conhecer as pessoas para quem a doação é destinada, uma que permita que você identifique oque é preciso ser doado e uma que te mostre os impactos da sua doação."2º: "A possibilidade de o doador escolher para qual projeto específico deseja contribuir e receber atualizações automáticas sobre os resultados."
 
-> * ###**Highlights de pesquisa**:### um compilado do levantamento realizado por meio das entrevistas.
+> * **Highlights de pesquisa**: um compilado do levantamento realizado por meio das entrevistas.
 
 > Nome: Helena Muniz
 > Data: 31 de agosto de 2024
