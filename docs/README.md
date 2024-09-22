@@ -321,10 +321,10 @@ Relação de ferramentas empregadas pelo grupo durante o projeto.
 
 | Ambiente                    | Plataforma | Link de acesso                                     |
 | --------------------------- | ---------- | -------------------------------------------------- |
-| Processo de Design Thinking | Miro       | https://miro.com/XXXXXXX ⚠️ EXEMPLO ⚠️        |
-| Repositório de código     | GitHub     | https://github.com/XXXXXXX ⚠️ EXEMPLO ⚠️      |
-| Hospedagem do site          | Render     | https://site.render.com/XXXXXXX ⚠️ EXEMPLO ⚠️ |
-| Protótipo Interativo       | MarvelApp  | https://marvelapp.com/XXXXXXX ⚠️ EXEMPLO ⚠️   |
+| Processo de Design Thinking | Miro       | [trello](https://miro.com/app/board/uXjVKn-RAgk=/) |
+| Repositório de código       | GitHub     | [github](https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-2024-2-g4-dificuldade-de-doacoes-para-ongs )|
+| Hospedagem do site          | Figma      | [figma](https://www.figma.com/proto/wY9F7p34OYJgGed354RgQz/LP_ONGS-(Prot%C3%B3tipo-Est%C3%A1tico)?page-id=0%3A1&node-id=2-3&node-type=canvas&viewport=309%2C-1783%2C0.5&t=6Wa0C76NLTTjsvEl-1&scaling=scale-down&content-scaling=fixed)|
+| Protótipo Interativo        | Trello     | [trello](https://trello.com/b/3KU3k8bd/trabalho-interdisciplinar-g4)   |
 |                             |            |                                                    |
 
 > ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
@@ -335,7 +335,7 @@ Relação de ferramentas empregadas pelo grupo durante o projeto.
 
 Divisão de papéis no grupo e apresentação da estrutura da ferramenta de controle de tarefas (Kanban).
 
-![Exemplo de Kanban](images/exemplo-kanban.png)
+![DivisaoDePapeis](imagem_2024-09-21_230022530.png)
 
 > ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
