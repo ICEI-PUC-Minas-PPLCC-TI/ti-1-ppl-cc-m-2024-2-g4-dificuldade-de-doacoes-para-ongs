@@ -64,140 +64,140 @@ Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa
 
 ## Etapa de Entendimento
 
-**✳️✳️✳️ APRESENTE OS ARTEFATOS DA ETAPA  ✳️✳️✳️**
-
 > * **Matriz CSD**: também conhecida por Matriz de Alinhamento, é uma ferramenta utilizada no Design Thinking para organizar informações e facilitar o processo de tomada de decisão e solução de problemas;
 
-Dúvidas (O que ainda não sabemos sobre o problema):
+### **Dúvidas (O que ainda não sabemos sobre o problema)**
 
-1. Quais instituições estariam participando do projeto?
-2. Como se conectar com os projetos socias?
-3. Como efetuar doações?
-4. Como aumentar o alcance da plataforma para divulgar as ONGS?
-5. O que deve ser feito para construir e manter a confiança dos doadores na plataforma?
-6. Quais funcionalidades específicas os doadores mais valorizam em uma plataforma de doações?
-7. Como garantir que as ONGs adotem a plataforma?
-8. Como podemos solucionar as dificuldades que as pessoas tem quanto a acessibilidade para doar?
-9. Como essa plataforma pode se diferenciar de outras já existentes?
-10. Como fazer com que os doadores façam doações recorrentes em vez de doações únicas?
-11. Quais desafios podem surgir ao tentar integrar uma nova plataforma?
-12. Como garantir que a plataforma seja acessível para pessoas com deficiência ou com limitações tecnológicas ?
-13. Qual é a melhor maneira de verificar a autenticidade e a legalidade das ONGs registradas na plataforma?
+> 1. Quais instituições estariam participando do projeto?
+> 2. Como se conectar com os projetos socias?
+> 3. Como efetuar doações?
+> 4. Como aumentar o alcance da plataforma para divulgar as ONGS?
+> 5. O que deve ser feito para construir e manter a confiança dos doadores na plataforma?
+> 6. Quais funcionalidades específicas os doadores mais valorizam em uma plataforma de doações?
+> 7. Como garantir que as ONGs adotem a plataforma?
+> 8. Como podemos solucionar as dificuldades que as pessoas tem quanto a acessibilidade para doar?
+> 9. Como essa plataforma pode se diferenciar de outras já existentes?
+> 10. Como fazer com que os doadores façam doações recorrentes em vez de doações únicas?
+> 11. Quais desafios podem surgir ao tentar integrar uma nova plataforma?
+> 12. Como garantir que a plataforma seja acessível para pessoas com deficiência ou com limitações tecnológicas ?
+> 13. Qual é a melhor maneira de verificar a autenticidade e a legalidade das ONGs registradas na plataforma?
 
-Certezas (O que já sabemos):
+### **Certezas (O que já sabemos)**
 
-1. Redes sociais estimulam doações.
-2. Dificuldade em relação ao tempo
-3. Pessoas mais tocadas pelo assunto já viram alguém próximo passando por dificuldades.
-4. As pessoas se sentem mais motivadas para doar quando assistem algum vídeo/documentário sobre o assunto.
-5. As pessoas buscam cada vez mais todo o tipo de informações sobre quem estão doando, para ter certeza de confiança.
-6. Doadores estão cada vez mais preocupados com a transparência e querem saber exatamente como sua doação será utilizada.
-7. Uma boa experiência de usuário ajuda a reter doadores.
-8. As ONGS dependem fortemente de doações para continuar operando.
-9. A cada ano a porcentagem das doações vem diminuindo gradativamente.
-10. As ONGs enfrentam problemas para sustentar sua causa diariamente.
+> 1. Redes sociais estimulam doações.
+> 2. Dificuldade em relação ao tempo
+> 3. Pessoas mais tocadas pelo assunto já viram alguém próximo passando por dificuldades.
+> 4. As pessoas se sentem mais motivadas para doar quando assistem algum vídeo/documentário sobre o assunto.
+> 5. As pessoas buscam cada vez mais todo o tipo de informações sobre quem estão doando, para ter certeza de confiança.
+> 6. Doadores estão cada vez mais preocupados com a transparência e querem saber exatamente como sua doação será utilizada.
+> 7. Uma boa experiência de usuário ajuda a reter doadores.
+> 8. As ONGS dependem fortemente de doações para continuar operando.
+> 9. A cada ano a porcentagem das doações vem diminuindo gradativamente.
+> 10. As ONGs enfrentam problemas para sustentar sua causa diariamente.
 
-Suposições (O que achamos, mas não temos certeza):
+### **Suposições (O que achamos, mas não temos certeza)**
 
-1. Doadores preferem direcionar suas doações para causas específicas (por exemplo, doações para projeto de educação ou saúde).
-2. Baixa taxa de doações por desconfiança dos doadores sobre como a doação será utilizada.
-3. Doadores são mais propensos a doar se a plataforma oferecer informações claras.
-4. Pessoas não doam por falta de confiança em ongs não conhecidas.
-5. Falta de meios confiáveis para doações online.
-6. Falta de verba das ONGS para divulgarem e propagarem os meios de doação e o trabalho que fazem.
-7. Pessoas que não doam por falta de dinheiro podem não saber que podem ajudar de outras formas, como trabalho voluntario, etc...
-8. Se o doador fizer uma doação mensal recorrente (com cartão de credito por exemplo) ele acaba doando mais.
-9. As pessoas são mais propensas a doar para ONGS próximas que resolvem problemas que elas conhecem do que distantes.
-10. Muitas vezes pessoas deixam de doar pela falta de acessibilidade e divulgação, não sabem como e o processo.
+> 1. Doadores preferem direcionar suas doações para causas específicas (por exemplo, doações para projeto de educação ou saúde).
+> 2. Baixa taxa de doações por desconfiança dos doadores sobre como a doação será utilizada.
+> 3. Doadores são mais propensos a doar se a plataforma oferecer informações claras.
+> 4. Pessoas não doam por falta de confiança em ongs não conhecidas.
+> 5. Falta de meios confiáveis para doações online.
+> 6. Falta de verba das ONGS para divulgarem e propagarem os meios de doação e o trabalho que fazem.
+> 7. Pessoas que não doam por falta de dinheiro podem não saber que podem ajudar de outras formas, como trabalho voluntario, etc...
+> 8. Se o doador fizer uma doação mensal recorrente (com cartão de credito por exemplo) ele acaba doando mais.
+> 9. As pessoas são mais propensas a doar para ONGS próximas que resolvem problemas que elas conhecem do que distantes.
+> 10. Muitas vezes pessoas deixam de doar pela falta de acessibilidade e divulgação, não sabem como e o processo.
 
 > * **Mapa de stakeholders**: ferramenta que nos permite compreender o grupo de pessoas e entidades que devemos estudar e conversar para entender mais sobre o problema
 
-Fundamentais:
-1. ONGs.
-2. Pessoas ajudadas pelas ONGS.
-3. Doadores.
+### **Fundamentais**
+> 1. ONGs.
+> 2. Pessoas ajudadas pelas ONGS.
+> 3. Doadores.
 
-Importantes:
-1. Governo local.
-2. Redes sociais.
-3. Consultorias que ajuda a medir e comunicar o impacto social das doações realizadas.
-4. Parceiros financeiros.
-5. Instituições que podem certificar a plataforma como segura e confiável.
-6. Grupos e associações de ONGS que podem ajudar a divulgar a plataforma entre suas afiliadas.
-7. Familiares.
+### **Importantes**
 
-Influenciadoras:
+> 1. Governo local.
+> 2. Redes sociais.
+> 3. Consultorias que ajuda a medir e comunicar o impacto social das doações realizadas.
+> 4. Parceiros financeiros.
+> 5. Instituições que podem certificar a plataforma como segura e confiável.
+> 6. Grupos e associações de ONGS que podem ajudar a divulgar a plataforma entre suas afiliadas.
+> 7. Familiares.
 
-1. Influenciadores digitais, televisão, propaganda.
-2. Mídia especializada em Filantropia.
-3. Organizações de pesquisa e avaliações de impactos.
-4. Organizações de certificações de Boas Práticas (exemplo: Charity Navigator, GuideStar etc).
-5. Agências de desenvolvimento econômico e social.
-6. Igrejas e cultos religiosos.
+### **Influenciadoras**
+
+> 1. Influenciadores digitais, televisão, propaganda.
+> 2. Mídia especializada em Filantropia.
+> 3. Organizações de pesquisa e avaliações de impactos.
+> 4. Organizações de certificações de Boas Práticas (exemplo: Charity Navigator, GuideStar etc).
+> 5. Agências de desenvolvimento econômico e social.
+> 6. Igrejas e cultos religiosos.
 
 > * **Entrevistas qualitativas**: série de entrevistas qualitativas para validar suposições e solucionar as dúvidas com as principais pessoas envolvidas;
 
-Pergunta 1: Quais são os maiores desafios que a ONG enfrenta para conseguir doações?
-Resposta: 1º: "Nosso maior desafio é sensibilizar as pessoas sobre a importância do nosso coletivo e como isso pode transformar vidas. Muitos não veem a urgência de doar para algo que consideram secundário." 2º:"A principal barreira é a desconfiança dos potenciais doadores sobre como o dinheiro será usado, mesmo que tenhamos um histórico sólido."
+> Pergunta 1º: Quais são os maiores desafios que a ONG enfrenta para conseguir doações?
 
-Pergunta 2: Quais práticas ou estratégias você acredita serem mais eficazes para incentivar doadores a arrecadar fundos?
+> Resposta: "Nosso maior desafio é sensibilizar as pessoas sobre a importância do nosso coletivo e como isso pode transformar vidas. Muitos não veem a urgência de doar para algo que consideram secundário. A principal barreira é a desconfiança dos potenciais doadores sobre como o dinheiro será usado, mesmo que tenhamos um histórico sólido."
 
-Resposta: 1º: "Campanhas onde mostramos histórias reais de transformação através dos nossos projetos, têm sido muito eficazes para sensibilizar os doadores." 2º: "Eventos presenciais, onde os doadores podem ver de perto o trabalho da ONG, sempre resultam em um aumento significativo nas doações."
+> Pergunta 2º: Quais práticas ou estratégias você acredita serem mais eficazes para incentivar doadores a arrecadar fundos?
 
-Pergunta 3: Quais ferramentas você gostaria de implementar para melhorar a transparência e a confiança dos doadores?
+> Resposta: "Campanhas onde mostramos histórias reais de transformação através dos nossos projetos, têm sido muito eficazes para sensibilizar os doadores. Eventos presenciais, onde os doadores podem ver de perto o trabalho da ONG, sempre resultam em um aumento significativo nas doações."
 
-Resposta: 1º: "Gostaríamos de implementar um sistema onde o doador possa conhecer mais sobre o projeto específico que deseja apoiar e acompanhar o progresso em tempo real." 2º:"Nós mesmo buscamos uma espécie de aplicativo, site, algo moderno e digital que permita aos doadores fazerem perguntas para nós e receberem respostas rápidas sobre como as doações estão sendo usadas, projetos ativos etc."
+> Pergunta 3º: Quais ferramentas você gostaria de implementar para melhorar a transparência e a confiança dos doadores?
 
-Pergunta 4: Quais informações foram cruciais para a sua decisão de doar para uma ONG?
+> Resposta: "Gostaríamos de implementar um sistema onde o doador possa conhecer mais sobre o projeto específico que deseja apoiar e acompanhar o progresso em tempo real. Nós mesmo buscamos uma espécie de aplicativo, site, algo moderno e digital que permita aos doadores fazerem perguntas para nós e receberem respostas rápidas sobre como as doações estão sendo usadas, projetos ativos etc."
 
-Resposta:: "As principais informações necessárias foram saber para onde o dinheiro estava indo, para onde os produtos iam, se a ONG era confiável e quais eram as necessidades das pessoas relacionadas a ONG"
+> Pergunta 4º: Quais informações foram cruciais para a sua decisão de doar para uma ONG?
 
-Pergunta 5: Como você gostaria de ser informado sobre o impacto de sua contribuição?
+> Resposta: "As principais informações necessárias foram saber para onde o dinheiro estava indo, para onde os produtos iam, se a ONG era confiável e quais eram as necessidades das pessoas relacionadas a ONG"
 
-Resposta:: "Gostaria de receber atualizações sobre as pessoas e causas que ajudo. Como vídeos, fotos e textos, para mostrar como a ajuda faz a diferença para a causa. Também de gostaria de receber um feedback relacionado às pessoas afetadas pela causa, quem recebe as doações."
+> Pergunta 5º: Como você gostaria de ser informado sobre o impacto de sua contribuição?
 
-Pergunta 6: Se você fosse criar um aplicativo para realizar doações para ONGs, quais funcionalidades não poderiam faltar?
+> Resposta: "Gostaria de receber atualizações sobre as pessoas e causas que ajudo. Como vídeos, fotos e textos, para mostrar como a ajuda faz a diferença para a causa. Também de gostaria de receber um feedback relacionado às pessoas afetadas pela causa, quem recebe as doações."
 
-Resposta: 1º: "Uma funcionalidade que permita você conhecer as pessoas para quem a doação é destinada, uma que permita que você identifique oque é preciso ser doado e uma que te mostre os impactos da sua doação."2º: "A possibilidade de o doador escolher para qual projeto específico deseja contribuir e receber atualizações automáticas sobre os resultados."
+> Pergunta 5º: Se você fosse criar um aplicativo para realizar doações para ONGs, quais funcionalidades não poderiam faltar?
+
+> Resposta: "Uma funcionalidade que permita você conhecer as pessoas para quem a doação é destinada, uma que permita que você identifique oque é preciso ser doado e uma que te mostre os impactos da sua doação."2º: "A possibilidade de o doador escolher para qual projeto específico deseja contribuir e receber atualizações automáticas sobre os resultados."
 
 > * **Highlights de pesquisa**: um compilado do levantamento realizado por meio das entrevistas.
 
-Nome: Helena Muniz
-Data: 31 de agosto de 2024
-Local: Sion
+> Nome: Helena Muniz
+> Data: 31 de agosto de 2024
+> Local: Sion
 
-1. O que os participantes falaram ou fizeram que surpreendeu, ou falas mais significativas: O que nos surpreendeu foi o fato da Helena não doar para alguma causa específica, já que imaginávamos que as pessoas teriam em mente exatamente a causa que mais as comovem.
+> 1. O que os participantes falaram ou fizeram que surpreendeu, ou falas mais significativas: O que nos surpreendeu foi o fato da Helena não doar para alguma causa específica, já que imaginávamos que as pessoas teriam em mente exatamente a causa que mais as comovem.
 
-2. Aspectos que importaram mais para os participantes: Em saber como o dinheiro seria utilizado e como ela iria receber atualizações sobre a causa no futuro.
+> 2. Aspectos que importaram mais para os participantes: Em saber como o dinheiro seria utilizado e como ela iria receber atualizações sobre a causa no futuro.
 
 
-3. Principais temas ou aprendizados que surgiram desta entrevista: Os principais temas  que surgiram foram: "Sensibilizar", "Feedback", "Transparência" e "Desconfiança".
+> 3. Principais temas ou aprendizados que surgiram desta entrevista: Os principais temas  que surgiram foram: "Sensibilizar", "Feedback", "Transparência" e "Desconfiança".
 
-4. Novos tópicos ou questões para explorar no futuro: Um modo para fazemos exatamente esta triagem de transparência das ONGs e dar o feedback aos doadores para que não fiquem passíveis de desconfiança no aplicativo ou site.
+> 4. Novos tópicos ou questões para explorar no futuro: Um modo para fazemos exatamente esta triagem de transparência das ONGs e dar o feedback aos doadores para que não fiquem passíveis de desconfiança no aplicativo ou site.
 
-Nome: Casa dos Livros
-Data: 28 de agosto de 2024
-Local: Ribeirão das Neves
+> Nome: Casa dos Livros
+> Data: 28 de agosto de 2024
+> Local: Ribeirão das Neves
 
-1. O que os participantes falaram ou fizeram que surpreendeu, ou falas mais significativas: Os participantes ressaltaram o impacto significativo que a Casa dos Livros tem na promoção da leitura entre jovens de comunidades carentes. Uma fala marcante foi: "É inspirador ver como gestos de afeto e atenção podem mudar a vida de uma criança. As doações aqui realmente fazem a diferença."
+> 1. O que os participantes falaram ou fizeram que surpreendeu, ou falas mais significativas: Os participantes ressaltaram o impacto significativo que a Casa dos Livros tem na promoção da leitura entre jovens de comunidades carentes. Uma fala marcante foi: "É inspirador ver como gestos de afeto e atenção podem mudar a vida de uma criança. As doações aqui realmente fazem a diferença."
 
-2. Aspectos que importaram mais para os participantes: Transparência na utilização dos recursos, e a importância de manter os doadores informados sobre o impacto das doações. Também foi destacado o desejo de ver os resultados concretos, como a melhoria na educação das crianças.
+> 2. Aspectos que importaram mais para os participantes: Transparência na utilização dos recursos, e a importância de manter os doadores informados sobre o impacto das doações. Também foi destacado o desejo de ver os resultados concretos, como a melhoria na educação das crianças.
 
-3. Principais temas ou aprendizados que surgiram desta entrevista: A necessidade de fortalecer a comunicação e a transparência para garantir a confiança dos doadores. Além disso, foi identificado que a educação é um grande motivador para quem deseja contribuir.
+> 3. Principais temas ou aprendizados que surgiram desta entrevista: A necessidade de fortalecer a comunicação e a transparência para garantir a confiança dos doadores. Além disso, foi identificado que a educação é um grande motivador para quem deseja contribuir.
 
-4. Novos tópicos ou questões para explorar no futuro: Explorar como envolver mais os doadores no processo educativo, talvez através de programas de leitura conjunta ou eventos comunitários. Também, considerar a introdução de tecnologias que facilitem a doação e o acompanhamento do impacto.
+> 4. Novos tópicos ou questões para explorar no futuro: Explorar como envolver mais os doadores no processo educativo, talvez através de programas de leitura conjunta ou eventos comunitários. Também, considerar a introdução de tecnologias que facilitem a doação e o acompanhamento do impacto.
 
-Nome: ONG Oportunidade
-Data: 29 de agosto de 2024
-Local: Santa Mônica
+> Nome: ONG Oportunidade
+> Data: 29 de agosto de 2024
+> Local: Santa Mônica
 
-1. O que os participantes falaram ou fizeram que surpreendeu, ou falas mais significativas: Um destaque foi como a ONG Oportunidade consegue não só oferecer apoio financeiro, mas também abrir portas para novas oportunidades de educação e emprego. "Aqui, não se trata apenas de dinheiro, mas de construir um futuro melhor," disse um participante.
+> 1. O que os participantes falaram ou fizeram que surpreendeu, ou falas mais significativas: Um destaque foi como a ONG Oportunidade consegue não só oferecer apoio financeiro, mas também abrir portas para novas oportunidades de educação e emprego. "Aqui, não se trata apenas de dinheiro, mas de construir um futuro melhor," disse um participante.
 
-2. Aspectos que importaram mais para os participantes: Ver o impacto direto das doações na vida dos beneficiados, especialmente em termos de empregabilidade e acesso à educação. A continuidade do apoio e as histórias de sucesso foram aspectos altamente valorizados.
+> 2. Aspectos que importaram mais para os participantes: Ver o impacto direto das doações na vida dos beneficiados, especialmente em termos de empregabilidade e acesso à educação. A continuidade do apoio e as histórias de sucesso foram aspectos altamente valorizados.
 
-3. Principais temas ou aprendizados que surgiram desta entrevista: Os doadores valorizam o impacto concreto e as histórias de transformação. Ver os beneficiados alcançando empregos e melhorando suas vidas reforça a importância das doações.
+> 3. Principais temas ou aprendizados que surgiram desta entrevista: Os doadores valorizam o impacto concreto e as histórias de transformação. Ver os beneficiados alcançando empregos e melhorando suas vidas reforça a importância das doações.
 
-4. Novos tópicos ou questões para explorar no futuro: Investir em parcerias com empresas para aumentar as oportunidades de emprego. Considerar a criação de uma plataforma onde os doadores possam acompanhar o progresso dos beneficiados ao longo do tempo.
+> 4. Novos tópicos ou questões para explorar no futuro: Investir em parcerias com empresas para aumentar as oportunidades de emprego. Considerar a criação de uma plataforma onde os doadores possam acompanhar o progresso dos beneficiados ao longo do tempo.
 
 ## Etapa de Definição
 
