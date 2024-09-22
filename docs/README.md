@@ -202,60 +202,16 @@ Local: Santa Mônica
 ## Etapa de Definição
 
 ### Personas
-
-**✳️✳️✳️ APRESENTE OS DIAGRAMAS DE PERSONAS ✳️✳️✳️**
-
+Persona 1:
 ![Persona 1:](images/persona1.png)
 Persona 2:
-Nome: Gabriela Mena dos Santos Martinez
-Idade: 20
-Hobby: Gosta de dançar
-Trabalho: Analista Financeiro no setor de tecnologia
-Personalidade: Gabriela é uma pessoa extrovertida, com o humor bastante contagiante e responsável
-Sonhos: Gabriela sonha em ter uma casa própria, ter uma carreira profissional estabelecida e viajar pelo mundo
-
-Objetos e Lugares:
-Gabriela costuma usar bastante o seu celular que faz parte de seu dia-a-dia, de seu fone de ouvido companheiro de trabalho e seu notebook de trabalho. Os lugares que ela mais frequenta é a Academia, o trabalho e a sua casa.
-
-Objetivos chave:
-Gabriela tem o objetivo de conseguir conciliar o seu tempo e seu dinheiro para assim conseguir realizar doações para ONGs, no qual ela ainda não é doadora diretamente à ONGs, mas ela é doadora frequente de causas vistas no instagram por meio e influenciadores seguidos e ela realiza a doação diretamente para esse influenciador linha de frente da causa. E também doa diretamente para moradores de rua.
-
-Como devemos tratá-la:
-Gabriela gosta de conversar informalmente, e visa ser tratada com educação e simpatia.
+![Persona 2:](images/persona2.png)
 
 Persona 3:
-Nome: Casa dos Livros
-Idade:
-Hobby:
-Trabalho: Promove oficinas, cursos e doações, com foco em ampliar o acesso à educação e capacitação para comunidades de baixa renda.
-Personalidade: A Casa dos Livros é acolhedora, inclusiva e comprometida em apoiar o desenvolvimento educacional e social de forma confiável e proativa.
-Sonhos: Expandir suas atividades para alcançar mais comunidades e transformar vidas por meio da educação e capacitação profissional.
-
-Objetos e Lugares:
-Livros didáticos, apostilas, cadernos, tablets para leitura digital, materiais de oficina como papéis, tintas e ferramentas de artesanato, além de kits de material escolar para distribuição.Na própria Casa dos Livros, escolas públicas, centros culturais e espaços voltados para educação.
-
-Objetivos chave:
-Os usuários da Casa dos Livros buscam acesso a recursos educativos, oficinas e cursos profissionalizantes para ampliar seu conhecimento e melhorar suas oportunidades no mercado de trabalho. Além disso, o serviço promove inclusão social, oferecendo a quem precisa oportunidades de desenvolvimento pessoal e profissional. Eles precisam superar barreiras educacionais e sociais, obtendo materiais didáticos e capacitação profissional, especialmente em comunidades com menos oportunidades.
-
-Como devemos tratá-la:
-Devemos tratá-la com respeito, empatia e abertura. A comunicação deve ser clara e acessível, valorizando o aprendizado e a inclusão.
+![Persona 3:](images/persona3.png)
 
 Persona 4:
-Nome: Projeto K1
-Idade:
-Hobby:
-Trabalho: Oferece suporte para aprimorar habilidades esportivas e de liderança, engajando os jovens em atividades comunitárias através do esporte.
-Personalidade: Colaborativo e determinado, com foco em promover a inclusão social e desenvolver habilidades de liderança entre os participantes.
-Sonhos: Transformar a vida dos jovens da comunidade, ajudando-os a superar barreiras socioeconômicas e alcançar sucesso no esporte, enquanto se tornam agentes de mudança em suas próprias comunidades
-
-Objetos e Lugares:
-Equipamentos esportivos como bolas de futebol, redes, cones para treinos, uniformes e materiais de proteção (joelheiras, caneleiras).O próprio espaço K1, centros de treinamento comunitários, campos de futebol em bairros carentes e escolas que oferecem programas de incentivo ao esporte. Participa de eventos ao ar livre, campeonatos locais e atividades em praças públicas que envolvem a comunidade através do esporte.
-
-Objetivos chave:
-Os usuários do Projeto K1 buscam melhorar suas habilidades esportivas e de liderança, além de participar de atividades comunitárias que promovam inclusão social. Eles precisam superar barreiras socioeconômicas e obter apoio para avançar no esporte e em projetos sociais.
-
-Como devemos tratá-la:
-Devemos tratá-lo com uma comunicação direta e motivacional, incentivando-o a alcançar seus objetivos no esporte e na comunidade.
+![Persona 4:](images/persona4.png)
 
 # Product Design
 
