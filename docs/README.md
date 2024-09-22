@@ -203,14 +203,18 @@ Local: Santa Mônica
 
 ### Personas
 Persona 1:
+
 ![Persona 1:](images/persona1.png)
 Persona 2:
+
 ![Persona 2:](images/persona2.png)
 
 Persona 3:
+
 ![Persona 3:](images/persona3.png)
 
 Persona 4:
+
 ![Persona 4:](images/persona4.png)
 
 # Product Design
@@ -244,15 +248,26 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 ## Proposta de Valor
 
-**✳️✳️✳️ APRESENTE O DIAGRAMA DA PROPOSTA DE VALOR PARA CADA PERSONA ✳️✳️✳️**
+Diagramas de Proposta de Valor
 
-##### Proposta para Persona XPTO ⚠️ EXEMPLO ⚠️
-
-![Exemplo de proposta de valor](images/exemplo-proposta-valor.png)
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
 > O mapa da proposta de valor é uma ferramenta que nos ajuda a definir qual tipo de produto ou serviço melhor atende às personas definidas anteriormente.
+
+Persona 1:
+
+![PV1](images/propostadevalor1.png)
+
+Persona 2:
+
+![PV2](images/propostadevalor2.png)
+
+Persona 3:
+
+![PV3](images/propostadevalor3.png)
+
+Persona 4:
+
+![PV4](images/propostadevalor4.png)
+
 
 ## Requisitos
 
