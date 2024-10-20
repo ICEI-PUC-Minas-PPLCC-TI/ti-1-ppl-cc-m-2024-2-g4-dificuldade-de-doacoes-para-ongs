@@ -1,34 +1,26 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15990027&assignment_repo_type=AssignmentRepo)
-# Nome do projeto
+# Solidarize.com
 
-Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/a180dceb-7486-43d4-8d66-50731cb1034d" alt="Apresentação Projeto Solidarize com" width="700"/>
+</div>
 
-## Alunos integrantes da equipe
+Solidarize.com é uma plataforma digital inovadora que visa conectar ONGs e doadores, promovendo um ambiente de doações mais transparente e eficiente. Nossa solução aborda os desafios enfrentados pelas ONGs, como o acesso restrito a informações de doação, falta de transparência na gestão de recursos e experiências de usuários insatisfatórias, que muitas vezes comprometem a confiança e o engajamento. Com um foco em relatórios de impacto, o Solidarize.com visa fortalecer o relacionamento entre doadores e organizações, ampliando o impacto social das iniciativas.
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+## Equipe de Desenvolvimento
 
-## Professores responsáveis
+- **Samuel de Jesus Fernandes Mascarenhas**
+- **David Cristhian Vieira Fonseca**
+- **Lucas Cabral Bicalho**
+- **Samuel Vitor Vieira**
+- **Lucas Vinicius**
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+## Professores Orientadores
 
+- **Rommel Vieira Carneiro**
+- **Hayala Nepomuceno Curto**
+- **Ilo Amy Saldanha Rivero**
+- **Walisson Ferreira de Carvalho**
 
+## Instruções de Utilização
 
-## Instruções de utilização 
-
-> **IMPORTANTE: APAGUE ESSA SEÇÃO DE INSTRUÇÕES ANTES DE ENTREGAR SEU TRABALHO**
-
-No desenvolvimento desse trabalho, o grupo deverá utilizar esse repositório como local para entrega de todos os artefatos a serem produzidos. Em especial, o grupo deverá providenciar a alteração dos seguintes arquivos:
-
-* **Capa do projeto** (Esse arquivo aqui): Informação básica sobre o projeto, alunos do grupo e professores responsáveis;
-* **Arquivo CITATION.cff**: descritor do projeto, utilizado para geração do certificado ao final da disciplina.
-* **Pasta código**: todos os arquivos resultantes da programação do software.
-* **Pasta docs --> arquivo README.md**: Documentação completa do projeto.
-
-Toda a documentação do projeto é realizado por meio do Markdown, uma linguagem de formatação adotada pelo GitHub e por diversas outras plataformas. Aprenda Markdown e use-o para documentar o projeto:
-
-* [Sintaxe básica de gravação e formatação no GitHub - GitHub Docs](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-* [Markdown® Básico: Sintaxe, Uso &amp; Exemplos [Passo a Passo]](https://markdown.net.br/sintaxe-basica/)
+Este projeto está em desenvolvimento. Instruções detalhadas de uso e implementação serão fornecidas em breve.
