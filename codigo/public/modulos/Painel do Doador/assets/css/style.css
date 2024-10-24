@@ -140,14 +140,10 @@
 }
 .container {
   display: flex;
-  align-items: center;
   justify-content: flex-end;
 }
 
-.imagem {
-  cursor: pointer;
-  width: 200px;
-}
+
 
 .perfil {
   display: none; /* Escondido inicialmente */
@@ -216,6 +212,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  margin-left: 200px;
 }
 
 .container-my-5 {
