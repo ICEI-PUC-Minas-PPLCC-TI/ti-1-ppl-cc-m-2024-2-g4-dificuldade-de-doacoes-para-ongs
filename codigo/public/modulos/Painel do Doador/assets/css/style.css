@@ -117,3 +117,26 @@
 {
   width:300px;
 }
+
+#perfil{
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.imagem {
+  cursor: pointer;
+  width: 200px;
+}
+
+.perfil {
+  display: none; /* Escondido inicialmente */
+  margin-left: 20px;
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 5px;
+}
