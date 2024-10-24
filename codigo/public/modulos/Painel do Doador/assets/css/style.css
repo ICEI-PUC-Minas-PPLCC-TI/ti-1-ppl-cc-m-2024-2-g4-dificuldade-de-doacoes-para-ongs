@@ -8,6 +8,22 @@
   z-index: 1000;
 }
 
+.sitename
+{
+  text-decoration: none;
+  margin-top: 7px;
+  color: white;
+}
+.sitename:hover {
+  color: white; /* Mantém a cor branca ao passar o mouse */
+  text-decoration: none; /* Garante que não será sublinhado ao passar o mouse */
+}
+.lista
+{
+  display: flex;
+  margin-top: 15px;
+}
+
 /* Topbar */
 .topbar {
   background-color: #00695C; /* Verde mais escuro */
@@ -86,7 +102,6 @@
 .navmenu ul li a:hover {
   color: #CCCCCC;
 }
-
 /* Responsivo */
 @media (max-width: 768px) {
   .topbar {
@@ -126,6 +141,7 @@
 .container {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .imagem {
