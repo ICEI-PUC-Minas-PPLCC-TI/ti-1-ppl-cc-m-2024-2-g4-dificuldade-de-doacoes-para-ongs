@@ -140,3 +140,69 @@
   padding: 10px;
   border-radius: 5px;
 }
+
+/* Modal e Overlay */
+.modal-right {
+  position: fixed;
+  top: 0;
+  right: -400px; /* Escondido fora da tela inicialmente */
+  width: 400px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  z-index: 2001; /* Elevado acima da página */
+  overflow-y: auto;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none; /* Escondido inicialmente */
+  z-index: 2001; /* Um pouco abaixo do modal */
+}
+
+.modal-right.open {
+  right: 0;
+}
+
+.modal-overlay.open {
+  display: block;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.modal-content p {
+  font-size: 16px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.imagem {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.container-my-5 {
+  margin: 50px;
+  margin-top: 140px;
+}

@@ -15,7 +15,6 @@
 
 <body>
     <header id="header" class="header fixed-top">
-
         <div class="topbar d-flex align-items-center">
             <div class="container d-flex justify-content-center justify-content-md-between">
                 <div class="contact-info d-flex align-items-center">
@@ -48,12 +47,8 @@
                         <li><a href="#recent-posts">Blog</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <div class="container">
-                            <img id="perfil"   src="../../assets/img/teste/blank-profile-picture-973460_1280.webp" alt="Perfil" onclick="mostrarPerfil()">
-                            <div id="perfil" class="perfil">
-                           
-                            </div>
-                          </div>
-                        
+                            <img id="profileImage" src="../../assets/img/teste/blank-profile-picture-973460_1280.webp" alt="Perfil" class="imagem"> <!-- Mudança no id -->
+                        </div>
                     </ul>
                     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav>
@@ -133,6 +128,19 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Modal e Overlay -->
+    <div id="modalOverlay" class="modal-overlay"></div>
+
+    <div id="profileModal" class="modal-right">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Perfil do Usuário</h2>
+            <p>Aqui você pode adicionar informações do perfil.</p>
+            <p>Nome: João Silva</p>
+            <p>Email: joao.silva@example.com</p>
         </div>
     </div>
 
