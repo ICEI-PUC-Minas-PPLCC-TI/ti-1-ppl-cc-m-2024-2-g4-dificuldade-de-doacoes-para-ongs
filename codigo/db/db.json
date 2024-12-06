@@ -1,0 +1,360 @@
+{
+  "usuarios": {
+    "donors": [
+      {
+        "name": "Samuell Mascarenhas",
+        "email": "s@gmail.com",
+        "phone": "319999999999",
+        "address": "bh",
+        "interests": "b",
+        "category": "s",
+        "password": "senha123"
+      },
+      {
+        "name": "teste",
+        "email": "joao@example.com",
+        "phone": "319999999999",
+        "address": "bh",
+        "interests": "b",
+        "category": "saúde",
+        "password": "senha123"
+      },
+      {
+        "name": "teste",
+        "email": "teste@gmail.com",
+        "phone": "319999999999",
+        "address": "bh",
+        "interests": "b",
+        "category": "saúde",
+        "password": "senha1234"
+      }
+    ],
+    "ongs": [
+      {
+        "orgName": "ONG",
+        "email": "ong@gmail.com",
+        "phone": "319999999999",
+        "socialMedia": "a",
+        "description": "sss",
+        "category": "saúde",
+        "address": "bh",
+        "password": "senha123"
+      },
+      {
+        "orgName": "ONG PROJETO",
+        "phone": "319999999999",
+        "email": "ongprojeto@gmail.com",
+        "socialMedia": "@ong",
+        "description": "projeto",
+        "category": "saúde",
+        "address": "bh",
+        "password": "senha12345"
+      }
+    ]
+  },
+  "doadores": [
+    {
+      "id": "7063",
+      "nome": "Lucas Cabral",
+      "descricao": "",
+      "location": "",
+      "telefone": "",
+      "email": "",
+      "causa": "Selecionar"
+    },
+    {
+      "id": "5de5",
+      "nome": "Victor Rabelo",
+      "descricao": "Alberto Rodrigues",
+      "location": "Belo Horizonte",
+      "telefone": "31983129229",
+      "email": "lucascabralbicalho@gmail.com",
+      "causa": "6"
+    }
+  ],
+  "ongs": [
+    {
+      "id": "23b5",
+      "name": "Alcoolicos Anônimos",
+      "description": "Os Alcoólicos Anônimos são um grupo de ajuda mútua, uma irmandade composta por homens e mulheres, fundada com o desejo de auxiliar aqueles que passam por dificuldades com relação ao uso do álcool",
+      "avaliacoes": []
+    },
+    {
+      "id": "7d90",
+      "name": "Criança Esperança",
+      "description": "O Programa Criança Esperança, uma iniciativa da Rede Globo em parceria com a UNESCO desde 2004, compreende uma mobilização social que busca transformar o futuro de crianças e jovens em situação de vulnerabilidade social.",
+      "avaliacoes": []
+    },
+    {
+      "id": "4cc2",
+      "name": "Instituto Ethos",
+      "description": "O Instituto Ethos de Empresas e Responsabilidade Social é uma organização social sem fins lucrativos cuja missão é mobilizar, sensibilizar e ajudar as empresas a gerirem seus negócios de forma socialmente responsável, tornando-as parceiras na construção de uma sociedade justa e sustentável.",
+      "avaliacoes": []
+    },
+    {
+      "id": "cb43",
+      "name": "CIEDS",
+      "description": "O CIEDS (Centro Integrado de Estudos e Programas de Desenvolvimento Sustentável) é uma organização social sem fins lucrativos que desenvolve projetos e programas para o desenvolvimento social.",
+      "avaliacoes": []
+    }
+  ],
+  "ongsFavoritas": [
+    {
+      "id": "1",
+      "nome": "ONG Favorita 1",
+      "descricao": "Descrição da ONG Favorita 1. Pode conter detalhes adicionais.",
+      "imagem": "../../assets/img/equipeOrg.jpg",
+      "link": "#"
+    },
+    {
+      "id": "2",
+      "nome": "ONG Favorita 2",
+      "descricao": "Descrição da ONG Favorita 2. Pode conter detalhes adicionais.",
+      "imagem": "../../assets/img/ong2.jpg",
+      "link": "#"
+    },
+    {
+      "id": "3",
+      "nome": "ONG Favorita 3",
+      "descricao": "Descrição da ONG Favorita 3. Pode conter detalhes adicionais.",
+      "imagem": "https://via.placeholder.com/300x200",
+      "link": "#"
+    }
+  ],
+  "ongsRecomendadas": [
+    {
+      "id": "1",
+      "nome": "ONG Recomendada 1",
+      "descricao": "Descrição da ONG Recomendada 1. Pode conter detalhes adicionais.",
+      "imagem": "../../assets/img/equipeOrg.jpg",
+      "link": "#"
+    },
+    {
+      "id": "2",
+      "nome": "ONG Recomendada 2",
+      "descricao": "Descrição da ONG Recomendada 2. Pode conter detalhes adicionais.",
+      "imagem": "../../assets/img/ong2.jpg",
+      "link": "#"
+    },
+    {
+      "id": "3",
+      "nome": "ONG Recomendada 3",
+      "descricao": "Descrição da ONG Recomendada 3. Pode conter detalhes adicionais.",
+      "imagem": "https://via.placeholder.com/300x200",
+      "link": "#"
+    }
+  ],
+  "ongsContribuidas": [
+    {
+      "id": "1",
+      "nome": "ONG Contribuída 1",
+      "descricao": "Texto de exemplo para a ONG Contribuída 1. Pode conter informações adicionais sobre o conteúdo.",
+      "imagem": "../../assets/img/equipeOrg.jpg"
+    },
+    {
+      "id": "2",
+      "nome": "ONG Contribuída 2",
+      "descricao": "Texto de exemplo para a ONG Contribuída 2. Pode conter informações adicionais sobre o conteúdo.",
+      "imagem": "../../assets/img/ong2.jpg"
+    },
+    {
+      "id": "3",
+      "nome": "ONG Contribuída 3",
+      "descricao": "Texto de exemplo para a ONG Contribuída 3. Pode conter informações adicionais sobre o conteúdo.",
+      "imagem": "https://via.placeholder.com/300x200"
+    }
+  ],
+  "midias": {
+    "fotos": [
+      {
+        "id": 1,
+        "src": "../../assets/img/ong1.jpg",
+        "alt": "Foto do Projeto 1"
+      },
+      {
+        "id": 2,
+        "src": "../../assets/img/ong2.jpg",
+        "alt": "Foto do Projeto 2"
+      },
+      {
+        "id": 3,
+        "src": "../../assets/img/ong3.jpg",
+        "alt": "Foto do Projeto 3"
+      }
+    ],
+    "videos": [
+      {
+        "id": 1,
+        "src": "../../assets/videos/video1.mp4",
+        "type": "video/mp4"
+      },
+      {
+        "id": 2,
+        "src": "../../assets/videos/video2.mp4",
+        "type": "video/mp4"
+      }
+    ]
+  },
+  "feedbacks": [
+    {
+      "id": "1",
+      "ong": "Casa dos Livros",
+      "feedback": "Agradecemos imensamente a sua contribuição para o nosso projeto. Com sua doação, conseguimos comprar materiais educativos para as crianças, que já estão utilizando no nosso novo curso. Continuamos precisando de sua ajuda para expandir ainda mais o projeto. Muito obrigado!"
+    },
+    {
+      "id": "2",
+      "ong": "ONG 2",
+      "feedback": "Saber que minha doação está ajudando a mudar vidas é o que mais me motiva a contribuir."
+    },
+    {
+      "id": "3",
+      "ong": "ONG 3",
+      "feedback": "A comunicação da ONG foi excelente. Recebi um e-mail de agradecimento logo após minha doação, o que foi muito apreciado."
+    },
+    {
+      "id": "4",
+      "ong": "ONG 4",
+      "feedback": "A minha experiência ao doar foi muito positiva. A plataforma é fácil de usar e me senti seguro durante todo o processo."
+    },
+    {
+      "id": "5",
+      "ong": "ONG 5",
+      "feedback": "Agradeço a transparência nas informações sobre para onde minha doação foi destinada. Isso me faz sentir mais confiante."
+    }
+  ],
+  "historico": [
+    {
+      "data": "2024-10-01",
+      "valor": "R$ 50,00",
+      "projeto": "Projeto A",
+      "id": "903d"
+    },
+    {
+      "data": "2024-09-15",
+      "valor": "R$ 100,00",
+      "projeto": "Projeto B",
+      "id": "5846"
+    },
+    {
+      "data": "2024-08-20",
+      "valor": "R$ 30,00",
+      "projeto": "Projeto C",
+      "id": "efcc"
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "image": "assets/img/projeto2.jpg",
+      "title": "Projeto Social",
+      "category": "filter-app",
+      "link": "portfolio-details.html"
+    },
+    {
+      "id": "2",
+      "image": "assets/img/ong1.jpg",
+      "title": "ONG",
+      "category": "filter-product",
+      "link": "portfolio-details.html"
+    },
+    {
+      "id": "3",
+      "image": "assets/img/voluntariado.jpg",
+      "title": "Voluntariado",
+      "category": "filter-branding",
+      "link": "portfolio-details.html"
+    }
+  ],
+  "posts": [
+    {
+      "category": "Politics",
+      "image": "assets/img/blog/closeup-diverse-people-joining-their-hands.jpg",
+      "title": "Em ano eleitoral, ONG referência em projetos vira bode expiatório de interesse político",
+      "url": "https://contato.org.br/em-ano-eleitoral-ong-referencia-em-projetos-vira-bode-expiatorio-de-interesse-politico/",
+      "author": "Ong Contato",
+      "authorImage": "assets/img/blog/logo-conta-to.png",
+      "date": "2024-08-08",
+      "id": "1191"
+    },
+    {
+      "category": "Education",
+      "image": "assets/img/blog/colorful-paper-chains-still-life.jpg",
+      "title": "Educação é caminho para transformação que queremos no Brasil",
+      "url": "https://www.amigosdobem.org/educacao-e-caminho-para-transformacao-que-queremos-no-brasil/",
+      "author": "Amigos do Bem",
+      "authorImage": "assets/img/blog/Novo-LOGO-01.webp",
+      "date": "2024-10-16",
+      "id": "0666"
+    },
+    {
+      "category": "News",
+      "image": "assets/img/blog/portrait-volunteers-who-organized-donations-charity.jpg",
+      "title": "A Importância das ONGs no Brasil: Promovendo Mudanças Sociais e Transformações Positivas",
+      "url": "https://blog.eporamor.org.br/a-importancia-das-ongs-no-brasil-promovendo-mudancas-sociais-e-transformacoes-positivas/",
+      "author": "ONG é por Amor",
+      "authorImage": "assets/img/blog/logo-blog-ong-e-por-amor.png",
+      "date": "2024-03-17",
+      "id": "0ef8"
+    }
+  ],
+  "favorites": [
+    {
+      "id": "7d90",
+      "name": "Criança Esperança",
+      "description": "O Programa Criança Esperança, uma iniciativa da Rede Globo em parceria com a UNESCO desde 2004, compreende uma mobilização social que busca transformar o futuro de crianças e jovens em situação de vulnerabilidade social.",
+      "avaliacoes": []
+    },
+    {
+      "id": "cb43",
+      "name": "CIEDS",
+      "description": "O CIEDS (Centro Integrado de Estudos e Programas de Desenvolvimento Sustentável) é uma organização social sem fins lucrativos que desenvolve projetos e programas para o desenvolvimento social.",
+      "avaliacoes": []
+    }
+  ],
+  "messages": [
+    {
+      "name": "a",
+      "email": "a@gmail.com",
+      "subject": "a",
+      "message": "a",
+      "id": "1"
+    }
+  ],
+  "perfilDoador": [
+    {
+      "nome": "Samuell Mascarenhas",
+      "sobre": "Sou um entusiasta de tecnologia com uma paixão por design e criatividade. Minha formação em Técnico em Desenvolvimento de Sistemas, juntamente com minha atual graduação em Ciência da Computação, reflete meu compromisso com o aprendizado contínuo e a inovação no mundo digital.",
+      "localizacao": "Belo Horizonte, MG",
+      "telefone": "31999999999",
+      "email": "s@gmail.com",
+      "causa": "8",
+      "id": "1"
+    }
+  ],
+  "doacoes": [
+    {
+      "id": "1",
+      "ongId": 1,
+      "userId": 1,
+      "valor": 200,
+      "data": "2023-07-01",
+      "feedback": "A ONG Casa dos Livros fez um ótimo trabalho, estou feliz em contribuir!"
+    },
+    {
+      "id": "2",
+      "ongId": 3,
+      "userId": 1,
+      "valor": 100,
+      "data": "2023-08-15",
+      "feedback": "A ONG Oportunidade é muito transparente com os resultados, recomendo!"
+    },
+    {
+      "id": "3",
+      "ongId": 2,
+      "userId": 2,
+      "valor": 300,
+      "data": "2023-05-22",
+      "feedback": "A iniciativa do Projeto K1 é fundamental para a capacitação dos jovens."
+    }
+  ]
+}

@@ -1,0 +1,611 @@
+/* Geral */
+.header {
+  background-color: #008374; /* Fundo verde do header */
+  padding: 10px 0;
+  color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.sitename {
+  text-decoration: none;
+  margin-top: 7px;
+  color: white;
+}
+
+.sitename:hover {
+  color: white; /* Mantém a cor branca ao passar o mouse */
+  text-decoration: none; /* Garante que não será sublinhado ao passar o mouse */
+}
+
+.lista {
+  display: flex;
+  margin-top: 15px;
+}
+
+/* Topbar */
+.topbar {
+  background-color: #00695C; /* Verde mais escuro */
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.topbar .contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.topbar .contact-info i {
+  color: #FFFFFF;
+  margin-right: 10px;
+}
+
+.topbar .contact-info a,
+.topbar .contact-info span {
+  color: #FFFFFF;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.topbar .social-links a {
+  color: #FFFFFF;
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+.topbar .social-links a:hover {
+  color: #CCCCCC;
+}
+
+/* Branding e Navegação */
+.branding {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 30px;
+  color: white;
+  margin: 0;
+}
+
+.navmenu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navmenu ul li {
+  margin-left: 20px;
+}
+
+.navmenu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navmenu ul li a:hover {
+  color: #CCCCCC;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .topbar .contact-info {
+    margin-bottom: 5px;
+  }
+  
+  .navmenu ul {
+    flex-direction: column;
+  }
+
+  .navmenu ul li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+.container .row {
+  margin-top: 100px;
+}
+
+.container-my-5 {
+  margin: 50px;
+  margin-top: 140px;
+}
+
+.container-my-6 {
+  margin: 20px;
+  margin-top: 140px;
+}
+
+#perfil {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+
+/* Ajustes novos */
+.container-my-5 {
+  margin: 0 auto; /* Centraliza o container */
+  max-width: 1200px; /* Largura máxima do container */
+  padding: 20px; /* Espaçamento interno */
+  margin-top: 140px; /* Ajuste da margem superior */
+}
+
+#perfil {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 20px; /* Espaço antes do ícone de perfil */
+}
+
+/* Perfil */
+.perfil {
+  display: none; /* Escondido inicialmente */
+  margin-left: 20px;
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Modal e Overlay */
+
+/* Overlay (fundo escuro) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro mais suave */
+  display: none; /* Oculto por padrão */
+  z-index: 2000;
+  transition: opacity 0.3s ease; /* Animação para suavizar a aparição */
+}
+
+/* Estado aberto do overlay */
+.modal-overlay.open {
+  display: block; /* Torna o overlay visível */
+  opacity: 1;
+}
+
+/* Modal que desliza da direita */
+.modal-right {
+  position: fixed;
+  top: 0;
+  right: -400px; /* Escondido fora da tela inicialmente */
+  width: 400px;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffffff, #f3f4f6); /* Fundo com gradiente suave */
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.3); /* Sombra mais evidente */
+  transition: right 0.4s ease-in-out; /* Transição mais suave */
+  z-index: 2001;
+  overflow-y: auto; /* Permite rolagem para conteúdo longo */
+  border-radius: 10px 0 0 10px; /* Arredonda o lado esquerdo */
+}
+
+/* Estado aberto do modal */
+.modal-right.open {
+  right: 0; /* Move o modal para dentro da tela */
+}
+
+/* Conteúdo do modal */
+.modal-content {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Título do modal */
+.modal-content h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #2c3e50; /* Azul escuro elegante */
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eaeaea; /* Linha separadora */
+  padding-bottom: 10px;
+}
+
+/* Texto dentro do modal */
+.modal-content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify; /* Justifica o texto */
+}
+
+/* Botão de fechar */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Animação na cor */
+}
+
+.close:hover {
+  color: #e74c3c; /* Destaque vermelho ao passar o mouse */
+}
+
+/* Botões adicionais (se necessários) */
+.modal-content .modal-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.modal-content .modal-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content .modal-buttons button.primary {
+  background-color: #3498db; /* Azul vibrante */
+  color: white;
+}
+
+.modal-content .modal-buttons button.primary:hover {
+  background-color: #2980b9; /* Azul mais escuro */
+}
+
+.modal-content .modal-buttons button.secondary {
+  background-color: #eaeaea; /* Cinza claro */
+  color: #555;
+}
+
+.modal-content .modal-buttons button.secondary:hover {
+  background-color: #d5d5d5; /* Cinza mais escuro */
+}
+
+
+
+.imagem {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 200px;
+}
+
+.container-my-5 {
+  margin: 50px;
+}
+
+.profile {
+  text-decoration: none;
+}
+
+.avaliacao_feedback {
+  text-decoration: none;
+}
+
+.pesquisa_ong {
+  margin: 20px;
+  margin-top: 150px;
+}
+
+.avaliacao {
+  margin: 20px;
+}
+
+.star-rating {
+  font-size: 2em;
+  display: flex;
+  justify-content: flex-start; /* Mantém as estrelas da esquerda para a direita */
+  margin: 20px;
+}
+
+input[type="radio"] {
+  display: none; /* Esconde os botões de rádio */
+}
+
+.star {
+  cursor: pointer;
+  color: lightgray;
+  transition: color 0.2s;
+}
+
+/* Aplica a cor dourada ao passar o mouse */
+.star:hover,
+.star:hover ~ .star {
+  color: gold;
+}
+
+/* Mantém a seleção dourada ao clicar em uma estrela */
+input[type="radio"]:checked ~ .star {
+  color: gold;
+}
+
+
+
+
+#rating-output {
+  margin-top: 10px; /* Para que fique logo abaixo das estrelas */
+  font-size: 1.2em; /* Tamanho da fonte da mensagem */
+  color: #333; /* Cor do texto */
+  margin-left: 20px; /* Para alinhar à esquerda */
+}
+
+.feedback {
+  margin: 20px;
+}
+
+/* Feedback */
+.feedback-container {
+  margin: 20px; /* Margem ao redor do feedback */
+}
+
+.feedback-input {
+  width: 100%; /* Largura total */
+  padding: 10px; /* Espaçamento interno */
+  margin-top: 10px; /* Espaço acima do input */
+  border: 1px solid #ccc; /* Borda */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+.submit-button {
+  margin-top: 10px; /* Espaço acima do botão */
+  padding: 10px 15px; /* Espaçamento interno do botão */
+  background-color: #008374; /* Cor de fundo do botão */
+  color: white; /* Cor do texto */
+  border: none; /* Sem borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor em forma de mão */
+}
+
+.submit-button:hover {
+  background-color: #00695C; /* Cor ao passar o mouse */
+}
+
+.profile-section {
+  margin-top: 80px;
+  width: 100%; /* Largura completa */
+  height: 100%; 
+  padding: 20px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0; /* Remove margens */
+}
+
+.profile-image img {
+  width: 150px; /* Aumenta o tamanho da imagem */
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.user-details h2 {
+  font-size: 2em;
+}
+
+.user-details p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.edit-info {
+  width: 100%; /* Largura completa do formulário */
+  max-width: 600px; /* Define um limite para não esticar demais em telas grandes */
+  margin-top: 20px;
+}
+
+/* Ajusta o espaçamento do botão de "Editar Perfil" */
+.profile-section .d-flex > div:last-child {
+  margin-left: 20px; /* Espaço entre o botão e a imagem de perfil */
+}
+
+/* Alinha a seção "Sobre" mais à esquerda */
+.about {
+  text-align: left;
+  width: 100%; /* Garante que a seção ocupe a largura completa do container */
+  padding-left: 20px; /* Espaçamento à esquerda */
+}
+
+.about h3 {
+  margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+.about p {
+  margin-bottom: 8px; /* Espaço entre os parágrafos */
+}
+
+.ongfav {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente os cards */
+  align-items: center; /* Centraliza verticalmente os cards */
+  flex-wrap: wrap; /* Permite quebra de linha */
+}
+
+.ong-card {
+  margin: 10px; /* Espaçamento entre os cards */
+}
+
+.feedback-section {
+  display: flex; /* Ativa o flexbox */
+  flex-direction: column; /* Coloca os itens em coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  text-align: center; /* Garante que o texto fique centralizado */
+
+}
+
+#ONGs_destaque{
+  margin-top: 150px;
+  font-size: 40px;
+  text-align: center;
+}
+
+#feedback_Destaque{
+  margin-top: 50px;
+  font-size: 40px;
+  text-align: center;
+}
+
+#cards_destaque{
+  margin-top: 50px;
+ }
+
+
+ /* CARD_BOX */
+
+ #cardBox{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .card {
+    width: 300px;
+    max-width: 400px; /* Limita a largura máxima */
+    margin: 20px auto; /* Centraliza e adiciona espaçamento */
+    border: 1px solid #ddd; /* Borda sutil */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    overflow: hidden; /* Impede que o conteúdo ultrapasse as bordas */
+    background-color: #fff; /* Fundo branco */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-height: 400px;
+    height: auto;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Eleva o card ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Intensifica a sombra */
+}
+
+.card-body {
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+.card-title {
+    font-size: 1.5em; /* Tamanho da fonte do título */
+    color: #333; /* Cor do texto */
+    margin-bottom: 10px; /* Espaço entre título e descrição */
+}
+
+.card-text {
+    font-size: 1em; /* Tamanho padrão do texto */
+    color: #666; /* Cor do texto */
+    margin-bottom: 20px; /* Espaço entre descrição e botão */
+}
+
+button.fav {
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 1em; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+    background-color: #007bff; /* Cor de fundo */
+    border: none; /* Remove borda padrão */
+    border-radius: 4px; /* Arredonda as bordas do botão */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button.fav:hover {
+    background-color: #0056b3; /* Escurece a cor ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão */
+}
+
+ /* -------- */
+
+ .avaliacao{
+  outline: 2px solid black;
+  padding: 10px;
+  scale: .7;
+ }
+
+ .avaliacao h3{
+  color: gray;
+ }
+
+ .pesquisa{
+  margin: 20px;
+ }
+
+ .pesquisa_ong{
+  align-content: center;
+  margin-top: 150 px;
+ }
+ .avaliar
+ {
+  margin: 20px;
+ }
+ .containercards
+ {
+  margin-top: 200px;
+ }
+
+/* Descrição do card */
+.card-text {
+    font-size: 1rem;  /* Tamanho da fonte para a descrição */
+    color: #666;  /* Cor de texto mais clara */
+    line-height: 1.5;  /* Espaçamento entre linhas */
+}
+
+
+.favorite-card {
+  width: 100%;
+  max-width: 350px; /* Limita a largura máxima */
+  margin: 15px auto; /* Centraliza e adiciona espaçamento */
+  padding: 15px; /* Adiciona espaçamento interno */
+  border: 1px solid #ccc; /* Define uma borda sutil */
+  border-radius: 8px; /* Bordas arredondadas */
+  background-color: #f9f9f9; /* Fundo levemente cinza */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
+}
+
+.favorite-card:hover {
+  transform: translateY(-5px); /* Eleva o card ao passar o mouse */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Intensifica a sombra */
+}
+
+.favorite-card h5 {
+  font-size: 1.4em; /* Tamanho do título */
+  color: #333; /* Cor do texto */
+  margin-bottom: 10px; /* Espaço inferior */
+  text-align: center; /* Centraliza o título */
+}
+
+.favorite-card p {
+  font-size: 1em; /* Tamanho padrão do texto */
+  color: #555; /* Cor do texto */
+  text-align: justify; /* Justifica o texto */
+  line-height: 1.5; /* Espaçamento entre linhas */
+  margin: 0; /* Remove margens padrão */
+}
+

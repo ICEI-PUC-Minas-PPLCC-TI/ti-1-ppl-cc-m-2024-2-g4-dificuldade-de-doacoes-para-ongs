@@ -1,0 +1,1 @@
+Para fins de testes é necessário inicializar os servidores: npm start e em outro terminal entre na pasta "db" (para entrar nesta pasta no terminal utilize "cd db") e use json-server --watch db.json --port 3001 para inicializar o JSONServer.

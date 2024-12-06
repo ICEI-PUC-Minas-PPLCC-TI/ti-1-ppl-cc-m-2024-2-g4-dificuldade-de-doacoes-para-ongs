@@ -1,0 +1,125 @@
+.header {
+    background-color: #008374; /* Fundo verde do header */
+    padding: 10px 0;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .sitename {
+    text-decoration: none;
+    margin-top: 7px;
+    color: white;
+  }
+  
+  .sitename:hover {
+    color: white; /* Mantém a cor branca ao passar o mouse */
+    text-decoration: none; /* Garante que não será sublinhado ao passar o mouse */
+  }
+  
+  .lista {
+    display: flex;
+    margin-top: 15px;
+  }
+  
+  /* Topbar */
+  .topbar {
+    background-color: #00695C; /* Verde mais escuro */
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .topbar .contact-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .topbar .contact-info i {
+    color: #FFFFFF;
+    margin-right: 10px;
+  }
+  
+  .topbar .contact-info a,
+  .topbar .contact-info span {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-right: 20px;
+  }
+  
+  .topbar .social-links a {
+    color: #FFFFFF;
+    margin-left: 15px;
+    font-size: 16px;
+  }
+  
+  .topbar .social-links a:hover {
+    color: #CCCCCC;
+  }
+  
+  /* Branding e Navegação */
+  .branding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo h1 {
+    font-size: 30px;
+    color: white;
+    margin: 0;
+  }
+  
+  .navmenu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navmenu ul li {
+    margin-left: 20px;
+  }
+  
+  .navmenu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .navmenu ul li a:hover {
+    color: #CCCCCC;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .topbar {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .topbar .contact-info {
+      margin-bottom: 5px;
+    }
+    
+    .navmenu ul {
+      flex-direction: column;
+    }
+  
+    .navmenu ul li {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  
