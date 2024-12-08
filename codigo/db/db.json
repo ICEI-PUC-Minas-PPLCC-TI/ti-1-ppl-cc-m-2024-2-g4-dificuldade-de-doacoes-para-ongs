@@ -58,6 +58,16 @@
         "category": "saúde",
         "address": "bh",
         "password": "senha12345"
+      },
+      {
+        "orgName": "Ong Cão feliz",
+        "phone": "(31) 98963-0000",
+        "email": "caoFeliz@gmail.com",
+        "socialMedia": "@c",
+        "description": "Ong que admira todos os animais",
+        "category": "animais",
+        "address": "rua urupes",
+        "password": "123"
       }
     ]
   },
