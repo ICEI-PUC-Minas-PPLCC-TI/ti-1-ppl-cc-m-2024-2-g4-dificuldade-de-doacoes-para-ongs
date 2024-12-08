@@ -67,6 +67,16 @@
       "interests": "Essa é minha Bio 2, gostou?",
       "category": "Cultura",
       "password": "senha12"
+    },
+    {
+      "id": "1733690220135",
+      "name": "David Cristhian ",
+      "email": "David@gmail.com",
+      "phone": "21",
+      "address": "r",
+      "interests": "pessoa",
+      "category": "animais",
+      "password": "123"
     }
   ],
   "ongs": [
@@ -289,7 +299,8 @@
       "cidade": "São Paulo",
       "cep": "01000-000",
       "numero": "123456789",
-      "redeSocial": "https://facebook.com/projeto-social"
+      "redeSocial": "https://facebook.com/projeto-social",
+      "descricao": "Projeto de animais"
     },
     {
       "id": 2,
@@ -300,7 +311,8 @@
       "cidade": "Belo Horizonte",
       "cep": "30100-000",
       "numero": "987654321",
-      "redeSocial": "https://instagram.com/ong"
+      "redeSocial": "https://instagram.com/ong",
+      "descricao": "Projeto de animais"
     },
     {
       "id": 3,
@@ -311,7 +323,8 @@
       "cidade": "Rio de Janeiro",
       "cep": "20000-000",
       "numero": "123123123",
-      "redeSocial": "https://twitter.com/voluntariado"
+      "redeSocial": "https://twitter.com/voluntariado",
+      "descricao": "Projeto de animais"
     }
   ],
   "posts": [
