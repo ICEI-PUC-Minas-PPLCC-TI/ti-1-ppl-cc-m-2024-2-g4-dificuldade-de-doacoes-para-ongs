@@ -1,67 +1,102 @@
 // URL base do JSON Server
-const API_URL = "http://localhost:3001/perfilDoador";
+const API_URL = 'http://localhost:3001/donors';
 
-// Função para alternar entre o formulário de edição e visualização
+
+// Função para alternar a visibilidade do formulário de edição
 function toggleEdit() {
-    var editForm = document.getElementById('editForm');
-
-    // Alterna a visibilidade do formulário
-    if (editForm.style.display === 'none' || editForm.style.display === '') {
-        editForm.style.display = 'block';  // Exibe o formulário
-    } else {
-        editForm.style.display = 'none';  // Oculta o formulário
+    const editForm = document.getElementById('editForm');
+    if (editForm) {
+        editForm.style.display = editForm.style.display === 'block' ? 'none' : 'block';
     }
 }
 
-// Função para fechar o formulário
+// Função para fechar o formulário de edição
 function fecharFormulario() {
-    document.getElementById('editForm').style.display = 'none';  // Oculta o formulário
+    const editForm = document.getElementById('editForm');
+    if (editForm) {
+        editForm.style.display = 'none';
+    }
 }
-
 
 // Função para exibir a pré-visualização da imagem de perfil
 function previewImage(event) {
-    var output = document.getElementById('profilePic');
-    output.src = URL.createObjectURL(event.target.files[0]);
+    const output = document.getElementById('profilePic');
+    if (output) {
+        output.src = URL.createObjectURL(event.target.files[0]);
+    }
 }
 
-// Modal Profile
-window.onload = function () {
-    // Verifique se os elementos existem antes de definir o evento
-    const closeModalButton = document.getElementById("closeModal");
-    const profileModal = document.getElementById("profileModal");
-    const modalOverlay = document.getElementById("modalOverlay");
-
-    if (closeModalButton && profileModal && modalOverlay) {
-        closeModalButton.onclick = function () {
-            profileModal.style.display = "none";
-            modalOverlay.style.display = "none";
-        };
-
-        profileModal.style.display = "block";
-        modalOverlay.style.display = "block";
+// Carregar informações do perfil do doador
+async function carregarInformacoes() {
+    const id = localStorage.getItem('donorId');
+    if (!id) {
+        alert("ID do doador não encontrado. Faça login novamente.");
+        return;
     }
-};
 
-// Dados de exemplo para o doador
-const doador = {
-    nivel: "Iniciante",
-    totalDoado: 1200,
-    doacoesRecorrentes: 500,
-    premios: [
-        { valor: 100, descricao: "Certificado de Agradecimento" },
-        { valor: 500, descricao: "Cupom de Desconto" },
-        { valor: 1000, descricao: "Camiseta Exclusiva" }
-    ],
-    impacto: {
-        percentual: 50,
-        mensagem: "Você ajudou a financiar a educação de 50 crianças! Obrigado por fazer a diferença!"
+    try {
+        const response = await fetch(`${API_URL}/${id}`);
+        if (!response.ok) throw new Error("Erro ao carregar informações do doador.");
+
+        const data = await response.json();
+
+        // Atualizar painel de exibição
+        document.getElementById("nome").textContent = data.name || "Nome não disponível";
+        document.getElementById("desc").textContent = data.interests || "Descrição não disponível";
+        document.getElementById("loc").textContent = data.address || "Localização não disponível";
+        document.getElementById("total-doado").textContent = `R$ ${data.totalDoado || 0}`;
+        document.getElementById("doacoes-recorrentes").textContent = `R$ ${data.doacoesRecorrentes || 0}/mês`;
+        document.getElementById("nivel-badge").textContent = data.nivel || "Iniciante";
+        document.getElementById("nivel-desc").textContent = `Você está no nível ${data.nivel || "Iniciante"}. Continue contribuindo para subir de nível.`;
+
+        // Atualizar prêmios
+        const premiosContainer = document.getElementById("premios");
+        if (premiosContainer) {
+            premiosContainer.innerHTML = "";
+            (data.premios || []).forEach(premio => {
+                const premioDiv = document.createElement("div");
+                premioDiv.classList.add("premio");
+                premioDiv.innerHTML = `
+                    <h4>R$ ${premio.valor}</h4>
+                    <p>${premio.descricao}</p>
+                `;
+                premiosContainer.appendChild(premioDiv);
+            });
+        }
+
+        // Atualizar impacto
+        document.getElementById("impacto-msg").textContent = data.impacto?.mensagem || "Sem impacto disponível.";
+        document.getElementById("progresso-bar").value = data.impacto?.percentual || 0;
+        document.getElementById("progresso-desc").textContent = `Faltam ${100 - (data.impacto?.percentual || 0)}% para o próximo marco! Vamos lá!`;
+
+        // Preencher o formulário de edição com as informações carregadas
+        document.getElementById('name').value = data.name || "";
+        document.getElementById('about').value = data.interests || "";
+        document.getElementById('location').value = data.address || "";
+        document.getElementById('number').value = data.phone || "";
+        document.getElementById('email').value = data.email || "";
+        document.getElementById('cause').value = data.category || "Selecionar";
+
+        // Exibir imagem de perfil se houver
+        if (data.profilePic) {
+            document.getElementById('profilePic').src = data.profilePic;
+        }
+
+    } catch (error) {
+        console.error(error);
+        alert("Erro ao carregar informações do perfil.");
     }
-};
+}
 
-// Função para atualizar os dados no painel
-// Função para atualizar os dados no painel
-function atualizarPainel() {
+
+// Função para salvar as informações editadas
+async function salvarInformacoes() {
+    const id = localStorage.getItem('donorId');
+    if (!id) {
+        alert("ID do doador não encontrado. Faça login novamente.");
+        return;
+    }
+
     const nome = document.getElementById('name').value;
     const sobre = document.getElementById('about').value;
     const localizacao = document.getElementById('location').value;
@@ -69,137 +104,79 @@ function atualizarPainel() {
     const email = document.getElementById('email').value;
     const causa = document.getElementById('cause').value;
 
-    document.getElementById("nome").textContent = nome;
-    document.getElementById("desc").textContent = sobre;
-    document.getElementById("loc").textContent = localizacao;
-
-    document.getElementById("total-doado").textContent = `R$ ${doador.totalDoado}`;
-    document.getElementById("doacoes-recorrentes").textContent = `R$ ${doador.doacoesRecorrentes}/mês`;
-    document.getElementById("nivel-badge").textContent = doador.nivel;
-    document.getElementById("nivel-desc").textContent = `Você está no nível ${doador.nivel}! Continue contribuindo para subir de nível.`;
-
-    const premiosContainer = document.getElementById("premios");
-    premiosContainer.innerHTML = ""; // Limpa os prêmios anteriores
-    doador.premios.forEach(premio => {
-        const premioDiv = document.createElement("div");
-        premioDiv.classList.add("premio");
-        premioDiv.innerHTML = `
-                <h4>R$ ${premio.valor}</h4>
-                <p>${premio.descricao}</p>
-            `;
-        premiosContainer.appendChild(premioDiv);
-    });
-
-    document.getElementById("impacto-msg").textContent = doador.impacto.mensagem;
-    document.getElementById("progresso-bar").value = doador.impacto.percentual;
-    document.getElementById("progresso-desc").textContent = `Faltam ${100 - doador.impacto.percentual}% para o próximo marco! Vamos lá!`;
-}
-
-
-atualizarPainel();
-
-// Função para salvar as informações editadas no JSON Server
-async function salvarInformacoes() {
-    var nome = document.getElementById('name').value;
-    var sobre = document.getElementById('about').value;
-    var localizacao = document.getElementById('location').value;
-    var telefone = document.getElementById('number').value;
-    var email = document.getElementById('email').value;
-    var causa = document.getElementById('cause').value;
-    var imagem = document.getElementById('uploadImage').files[0];
-
-    var db = {
-        nome: nome,
-        sobre: sobre,
-        localizacao: localizacao,
-        telefone: telefone,
+    const db = {
+        name: nome,
+        interests: sobre,
+        address: localizacao,
+        phone: telefone,
         email: email,
-        causa: causa,
-        imagem: imagem
+        category: causa,
     };
 
-
-    const id = 1; // ID do perfil a ser atualizado
-
     try {
-        // Verifica se o perfil com o ID já existe
-        const getResponse = await fetch(API_URL + '/' + id); // URL corrigida
-        if (getResponse.ok) {
-            // Se o perfil existe, faz o PUT para atualizar
-            const putResponse = await fetch(API_URL + '/' + id, {
-                method: 'PUT',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(db)
-            });
+        const response = await fetch(`${API_URL}/${id}`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(db),
+        });
 
-            if (putResponse.ok) {
-                alert("Informações atualizadas com sucesso!");
-                // Chama a função para atualizar o painel com os dados mais recentes
-                atualizarPainel();
-            } else {
-                alert("Erro ao atualizar as informações.");
-            }
-        } else {
-            // Se o perfil não existir, faz o POST para criar um novo
-            const postResponse = await fetch(API_URL, { // URL corrigida para POST
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(db)
-            });
-
-            if (postResponse.ok) {
-                alert("Perfil criado com sucesso!");
-                // Chama a função para atualizar o painel com os dados mais recentes
-                atualizarPainel();
-            } else {
-                alert("Erro ao criar o perfil.");
-            }
-        }
-    } catch (error) {
-        console.error("Erro na requisição:", error);
-        alert("Ocorreu um erro ao tentar salvar as informações.");
-    }
-
-    toggleEdit(); // Fecha o modal ou formulário de edição
-}
-
-
-
-// Função para carregar as informações do perfil do JSON Server
-async function carregarInformacoes() {
-    const id = 1; // ID do perfil a ser carregado
-
-    try {
-        const response = await fetch(API_URL + '/' + id); // A URL agora busca pelo ID
         if (response.ok) {
-            const perfil = await response.json();
-
-            // Verifique o conteúdo do perfil no console
-            console.log("Dados recebidos do servidor:", perfil);
-
-            // Atualize os campos com os dados do perfil
-            document.getElementById('nome').textContent = perfil.nome || '';
-            document.getElementById('desc').textContent = perfil.sobre || '';
-            document.getElementById('loc').textContent = perfil.localizacao || '';
-
-            document.getElementById('name').value = perfil.nome || '';
-            document.getElementById('about').value = perfil.sobre || '';
-            document.getElementById('location').value = perfil.localizacao || '';
-            document.getElementById('number').value = perfil.telefone || '';
-            document.getElementById('email').value = perfil.email || '';
-            document.getElementById('cause').value = perfil.causa || '';
+            alert("Informações atualizadas com sucesso!");
+            carregarInformacoes();
+            fecharFormulario();      // Fechar o formulário de edição
         } else {
-            console.warn("Erro ao carregar os dados do servidor.");
+            throw new Error("Erro ao atualizar as informações.");
         }
     } catch (error) {
-        console.error("Erro na requisição:", error);
+        console.error(error);
+        alert("Erro ao salvar as informações. Tente novamente.");
+    }
+}
+
+// Inicializa a página ao carregar
+document.addEventListener("DOMContentLoaded", function () {
+    carregarInformacoes();
+
+    // Configurar modal de histórico
+    document.getElementById('abrir-modal').onclick = function () {
+        carregarHistorico();
+        document.getElementById('historicoModal').style.display = "block";
+    };
+
+    document.getElementById('fechar-modal').onclick = function () {
+        document.getElementById('historicoModal').style.display = "none";
+    };
+});
+
+// Função para carregar o histórico de doações
+async function carregarHistorico() {
+    const lista = document.getElementById('historico-lista');
+    lista.innerHTML = '';
+
+    try {
+        const response = await fetch(`${API_URL}/historico`);
+        if (!response.ok) throw new Error("Erro ao carregar histórico.");
+
+        const data = await response.json();
+
+        data.forEach(doacao => {
+            const linha = document.createElement('tr');
+            linha.innerHTML = `
+                <td>${doacao.data}</td>
+                <td>${doacao.valor}</td>
+                <td>${doacao.projeto}</td>
+            `;
+            lista.appendChild(linha);
+        });
+    } catch (error) {
+        console.error(error);
+        lista.innerHTML = '<tr><td colspan="3">Erro ao carregar o histórico.</td></tr>';
     }
 }
 
 
+// -------------------
 
-// Chama a função para carregar os dados do perfil ao abrir a página
-carregarInformacoes();
 
 function enviarFeedback() {
     const avaliacao = document.getElementById('avaliacao').value;
@@ -220,6 +197,8 @@ document.getElementById('fechar-modal').onclick = function () {
     document.getElementById('historicoModal').style.display = "none";
 };
 
+
+// ------------------
 // Função para preencher o histórico de forma dinâmica
 async function carregarHistorico() {
     const lista = document.getElementById('historico-lista');
@@ -250,9 +229,7 @@ async function carregarHistorico() {
     }
 }
 
-
-
-
+// 
 
 // Função para mostrar a div de feedback
 function mostrarFeedback() {

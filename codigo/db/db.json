@@ -1,57 +1,79 @@
 {
-  "usuarios": {
-    "donors": [
-      {
-        "name": "Samuell Mascarenhas",
-        "email": "s@gmail.com",
-        "phone": "319999999999",
-        "address": "bh",
-        "interests": "b",
-        "category": "s",
-        "password": "senha123"
-      },
-      {
-        "name": "teste",
-        "email": "joao@example.com",
-        "phone": "319999999999",
-        "address": "bh",
-        "interests": "b",
-        "category": "saúde",
-        "password": "senha123"
-      },
-      {
-        "name": "teste",
-        "email": "teste@gmail.com",
-        "phone": "319999999999",
-        "address": "bh",
-        "interests": "b",
-        "category": "saúde",
-        "password": "senha1234"
-      }
-    ],
-    "ongs": [
-      {
-        "orgName": "ONG",
-        "email": "ong@gmail.com",
-        "phone": "319999999999",
-        "socialMedia": "a",
-        "description": "sss",
-        "category": "saúde",
-        "address": "bh",
-        "password": "senha123"
-      },
-      {
-        "orgName": "ONG PROJETO",
-        "phone": "319999999999",
-        "email": "ongprojeto@gmail.com",
-        "socialMedia": "@ong",
-        "description": "projeto",
-        "category": "saúde",
-        "address": "bh",
-        "password": "senha12345"
-      }
-    ]
-  },
+  "donors": [
+    {
+      "name": "Samuell Mascarenhas",
+      "email": "s@gmail.com",
+      "phone": "319999999999",
+      "address": "bh",
+      "interests": "b",
+      "category": "s",
+      "password": "senha123",
+      "id": "98fb"
+    },
+    {
+      "name": "teste",
+      "email": "joao@example.com",
+      "phone": "319999999999",
+      "address": "bh",
+      "interests": "b",
+      "category": "saúde",
+      "password": "senha123",
+      "id": "b291"
+    },
+    {
+      "name": "teste",
+      "email": "teste@gmail.com",
+      "phone": "319999999999",
+      "address": "bh",
+      "interests": "b",
+      "category": "saúde",
+      "password": "senha1234",
+      "id": "bba2"
+    },
+    {
+      "id": "1733675490630",
+      "name": "Samuel Mascarenhas",
+      "email": "mascarenhasctt@gmail.com",
+      "phone": "31999999999",
+      "address": "Belo Horizonte",
+      "interests": "Software Developer apaixonado em utilizar as tecnologias em prol das comunidades.",
+      "category": "Cultura",
+      "password": "senha123"
+    },
+    {
+      "name": "teste",
+      "interests": "Software Developer apaixonado em utilizar as tecnologias em prol das comunidades.",
+      "address": "Belo Horizonte",
+      "phone": "31999999999",
+      "email": "teste@gmail.com",
+      "category": "5",
+      "id": "1733676011528"
+    }
+  ],
+  "ongs": [
+    {
+      "orgName": "ONG",
+      "email": "ong@gmail.com",
+      "phone": "319999999999",
+      "socialMedia": "a",
+      "description": "sss",
+      "category": "saúde",
+      "address": "bh",
+      "password": "senha123",
+      "id": "c33e"
+    },
+    {
+      "orgName": "ONG PROJETO",
+      "phone": "319999999999",
+      "email": "ongprojeto@gmail.com",
+      "socialMedia": "@ong",
+      "description": "projeto",
+      "category": "saúde",
+      "address": "bh",
+      "password": "senha12345",
+      "id": "199f"
+    }
+  ],
   "doadores": [
     {
       "id": "7063",
@@ -70,32 +92,6 @@
       "telefone": "31983129229",
       "email": "lucascabralbicalho@gmail.com",
       "causa": "6"
-    }
-  ],
-  "ongs": [
-    {
-      "id": "23b5",
-      "name": "Alcoolicos Anônimos",
-      "description": "Os Alcoólicos Anônimos são um grupo de ajuda mútua, uma irmandade composta por homens e mulheres, fundada com o desejo de auxiliar aqueles que passam por dificuldades com relação ao uso do álcool",
-      "avaliacoes": []
-    },
-    {
-      "id": "7d90",
-      "name": "Criança Esperança",
-      "description": "O Programa Criança Esperança, uma iniciativa da Rede Globo em parceria com a UNESCO desde 2004, compreende uma mobilização social que busca transformar o futuro de crianças e jovens em situação de vulnerabilidade social.",
-      "avaliacoes": []
-    },
-    {
-      "id": "4cc2",
-      "name": "Instituto Ethos",
-      "description": "O Instituto Ethos de Empresas e Responsabilidade Social é uma organização social sem fins lucrativos cuja missão é mobilizar, sensibilizar e ajudar as empresas a gerirem seus negócios de forma socialmente responsável, tornando-as parceiras na construção de uma sociedade justa e sustentável.",
-      "avaliacoes": []
-    },
-    {
-      "id": "cb43",
-      "name": "CIEDS",
-      "description": "O CIEDS (Centro Integrado de Estudos e Programas de Desenvolvimento Sustentável) é uma organização social sem fins lucrativos que desenvolve projetos e programas para o desenvolvimento social.",
-      "avaliacoes": []
     }
   ],
   "ongsFavoritas": [

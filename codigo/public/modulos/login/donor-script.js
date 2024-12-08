@@ -11,14 +11,16 @@ document.getElementById('donorForm').addEventListener('submit', async function (
     }
 
     const donor = {
+        id: Date.now(), // Gerando um ID único baseado no timestamp
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
         phone: document.getElementById('phone').value,
         address: document.getElementById('address').value,
         interests: document.getElementById('interests').value,
         category: document.getElementById('category').value,
-        password: password, // Armazena a senha
+        password: password,
     };
+    
 
     try {
         const response = await fetch('http://localhost:3001/usuarios');

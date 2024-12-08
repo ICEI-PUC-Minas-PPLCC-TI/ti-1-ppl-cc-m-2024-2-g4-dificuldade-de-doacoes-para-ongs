@@ -5,20 +5,27 @@ document.getElementById('loginForm').addEventListener('submit', async function (
     const password = document.getElementById('password').value;
 
     try {
-        const response = await fetch('http://localhost:3001/usuarios');
+        // Altere a URL para '/donors' ou '/ongs'
+        const response = await fetch('http://localhost:3001/donors');  // Para doadores
         const db = await response.json();
 
         // Verificar se o usuário é um doador
-        const donor = db.donors.find(user => user.email === email && user.password === password);
+        const donor = db.find(user => user.email === email && user.password === password);
 
         if (donor) {
             alert('Login realizado com sucesso como doador!');
+            localStorage.setItem('donorId', donor.id);
             window.location.href = '../Tela_Painel_Doador_por_Samuel_Mascarenhas/painelDoador.html';
             return;
+        } else {
+            console.log('Donor ID not found');
         }
 
         // Verificar se o usuário é uma ONG
-        const ong = db.ongs.find(user => user.email === email && user.password === password);
+        const responseOng = await fetch('http://localhost:3001/ongs');  // Para ONGs
+        const dbOng = await responseOng.json();
+
+        const ong = dbOng.find(user => user.email === email && user.password === password);
 
         if (ong) {
             alert('Login realizado com sucesso como ONG!');
