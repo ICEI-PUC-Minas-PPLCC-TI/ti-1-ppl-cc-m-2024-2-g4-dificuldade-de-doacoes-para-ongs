@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de controle</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Link css -->
+    <link rel="stylesheet" href="style-PainelOng.css">
+    <!-- Link library icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header></header>
+    <main>
+        <aside>
+            <nav>
+                <div class="name-Web-Site_Ong">
+                    <h2>Solidarize</h2>
+                </div>
+                <div class="options-Control-Panel_Ongs">
+                    <ul>
+                        <li><a onclick="carregarSecao('#secProjects')" class="option-Control-Panel_Ong active-Link-Options-Control_Ong"><i class="fa-solid fa-list"></i>Projetos</a></li>
+                        <li><a onclick="carregarSecao('#sec2')" class="option-Control-Panel_Ong "><i class="fa-solid fa-gear"></i>Gerenciar Perfil</a></li>
+                        <li><a onclick="carregarSecao('#sectionDonation')" class="option-Control-Panel_Ong "><i class="fa-solid fa-eye"></i>Visualizar Doações</a></li>
+                        <li><a onclick="carregarSecao('#secShare-Projects')" class="option-Control-Panel_Ong "><i class="fa-solid fa-share-nodes"></i>Compartilhar Projetos</a></li>
+                        <li><a onclick="carregarSecao('#sec5')" class="option-Control-Panel_Ong "><i class="fa-regular fa-comment"></i>Doadores em Contato</a></li>
+                        <li><a onclick="carregarSecao('#sec6')" class="option-Control-Panel_Ong "><i class="fa-solid fa-paste"></i>Relatório de Impacto</a></li>
+                        <li><a onclick="carregarSecao('#sec7')" class="option-Control-Panel_Ong "><i class="fa-solid fa-arrow-up-right-from-square"></i>Postar conteudos</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+        <div id="conteudo"><!-- Div onde a seção será carregada -->
+            <section class="projects_Ong" id="sec1"><!-- Start section of projects -->
+                <div class="container-Projects_Ong">
+                    <div class="page-Path_Ong">
+                        <div class="title-Page_Ong"><h1>Painel de controle</h1></div>
+                        <div class="path"><h2>Painel > Projetos</h2></div>
+                    </div>
+                    <div class="projects-Page-Filter_Ong">
+                        <button class="active-Button-Project-List-Filter_Ong">All items</button>
+                        <button class="">Projetos Sociais</button>
+                        <button class="">Projetos de impacto</button>
+                    </div>
+                    <div class="submenu-Control-panel_Ong">
+                        <ul>
+                            <li><a href="" class="option-Control-Panel_Ong active-Link-Options-Control_Ong"><i class="fa-solid fa-list"></i>Projetos</a></li>
+                            <li><a href="" class="option-Control-Panel_Ong "><i class="fa-solid fa-gear"></i>Gerenciar Perfil</a></li>
+                            <li><a href="" class="option-Control-Panel_Ong "><i class="fa-solid fa-eye"></i>Visualizar Doações</a></li>
+                            <li><a href="" class="option-Control-Panel_Ong "><i class="fa-solid fa-share-nodes"></i>Compartilhar Projetos</a></li>
+                            <li><a href="" class="option-Control-Panel_Ong "><i class="fa-regular fa-comment"></i>Doadores em Contato</a></li>
+                            <li><a href="" class="option-Control-Panel_Ong "><i class="fa-solid fa-paste"></i>Relatório de Impacto</a></li>
+                            <li><a href="" class="option-Control-Panel_Ong "><i class="fa-solid fa-arrow-up-right-from-square"></i>Postar conteudos</a></li>
+                        </ul>
+                    </div>
+                    <div class="conteiner-Projects-List_Ong">
+                      <div class="project-List-Item_Ong">
+                        <div class="project-Image_Ong">
+                            <img src="../../assets/img/medium-shot-people-writing-placards.jpg" alt="">
+                        </div>
+                        <div class="project-Content_Ong">
+                            <h3>Projeto Coração</h3>
+                            <a href="#" class="more-Info_Ong"><i class="fa-solid fa-pen-to-square"></i>Mais</a>
+                        </div>
+                      </div>
+                      <div class="project-List-Item_Ong">
+                        <div class="project-Image_Ong">
+                            <img src="../../assets/img/medium-shot-people-writing-placards.jpg" alt="">
+                        </div>
+                        <div class="project-Content_Ong">
+                            <h3>Projeto Coração</h3>
+                            <a href="#" class="more-Info_Ong"><i class="fa-solid fa-pen-to-square"></i>Mais</a>
+                        </div>
+                    </div>
+                    <div class="project-List-Item_Ong">
+                      <div class="project-Image_Ong">
+                          <img src="../../assets/img/medium-shot-people-writing-placards.jpg" alt="">
+                      </div>
+                      <div class="project-Content_Ong">
+                          <h3>Projeto Coração</h3>
+                          <a href="#" class="more-Info_Ong"><i class="fa-solid fa-pen-to-square"></i>Mais</a>
+                      </div>
+                  </div>
+                  <div class="project-List-Item_Ong">
+                    <div class="project-Image_Ong">
+                        <img src="../../assets/img/medium-shot-people-writing-placards.jpg" alt="">
+                    </div>
+                    <div class="project-Content_Ong">
+                        <h3>Projeto Coração</h3>
+                        <a href="#" class="more-Info_Ong"><i class="fa-solid fa-pen-to-square"></i>Mais</a>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="modal_Ong modal-Active_Ong">
+                      <div class="img-Modal_Ong">
+                          <img src="../../assets/img/medium-shot-people-writing-placards.jpg" alt="">
+                      </div>
+                      <div class="content-Modal_Ong">
+                          <div class="title-Project-Modal_Ong">
+                              <h2>Nome:</h2>
+                              <p>Projeto 1</p>
+                          </div>
+                          <div class="description-Modal_Ong">
+                              <h2>Descrição: </h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                          </div>
+                          <div class="information-Modal_Ong">
+                              <h2>Categoria:</h2>
+                              <p>Animais</p>
+                              <h2>Meta de arrecadação:</h2>
+                              <p>R$ 1000</p>
+                              <h2>Estado:</h2>
+                              <p>MG</p>
+                              <h2>Cidade:</h2>
+                              <p>Belo Horizonte</p>
+                              <h2>CEP:</h2>
+                              <p>21212121</p>
+                              <h2>Número:</h2>
+                              <p>31 93131-3131</p>
+                              <h2>Link rede social:</h2>
+                              <p>assadasdsads</p>
+                          </div>
+                          <div class="options-Modal_Ong">
+                              <button id="toggle-Button-Modal_Ong">Editar</button>
+                              <a href="index.html"><button id="minimize-Button-Modal_Ong">Minimizar</button></a>
+                              <button id="delete-Button-Modal_Ong">Delete</button>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </section> <!-- End section of projects -->
+        </div>
+        
+    </main>
+    <footer></footer>
+
+
+    <!-- Script carregado no final do body -->
+    <script src="script-PainelOng.js" defer></script>
+    <script src="script-CadProjeto.js" defer></script>
+</body>
+</html>
