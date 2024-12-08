@@ -31,14 +31,13 @@
       "id": "bba2"
     },
     {
-      "id": "1733675490630",
-      "name": "Samuel Mascarenhas",
-      "email": "mascarenhasctt@gmail.com",
-      "phone": "31999999999",
-      "address": "Belo Horizonte",
+      "name": "Samuel de Jesus Fernandes Mascarenhas",
       "interests": "Software Developer apaixonado em utilizar as tecnologias em prol das comunidades.",
-      "category": "Cultura",
-      "password": "senha123"
+      "address": "Belo Horizonte",
+      "phone": "31999999999",
+      "email": "mascarenhasctt@gmail.com",
+      "category": "8",
+      "id": "1733675490630"
     },
     {
       "name": "teste",
@@ -48,6 +47,26 @@
       "email": "teste@gmail.com",
       "category": "5",
       "id": "1733676011528"
+    },
+    {
+      "id": "1733682456653",
+      "name": "Novo Teste de Usuario",
+      "email": "testeusuario@gmail.com",
+      "phone": "31999999999",
+      "address": "Belo Horizonte",
+      "interests": "Essa é minha Bio, gostou?",
+      "category": "Cultura",
+      "password": "minhasenha123"
+    },
+    {
+      "id": "1733682830029",
+      "name": "Novo Teste de Usuario 2",
+      "email": "testeusuario2@gmail.com",
+      "phone": "31999999999",
+      "address": "Belo Horizonte",
+      "interests": "Essa é minha Bio 2, gostou?",
+      "category": "Cultura",
+      "password": "senha12"
     }
   ],
   "ongs": [
@@ -72,9 +91,19 @@
       "address": "bh",
       "password": "senha12345",
       "id": "199f"
+    },
+    {
+      "id": "1733683058244",
+      "orgName": "Teste Nova Ong",
+      "phone": "31999999999",
+      "email": "novaongteste@gmail.com",
+      "socialMedia": "@novaong",
+      "description": "descrição da ong",
+      "category": "saúde",
+      "address": "Belo Horizonte",
+      "password": "novaong"
     }
   ],
-
   "doadores": [
     {
       "id": "7063",

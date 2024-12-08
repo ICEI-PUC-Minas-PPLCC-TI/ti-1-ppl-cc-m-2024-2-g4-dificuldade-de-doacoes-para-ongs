@@ -11,7 +11,7 @@ document.getElementById('donorForm').addEventListener('submit', async function (
     }
 
     const donor = {
-        id: Date.now(), // Gerando um ID único baseado no timestamp
+        id: Date.now().toString(), // Convertendo o ID para string
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
         phone: document.getElementById('phone').value,
@@ -20,21 +20,18 @@ document.getElementById('donorForm').addEventListener('submit', async function (
         category: document.getElementById('category').value,
         password: password,
     };
-    
 
     try {
-        const response = await fetch('http://localhost:3001/usuarios');
-        const db = await response.json();
-
-        // Adicionar o novo doador
-        db.donors.push(donor);
-
-        // Atualizar o db.json
-        await fetch('http://localhost:3001/usuarios', {
-            method: 'PUT',
+        // Enviar o novo doador ao servidor com POST
+        const response = await fetch('http://localhost:3001/donors', {
+            method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(db),
+            body: JSON.stringify(donor),
         });
+
+        if (!response.ok) {
+            throw new Error(`Erro ao registrar o doador: ${response.statusText}`);
+        }
 
         alert('Registro de doador concluído com sucesso!');
         window.location.href = '../login/login.html';

@@ -10,6 +10,7 @@ document.getElementById('ongForm').addEventListener('submit', async function (ev
     }
 
     const ong = {
+        id: Date.now().toString(), // ID único como string
         orgName: document.getElementById('orgName').value,
         phone: document.getElementById('phone').value,
         email: document.getElementById('email').value,
@@ -17,19 +18,21 @@ document.getElementById('ongForm').addEventListener('submit', async function (ev
         description: document.getElementById('description').value,
         category: document.getElementById('category').value,
         address: document.getElementById('address').value,
-        password: password, // Armazena a senha
+        password: password,
     };
 
+    // Verificação de campos obrigatórios
+    if (!ong.orgName || !ong.phone || !ong.email || !ong.password) {
+        alert('Por favor, preencha todos os campos obrigatórios.');
+        return;
+    }
+
     try {
-        const response = await fetch('http://localhost:3001/usuarios');
-        const db = await response.json();
-
-        db.ongs.push(ong);
-
-        await fetch('http://localhost:3001/usuarios', {
-            method: 'PUT',
+        // Enviar os dados para o servidor
+        await fetch('http://localhost:3001/ongs', {
+            method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(db),
+            body: JSON.stringify(ong),
         });
 
         alert('Registro de ONG concluído com sucesso!');
