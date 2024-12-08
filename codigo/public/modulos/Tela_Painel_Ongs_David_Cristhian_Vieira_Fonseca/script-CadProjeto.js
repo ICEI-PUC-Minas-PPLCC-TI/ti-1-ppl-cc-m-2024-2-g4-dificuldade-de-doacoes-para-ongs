@@ -1,5 +1,5 @@
 
-const API_URL = "http://localhost:3000/projects";
+const API_URL = "http://localhost:3001/projects";
 
 const form = document.getElementById("sharing-Form_Ong");
 
@@ -17,7 +17,7 @@ form.addEventListener("submit", async (e) => {
 
   const projectData = { nome, categoria, valorAlvo, estado, cidade, cep, numero, redeSocial};
 
-  if (projectData) {
+  if (nome && categoria && valorAlvo && estado && cidade && cep && numero && redeSocial) {
     // Criar contato
     await fetch(API_URL, {
       method: "POST",

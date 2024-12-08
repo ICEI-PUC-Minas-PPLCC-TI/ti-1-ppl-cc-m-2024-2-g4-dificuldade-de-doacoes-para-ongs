@@ -102,6 +102,17 @@
       "category": "saúde",
       "address": "Belo Horizonte",
       "password": "novaong"
+    },
+    {
+      "id": "1733689112319",
+      "orgName": "Ong Gato feliz",
+      "phone": "31",
+      "email": "1@1",
+      "socialMedia": "1",
+      "description": "a",
+      "category": "animais",
+      "address": "rua urupes",
+      "password": "123"
     }
   ],
   "doadores": [
@@ -270,25 +281,37 @@
   ],
   "projects": [
     {
-      "id": "1",
-      "image": "assets/img/projeto2.jpg",
-      "title": "Projeto Social",
-      "category": "filter-app",
-      "link": "portfolio-details.html"
+      "id": 1,
+      "nome": "Projeto Social animais no topo",
+      "categoria": "animais",
+      "valorAlvo": 10000,
+      "estado": "SP",
+      "cidade": "São Paulo",
+      "cep": "01000-000",
+      "numero": "123456789",
+      "redeSocial": "https://facebook.com/projeto-social"
     },
     {
-      "id": "2",
-      "image": "assets/img/ong1.jpg",
-      "title": "ONG",
-      "category": "filter-product",
-      "link": "portfolio-details.html"
+      "id": 2,
+      "nome": "Mundo animal",
+      "categoria": "animais",
+      "valorAlvo": 5000,
+      "estado": "MG",
+      "cidade": "Belo Horizonte",
+      "cep": "30100-000",
+      "numero": "987654321",
+      "redeSocial": "https://instagram.com/ong"
     },
     {
-      "id": "3",
-      "image": "assets/img/voluntariado.jpg",
-      "title": "Voluntariado",
-      "category": "filter-branding",
-      "link": "portfolio-details.html"
+      "id": 3,
+      "nome": "Animais felizes",
+      "categoria": "animais",
+      "valorAlvo": 2000,
+      "estado": "RJ",
+      "cidade": "Rio de Janeiro",
+      "cep": "20000-000",
+      "numero": "123123123",
+      "redeSocial": "https://twitter.com/voluntariado"
     }
   ],
   "posts": [
