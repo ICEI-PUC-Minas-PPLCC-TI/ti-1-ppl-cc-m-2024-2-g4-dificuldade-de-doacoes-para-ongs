@@ -47,6 +47,9 @@ main {
     /* height: 100vh; */
 }
 /* End of default configuration */
+/* Start of configuration header */
+
+/* End of configuration header */
 aside{/* Start of configuration aside*/
     position: fixed;
     top: 0;
@@ -151,6 +154,17 @@ aside > nav{
     gap: 0.5rem;
     color: black;
 }
+/* Inicio responsividade do submenu */
+@media (width < 1031px){
+    .submenu-Control-panel_Ong{
+        display: none;
+        align-items: center;
+        background-color: var(--color-background);
+        box-shadow: var(--box-shadow-light);
+        padding: 10px;
+    }
+}
+/* Fim responsividade do submenu */
 .conteiner-Projects-List_Ong{
     display: grid;
     grid-template-columns: repeat(4, 370px);

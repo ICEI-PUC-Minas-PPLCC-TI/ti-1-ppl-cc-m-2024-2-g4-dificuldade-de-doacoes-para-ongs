@@ -12,11 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
       // Coleta os dados do formulário
       const nome = document.getElementById("inpName").value;
       const categoria = document.getElementById("inpCategory").value;
-      const valorAlvo = document.getElementById("inpTarget-Value").value;
+      const valorAlvo = Number(document.getElementById("inpTarget-Value").value);
       const estado = document.getElementById("inpState").value;
       const cidade = document.getElementById("inpCity").value;
-      const cep = document.getElementById("inpZip-Code").value;
-      const numero = document.getElementById("inpContactNumber").value;
+      const cep = Number(document.getElementById("inpZip-Code").value);
+      const numero = Number(document.getElementById("inpContactNumber").value);
       const redeSocial = document.getElementById("inpSocialMedia").value;
       const descricao = document.getElementById("inpDescription").value;
 
@@ -62,8 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
       // Limpa o formulário após o envio
       form.reset();
 
-      // Atualiza a lista de projetos, caso haja uma função `fetchContacts()`
-      fetchContacts();
     });
   } else {
     console.error("Formulário não encontrado!");

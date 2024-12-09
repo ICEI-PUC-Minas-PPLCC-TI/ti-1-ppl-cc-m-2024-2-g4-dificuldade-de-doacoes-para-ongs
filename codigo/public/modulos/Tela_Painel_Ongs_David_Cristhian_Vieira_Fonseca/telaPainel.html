@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header></header>
     <main>
         <aside>
             <nav>
@@ -31,6 +30,17 @@
                 </div>
             </nav>
         </aside>
+        <nav class="submenu-Control-panel_Ong">
+            <ul>
+                <li><a onclick="carregarSecao('#secProjects')" class="option-Control-Panel_Ong active-Link-Options-Control_Ong"><i class="fa-solid fa-list"></i>Projetos</a></li>
+                <li><a onclick="carregarSecao('#sec2')" class="option-Control-Panel_Ong "><i class="fa-solid fa-gear"></i>Gerenciar Perfil</a></li>
+                <li><a onclick="carregarSecao('#sectionDonation')" class="option-Control-Panel_Ong "><i class="fa-solid fa-eye"></i>Visualizar Doações</a></li>
+                <li><a onclick="carregarSecao('#secShare-Projects')" class="option-Control-Panel_Ong "><i class="fa-solid fa-share-nodes"></i>Compartilhar Projetos</a></li>
+                <li><a onclick="carregarSecao('#sec5')" class="option-Control-Panel_Ong "><i class="fa-regular fa-comment"></i>Doadores em Contato</a></li>
+                <li><a onclick="carregarSecao('#sec6')" class="option-Control-Panel_Ong "><i class="fa-solid fa-paste"></i>Relatório de Impacto</a></li>
+                <li><a onclick="carregarSecao('#sec7')" class="option-Control-Panel_Ong "><i class="fa-solid fa-arrow-up-right-from-square"></i>Postar conteudos</a></li>
+            </ul>
+        </nav>
         <div id="conteudo"><!-- Div onde a seção será carregada -->
             <section class="projects_Ong" id="sec1"><!-- Start section of projects -->
                 <div class="container-Projects_Ong">
