@@ -168,6 +168,46 @@
       "link": "#"
     }
   ],
+  "doacoes": [
+    {
+      "id": "1",
+      "idDoador": "98fb",
+      "nome": "Samuell",
+      "idOng": "c33e",
+      "valor": 50,
+      "data": "2024-12-01",
+      "mensagem": "Espero que ajude no projeto.",
+      "status": "concluída"
+    },
+    {
+      "id": "2",
+      "idDoador": "b291",
+      "nome": "Samuel",
+      "idOng": "199f",
+      "valor": 100,
+      "data": "2024-11-30",
+      "mensagem": "Continuem com o ótimo trabalho.",
+      "status": "concluída"
+    }
+  ],
+  "donations": [
+    {
+      "id": 1,
+      "doador": "João Silva",
+      "valor": 150,
+      "ong": "ONG A",
+      "utilizacao": "Compra de materiais escolares",
+      "data": "2024-12-01"
+    },
+    {
+      "id": 2,
+      "doador": "Maria Oliveira",
+      "valor": 200,
+      "ong": "ONG B",
+      "utilizacao": "Alimentação para animais",
+      "data": "2024-12-02"
+    }
+  ],
   "ongsRecomendadas": [
     {
       "id": "1",
@@ -267,6 +307,21 @@
       "id": "5",
       "ong": "ONG 5",
       "feedback": "Agradeço a transparência nas informações sobre para onde minha doação foi destinada. Isso me faz sentir mais confiante."
+    },
+    {
+      "id": "1",
+      "ong": "ONG Desconhecida",
+      "feedback": "teste"
+    },
+    {
+      "id": "1",
+      "ong": "ONG Desconhecida",
+      "feedback": "teste2"
+    },
+    {
+      "id": "2",
+      "ong": "ONG Desconhecida",
+      "feedback": "teste 2"
     }
   ],
   "historico": [
@@ -291,40 +346,40 @@
   ],
   "projects": [
     {
-      "id": 1,
-      "nome": "Projeto Social animais no topo",
-      "categoria": "animais",
-      "valorAlvo": 10000,
-      "estado": "SP",
-      "cidade": "São Paulo",
-      "cep": "01000-000",
-      "numero": "123456789",
-      "redeSocial": "https://facebook.com/projeto-social",
-      "descricao": "Projeto de animais"
+      "id": "1",
+      "image": "/assets/img/projeto2.jpg",
+      "title": "Projeto Social",
+      "category": "Projeto Social",
+      "link": "portfolio-details.html"
     },
     {
-      "id": 2,
-      "nome": "Mundo animal",
-      "categoria": "animais",
-      "valorAlvo": 5000,
-      "estado": "MG",
-      "cidade": "Belo Horizonte",
-      "cep": "30100-000",
-      "numero": "987654321",
-      "redeSocial": "https://instagram.com/ong",
-      "descricao": "Projeto de animais"
+      "id": "2",
+      "image": "/assets/img/ong1.jpg",
+      "title": "ONG",
+      "category": "Social",
+      "link": "portfolio-details.html"
     },
     {
-      "id": 3,
-      "nome": "Animais felizes",
-      "categoria": "animais",
-      "valorAlvo": 2000,
-      "estado": "RJ",
-      "cidade": "Rio de Janeiro",
-      "cep": "20000-000",
-      "numero": "123123123",
-      "redeSocial": "https://twitter.com/voluntariado",
-      "descricao": "Projeto de animais"
+      "id": "3",
+      "image": "/assets/img/voluntariado.jpg",
+      "title": "Voluntariado",
+      "category": "Social",
+      "link": "portfolio-details.html"
+    },
+    {
+      "id": "0e25",
+      "title": "Teste projeto",
+      "description": "teste",
+      "category": "Meio Ambiente",
+      "goal": 10000,
+      "image": "/assets/img/voluntariado.jpg",
+      "projectLeader": "teste",
+      "contact": "teste@gmail.com",
+      "location": "Belo Horizonte, Minas Gerais",
+      "startDate": "2024-12-08",
+      "endDate": "2024-12-18",
+      "ngoId": 1
+
     }
   ],
   "posts": [
@@ -391,32 +446,6 @@
       "email": "s@gmail.com",
       "causa": "8",
       "id": "1"
-    }
-  ],
-  "doacoes": [
-    {
-      "id": "1",
-      "ongId": 1,
-      "userId": 1,
-      "valor": 200,
-      "data": "2023-07-01",
-      "feedback": "A ONG Casa dos Livros fez um ótimo trabalho, estou feliz em contribuir!"
-    },
-    {
-      "id": "2",
-      "ongId": 3,
-      "userId": 1,
-      "valor": 100,
-      "data": "2023-08-15",
-      "feedback": "A ONG Oportunidade é muito transparente com os resultados, recomendo!"
-    },
-    {
-      "id": "3",
-      "ongId": 2,
-      "userId": 2,
-      "valor": 300,
-      "data": "2023-05-22",
-      "feedback": "A iniciativa do Projeto K1 é fundamental para a capacitação dos jovens."
     }
   ]
 }
