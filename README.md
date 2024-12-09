@@ -10,7 +10,6 @@ Solidarize.com é uma plataforma digital inovadora que visa conectar ONGs e doad
 
 - **Samuel de Jesus Fernandes Mascarenhas**
 - **David Cristhian Vieira Fonseca**
-- **Lucas Cabral Bicalho**
 
 ## Professores Orientadores
 
