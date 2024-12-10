@@ -334,9 +334,6 @@ Divisão de papéis no grupo e apresentação da estrutura da ferramenta de cont
 
 ![DivisaoDePapeis](images/imagem_2024-09-21_230022530.png)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nesta parte do documento, você deve apresentar  o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a gestão de configuração do projeto via GitHub.
 >
 > Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
 >
@@ -350,7 +347,10 @@ Divisão de papéis no grupo e apresentação da estrutura da ferramenta de cont
 
 # Solução Implementada
 
-Esta seção apresenta todos os detalhes da solução criada no projeto.
+>1- Conexão Direta com ONGs: Plataforma para ONGs se conectarem diretamente com doadores e apresentarem suas iniciativas.
+2- Transparência nas Doações: Exibição de detalhes das campanhas e uso dos recursos arrecadados.
+3- Acompanhamento de Impacto: Relatórios que mostram os resultados gerados pelas doações.
+
 
 ## Vídeo do Projeto
 
