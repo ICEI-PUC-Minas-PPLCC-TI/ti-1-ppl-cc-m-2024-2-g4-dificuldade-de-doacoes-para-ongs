@@ -272,20 +272,30 @@ document.addEventListener('DOMContentLoaded', function() {
             content: document.getElementById('storyContent').value,
             date: new Date().toISOString(),
         };
-
-        await fetch('http://localhost:3001/stories', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(story),
-        }).then(response => response.json())
-            .then(data => {
-                alert('História postada com sucesso!');
-            })
-            .catch(error => {
-                console.error('Erro ao postar a história:', error);
-                alert('Erro ao postar a história.');
+   
+        try {
+            const response = await fetch('http://localhost:3001/stories', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(story),
             });
+   
+            // Verifique a resposta antes de tentar converter para JSON
+            const responseText = await response.text();
+            console.log('Resposta do servidor:', responseText);
+   
+            if (response.ok) {
+                const data = JSON.parse(responseText); // Parse manual do texto se necessário
+                alert('História postada com sucesso!');
+            } else {
+                alert(`Erro ao postar a história. Status: ${response.status}`);
+            }
+        } catch (error) {
+            console.error('Erro ao postar a história:', error);
+            alert('Erro ao postar a história.');
+        }
     });
+   
 
     // Generate Report
     document.getElementById('generateReportButton').addEventListener('click', async () => {
@@ -405,12 +415,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     
-
 // Garante que o código será executado após o DOM estar carregado
 document.addEventListener('DOMContentLoaded', function () {
     console.log('DOM totalmente carregado.');
 
-    // Recuperando os dados do localStorage
+    // Recuperando os dados da ONG registrada no localStorage
     const localStorageData = localStorage.getItem('registeredOng');
     if (!localStorageData) {
         console.warn('Nenhuma ONG registrada encontrada no localStorage.');
@@ -427,15 +436,21 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        // Preencher os campos do formulário
-        document.getElementById('orgId').value = ongData.id || '';
-        document.getElementById('orgName').value = ongData.orgName || '';
-        document.getElementById('orgDescription').value = ongData.description || '';
-        document.getElementById('orgSocialMedia').value = ongData.socialMedia || '';
-        document.getElementById('orgCategory').value = ongData.category || '';
-        document.getElementById('orgAddress').value = ongData.address || '';
-        document.getElementById('orgPhone').value = ongData.phone || '';
-        document.getElementById('orgEmail').value = ongData.email || '';
+        // Preenche os campos do formulário, incluindo o campo 'orgId'
+        const fields = [
+            'orgId', 'orgName', 'orgDescription', 'orgSocialMedia', 
+            'orgCategory', 'orgAddress', 'orgPhone', 'orgEmail', 'orgPassword'
+        ];
+
+        fields.forEach(fieldId => {
+            const field = document.getElementById(fieldId);
+            if (field) {
+                field.value = ongData[fieldId] || '';  // Preenche o campo se encontrado
+            } else {
+                console.warn(`Campo com ID "${fieldId}" não encontrado no DOM.`);
+            }
+        });
+
         console.log('Campos preenchidos com sucesso.');
     } catch (error) {
         console.error('Erro ao preencher os campos:', error);
@@ -443,54 +458,69 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Atualizar Perfil
+// 1. Carregar as informações da ONG quando a página for carregada
+window.addEventListener('DOMContentLoaded', () => {
+    const ongProfile = JSON.parse(localStorage.getItem('loggedOngProfile'));
+    
+    if (ongProfile) {
+        document.getElementById('orgId').value = ongProfile.id;
+        document.getElementById('orgName').value = ongProfile.orgName;
+        document.getElementById('orgDescription').value = ongProfile.description;
+        document.getElementById('orgSocialMedia').value = ongProfile.socialMedia;
+        document.getElementById('orgCategory').value = ongProfile.category;
+        document.getElementById('orgAddress').value = ongProfile.address;
+        document.getElementById('orgPhone').value = ongProfile.phone;
+        document.getElementById('orgEmail').value = ongProfile.email;
+        // Não preenche a senha no carregamento
+    } else {
+        console.log('Nenhum perfil de ONG encontrado no localStorage');
+    }
+});
+
+// 2. Enviar atualização para o servidor e atualizar o localStorage
 document.getElementById('updateProfileForm').addEventListener('submit', async function (event) {
-    event.preventDefault(); // Evitar comportamento padrão do formulário
+    event.preventDefault(); // Impede o envio padrão do formulário
 
-    // Captura os valores atualizados do formulário
-    const updatedOng = {
-        id: document.getElementById('orgId').value,
-        orgName: document.getElementById('orgName').value,
-        description: document.getElementById('orgDescription').value,
-        socialMedia: document.getElementById('orgSocialMedia').value,
-        category: document.getElementById('orgCategory').value,
-        address: document.getElementById('orgAddress').value,
-        phone: document.getElementById('orgPhone').value,
-        email: document.getElementById('orgEmail').value,
-    };
-
-    console.log('ID da ONG para atualização:', updatedOng.id); // Log para verificar o valor do ID
-
-    // Verificar se o id da ONG está presente
-    if (!updatedOng.id) {
+    const orgId = document.getElementById('orgId')?.value;
+    if (!orgId) {
+        console.error('ID da ONG não encontrado:', orgId);
         alert("ID da ONG não encontrado.");
         return;
     }
 
-    try {
-        // Imprime a URL para a requisição PUT para verificar se o ID está correto
-        const updateUrl = `http://localhost:3001/ongs/${updatedOng.id}`;
-        console.log('Requisição PUT para:', updateUrl); // Log da URL de requisição
+    // Log para verificar o ID da ONG
+    console.log('ID da ONG sendo enviado:', orgId);
 
-        // Atualiza os dados no servidor (db.json)
+    const updatedOng = {
+        id: String(orgId),  // Garantir que o ID seja tratado como string
+        orgName: document.getElementById('orgName')?.value,
+        description: document.getElementById('orgDescription')?.value,
+        socialMedia: document.getElementById('orgSocialMedia')?.value,
+        category: document.getElementById('orgCategory')?.value,
+        address: document.getElementById('orgAddress')?.value,
+        phone: document.getElementById('orgPhone')?.value,
+        email: document.getElementById('orgEmail')?.value,
+        password: document.getElementById('orgPassword')?.value || '' // Garantir que a senha não seja apagada
+    };
+
+    // Envia os dados atualizados para o servidor
+    try {
+        const updateUrl = `http://localhost:3001/ongs/${updatedOng.id}`;
+        console.log('URL de atualização:', updateUrl); // Log da URL completa
         const response = await fetch(updateUrl, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(updatedOng),
         });
 
-        // Verifica se a resposta foi bem-sucedida
         if (!response.ok) {
             throw new Error(`Erro ao atualizar no servidor. Status: ${response.status}`);
         }
 
-        // Log de depuração
         const responseData = await response.json();
-        console.log('Resposta do servidor:', responseData);
-
-        // Atualiza os dados localmente (localStorage)
-        localStorage.setItem('registeredOng', JSON.stringify(updatedOng));
-
-        // Mensagem de sucesso
+        // Atualiza o localStorage com os novos dados
+        localStorage.setItem('loggedOngProfile', JSON.stringify(updatedOng)); // Atualiza o localStorage
+        localStorage.setItem('registeredOng', JSON.stringify(updatedOng)); // Certifique-se de atualizar também o localStorage de cadastro
         alert('Perfil atualizado com sucesso!');
     } catch (error) {
         console.error('Erro ao atualizar o perfil:', error);
@@ -500,7 +530,16 @@ document.getElementById('updateProfileForm').addEventListener('submit', async fu
 
 
 
+// Recupera o ID da ONG do localStorage
+const ongId = localStorage.getItem('loggedOngId');
 
+// Verifica se o ID foi encontrado
+if (ongId) {
+    document.getElementById('orgId').value = ongId;  // Preenche o campo oculto com o ID da ONG
+} else {
+    console.error("ID da ONG não encontrado no localStorage.");
+    alert("Ocorreu um erro. ID da ONG não encontrado.");
+}
 
 // Garante que o código será executado após o DOM estar carregado
 document.addEventListener('DOMContentLoaded', async function () {
@@ -508,6 +547,8 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // Recupera o ID da ONG logada do localStorage
     const loggedOrgId = localStorage.getItem('loggedOrgId');
+    console.log('ID da ONG logada:', loggedOrgId); // Verifique o valor
+
     if (!loggedOrgId) {
         console.warn('Nenhuma ONG registrada encontrada. Faça login novamente.');
         window.location.href = 'login.html';
@@ -517,12 +558,18 @@ document.addEventListener('DOMContentLoaded', async function () {
     try {
         // Busca os dados da ONG no servidor (db.json)
         const response = await fetch(`http://localhost:3001/ongs/${loggedOrgId}`);
+        
         if (!response.ok) {
             throw new Error('Erro ao buscar os dados da ONG no servidor.');
         }
 
         const ongData = await response.json();
-        console.log('Dados carregados do servidor:', ongData);
+        console.log('Dados carregados do servidor:', ongData); // Log os dados para verificação
+
+        // Verifica se a ONG foi encontrada
+        if (!ongData) {
+            throw new Error('Nenhum dado encontrado para a ONG.');
+        }
 
         // Preenche os campos do formulário com os dados da ONG
         document.getElementById('orgId').value = ongData.id || '';
@@ -544,6 +591,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         window.location.href = 'login.html';
     }
 });
+
+
+
 
 
 

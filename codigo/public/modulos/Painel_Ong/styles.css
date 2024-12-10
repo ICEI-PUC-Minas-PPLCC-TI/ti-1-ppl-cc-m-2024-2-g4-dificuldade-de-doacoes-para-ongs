@@ -233,7 +233,9 @@ h6 {
     .navmenu>ul>li:last-child {
         padding-right: 0;
     }
-
+.navmenu a {
+  text-decoration: none;
+}
     .navmenu button,
     .navmenu button:focus {
         color: var(--nav-color);

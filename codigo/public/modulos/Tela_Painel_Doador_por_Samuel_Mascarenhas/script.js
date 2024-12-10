@@ -275,8 +275,8 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <div class="card-body">
                                     <h5 class="card-title">${ong.nome}</h5>
                                     <p class="card-text">${ong.descricao}</p>
-                                    <button class="btn-primary-4" onclick="abrirFormularioFeedback('${ong.id}')">Avaliar ONG</button>
-                                    <button class="btn-secondary-4" onclick="abrirFormularioDoacao('${ong.id}')">Doar Novamente</button>
+                                    <a href="#FormFeedback"><button class="btn-primary-4" onclick="abrirFormularioFeedback('${ong.id}')">Avaliar ONG</button></a>
+                                    <a href="#doacaoModal"><button class="btn-secondary-4" onclick="abrirFormularioDoacao('${ong.id}')">Doar Novamente</button></a>
                                 </div>
                             </div>
                         </div>`;
@@ -287,37 +287,44 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Função para abrir o formulário de doação
-    window.abrirFormularioDoacao = function(idOng) {
-        // Mostra o modal de doação
+    window.abrirFormularioDoacao = function (idOng) {
         const modal = document.querySelector(".modal-doacao");
         modal.style.display = "block";
-    
-        // Definir a ONG para a doação
+
         document.getElementById("doar-novamente-btn").onclick = function () {
             const valor = parseFloat(document.getElementById("valor-doacao").value);
             const mensagem = document.getElementById("mensagem-doacao").value;
-    
+
             if (isNaN(valor) || valor <= 0) {
                 alert("Por favor, insira um valor válido.");
                 return;
             }
-    
+
             if (!mensagem.trim()) {
                 alert("A mensagem é obrigatória.");
                 return;
             }
-    
-            // Obter o ID do doador do localStorage
+
             const doadorId = localStorage.getItem("donorId");
             if (!doadorId) {
                 alert("Doador não encontrado.");
                 return;
             }
-    
-            // Buscar o histórico de doações do doador
+
             fetch(`http://localhost:3001/donors/${doadorId}`)
-                .then(response => response.json())
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("Erro ao buscar os dados do doador.");
+                    }
+                    return response.json();
+                })
                 .then(doador => {
+                    // Garantir que o campo historico existe e é um array
+                    if (!doador.historico || !Array.isArray(doador.historico)) {
+                        console.warn("Campo 'historico' ausente ou inválido. Inicializando como um array vazio.");
+                        doador.historico = [];
+                    }
+
                     const historicoAtualizado = [
                         ...doador.historico,
                         {
@@ -327,8 +334,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             id: generateUniqueId()
                         }
                     ];
-    
-                    // Atualizar o histórico do doador
+
                     return fetch(`http://localhost:3001/donors/${doadorId}`, {
                         method: 'PATCH',
                         headers: {
@@ -340,7 +346,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     });
                 })
                 .then(() => {
-                    // Adicionar a doação à lista de doações
                     return fetch("http://localhost:3001/doacoes", {
                         method: 'POST',
                         headers: {
@@ -367,14 +372,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     console.error("Erro ao processar a doação:", error);
                     alert("Ocorreu um erro ao processar sua doação.");
                 });
-        }
+        };
     };
-    
+
     // Função para gerar um ID único para cada doação
     function generateUniqueId() {
         return Math.random().toString(36).substr(2, 9);
     }
-    
 
     // Função para fechar o modal de doação
     document.querySelector(".close-doacao").onclick = function () {
@@ -382,9 +386,37 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.style.display = "none";
     };
 
-    // Chama a função para buscar e renderizar as ONGs contribuídas
+    // Função para carregar o histórico do doador
+    function carregarHistorico() {
+        const doadorId = localStorage.getItem("donorId");
+        if (!doadorId) return;
+
+        fetch(`http://localhost:3001/donors/${doadorId}`)
+            .then(response => response.json())
+            .then(doador => {
+                const historicoContainer = document.getElementById("historico");
+                if (!historicoContainer) return;
+
+                historicoContainer.innerHTML = ""; // Limpa o histórico atual
+                (doador.historico || []).forEach(item => {
+                    const historicoItem = document.createElement("div");
+                    historicoItem.classList.add("historico-item");
+                    historicoItem.innerHTML = `
+                        <p>Data: ${item.data}</p>
+                        <p>Valor: ${item.valor}</p>
+                        <p>Projeto: ${item.projeto}</p>
+                    `;
+                    historicoContainer.appendChild(historicoItem);
+                });
+            })
+            .catch(error => console.error("Erro ao carregar histórico:", error));
+    }
+
+    // Chama as funções iniciais
     fetchAndRenderOngsContribuidas();
+    carregarHistorico();
 });
+
 
 let ongSelecionadaId = null; // Variável para armazenar o ID da ONG selecionada
 
@@ -510,19 +542,115 @@ async function carregarHistorico() {
 document.addEventListener("DOMContentLoaded", function () {
     const ongCardsContainer = document.getElementById("ong-cards-container");
 
+    // Modal para doação exclusiva de ONGs favoritas
+    const modalFavoritas = document.getElementById("modal-doacao-favoritas");
+    const closeFavoritas = document.querySelector(".close-favoritas");
+    const confirmarDoacaoFavoritas = document.getElementById("confirmar-doacao-favoritas");
+
+    let ongIdAtual; // Variável para armazenar o ID da ONG selecionada
+
+    // Função para abrir o modal
+    function abrirModalFavoritas(idOng) {
+        ongIdAtual = idOng;
+        modalFavoritas.style.display = "block";
+    }
+
+    // Função para fechar o modal
+    closeFavoritas.onclick = function () {
+        modalFavoritas.style.display = "none";
+    };
+
+    // Fechar modal ao clicar fora dele
+    window.onclick = function (event) {
+        if (event.target === modalFavoritas) {
+            modalFavoritas.style.display = "none";
+        }
+    };
+
+    // Função para confirmar a doação
+    confirmarDoacaoFavoritas.onclick = function () {
+        const valor = parseFloat(document.getElementById("valor-doacao-favoritas").value);
+        const mensagem = document.getElementById("mensagem-doacao-favoritas").value;
+
+        if (isNaN(valor) || valor <= 0) {
+            alert("Por favor, insira um valor válido.");
+            return;
+        }
+
+        if (!mensagem.trim()) {
+            alert("A mensagem é obrigatória.");
+            return;
+        }
+
+        // Obter o ID do doador do localStorage
+        const doadorId = localStorage.getItem("donorId");
+        if (!doadorId) {
+            alert("Doador não encontrado.");
+            return;
+        }
+
+        // Adicionar a doação
+        fetch(`http://localhost:3001/donors/${doadorId}`)
+            .then(response => response.json())
+            .then(doador => {
+                const historicoAtualizado = [
+                    ...doador.historico,
+                    {
+                        data: new Date().toISOString().split("T")[0],
+                        valor: `R$ ${valor.toFixed(2)}`,
+                        projeto: `Doação para ONG ${ongIdAtual}`,
+                        id: generateUniqueId()
+                    }
+                ];
+
+                return fetch(`http://localhost:3001/donors/${doadorId}`, {
+                    method: "PATCH",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ historico: historicoAtualizado })
+                });
+            })
+            .then(() => {
+                return fetch("http://localhost:3001/doacoes", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        idDoador: doadorId,
+                        nome: localStorage.getItem("donorName"),
+                        idOng: ongIdAtual,
+                        valor: valor,
+                        data: new Date().toISOString().split("T")[0],
+                        mensagem: mensagem,
+                        status: "pendente"
+                    })
+                });
+            })
+            .then(() => {
+                alert("Doação realizada com sucesso!");
+                modalFavoritas.style.display = "none"; // Fecha o modal
+            })
+            .catch(error => {
+                console.error("Erro ao processar a doação:", error);
+                alert("Ocorreu um erro ao processar sua doação.");
+            });
+    };
+
     // Função para buscar ONGs favoritas e renderizar os cards
     function fetchAndRenderOngsFavoritas() {
-        fetch("http://localhost:3001/ongsFavoritas") // Endpoint do JSON Server para "ongsFavoritas"
-            .then((response) => {
+        fetch("http://localhost:3001/ongsFavoritas")
+            .then(response => {
                 if (!response.ok) {
                     throw new Error("Erro ao buscar ONGs favoritas");
                 }
                 return response.json();
             })
-            .then((ongsFavoritas) => {
-                ongCardsContainer.innerHTML = ""; // Limpa qualquer conteúdo existente
+            .then(ongsFavoritas => {
+                ongCardsContainer.innerHTML = "";
 
-                ongsFavoritas.forEach((ong) => {
+                ongsFavoritas.forEach(ong => {
                     const cardHTML = `
                         <div class="col-md-4 mb-4 d-flex justify-content-center">
                             <div class="card">
@@ -530,19 +658,36 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <div class="card-body">
                                     <h5 class="card-title">${ong.nome}</h5>
                                     <p class="card-text">${ong.descricao}</p>
-                                    <a href="${ong.link}" class="btn btn-primary-2">Ver Detalhes</a>
+                                    <a href="${ong.link}" class="btn2 
+                                    btn-primary-4">Ver Detalhes</a>
+                                    <button class="btn-secondary-4" id="doar-${ong.id}">Doar</button>
                                 </div>
                             </div>
                         </div>`;
-                    ongCardsContainer.innerHTML += cardHTML; // Adiciona o card ao contêiner
+
+                    ongCardsContainer.innerHTML += cardHTML;
+                });
+
+                // Agora que os cards foram renderizados, associamos os eventos
+                ongsFavoritas.forEach(ong => {
+                    const buttonDoar = document.getElementById(`doar-${ong.id}`);
+                    buttonDoar.addEventListener("click", function () {
+                        abrirModalFavoritas(ong.id);
+                    });
                 });
             })
-            .catch((error) => console.error("Erro ao carregar ONGs favoritas:", error));
+            .catch(error => console.error("Erro ao carregar ONGs favoritas:", error));
     }
 
-    // Chama a função para buscar e renderizar as ONGs favoritas
+    // Chamar a função para buscar e renderizar as ONGs favoritas
     fetchAndRenderOngsFavoritas();
+
+    // Função para gerar um ID único para doações
+    function generateUniqueId() {
+        return Math.random().toString(36).substr(2, 9);
+    }
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const recomendacoesCardsContainer = document.getElementById("recomendacoes-cards-container");

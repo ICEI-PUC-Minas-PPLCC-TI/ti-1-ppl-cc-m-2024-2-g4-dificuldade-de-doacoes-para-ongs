@@ -55,13 +55,13 @@
 
                 <nav id="navmenu" class="navmenu">
                     <ul>
-                        <button class="nav-link active" id="projectsButton">Projetos</button>
-                        <button class="nav-link" id="createProjectsTab">Criar Projetos</button>
-                        <button class="nav-link" id="viewDonationsTab">Visualizar</button>
-                        <button class="nav-link" id="viewDonorsTab">Doadores</button>
-                        <button class="nav-link" id="postStoriesTab">Postar Histórias</button>
-                        <button class="nav-link" id="generateReportsTab">Relatórios</button>
-                        <button class="nav-link" id="manageProfileTab">Perfil</button>
+                        <a href="#"><button class="nav-link active" id="projectsButton">Projetos</button></a>
+                        <a href="#"><button class="nav-link" id="createProjectsTab">Criar Projetos</button></a>
+                        <a href="#"><button class="nav-link" id="viewDonationsTab">Visualizar</button></a>
+                        <a href="#"><button class="nav-link" id="viewDonorsTab">Doadores</button></a>
+                        <a href="#"><button class="nav-link" id="postStoriesTab">Postar Histórias</button></a>
+                        <a href="#"><button class="nav-link" id="generateReportsTab">Relatórios</button></a>
+                        <a href="#"><button class="nav-link" id="manageProfileTab">Perfil</button></a>
                         <li><a href="../../index.html">
                                 <button class="Btn-logout">
 
@@ -202,7 +202,7 @@
                     <form id="updateProfileForm">
 
                         <!-- Campo Oculto para o ID da ONG -->
-                        <input type="hidden" id="orgId">
+                        <input type="hidden" id="orgId" value="">
                     
                         <!-- Nome da ONG -->
                         <div class="mb-3">
@@ -252,6 +252,10 @@
                         <div class="mb-3">
                             <label for="orgEmail" class="form-label">E-mail para Contato</label>
                             <input type="email" id="orgEmail" class="form-control" placeholder="Digite o e-mail para contato" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="password" id="orgPassword"  class="form-control" placeholder="Nova Senha"/>
                         </div>
                     
                         <!-- Botão de Submissão -->

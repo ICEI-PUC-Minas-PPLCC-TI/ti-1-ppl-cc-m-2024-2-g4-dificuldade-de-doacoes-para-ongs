@@ -1190,7 +1190,36 @@ h6 {
     background-color: #007BB5;
     color: #fff;
 }
+
+
 /* Modal oculto por padrão */
+
+.modal-doacao-favoritas {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-doacao-favoritas .modal-content {
+    background: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 700px;
+    text-align: center;
+}
+
+.modal-doacao-favoritas .close-favoritas {
+    float: right;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
 .modal-doacao {
     display: none; /* Impede que o modal apareça ao recarregar a página */
 
@@ -1203,7 +1232,7 @@ h6 {
     width: 100%;
     text-align: center;
 }
-.header-doar-modal{
+.header-doar-modal, .header-doacao-fav{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1225,12 +1254,12 @@ h6 {
     padding: 8px;
     border-radius: 8px;
 }
-.close-doacao {
+.close-doacao, .close-favoritas {
     font-size: 35px;
     
     cursor: pointer;
 }
-.close-doacao:hover{
+.close-doacao:hover, .close-favoritas:hover{
     color: #008374;
 }
 

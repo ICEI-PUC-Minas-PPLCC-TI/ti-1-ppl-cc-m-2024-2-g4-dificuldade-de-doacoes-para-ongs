@@ -29,81 +29,29 @@
           "id": "efcc"
         }
       ]
-    },
-    {
-      "name": "Samuel Mascarenhas",
-      "interests": "Software Developer apaixonado em utilizar as tecnologias em prol das comunidades.",
-      "address": "Belo Horizonte",
-      "phone": "31999999999",
-      "email": "mascarenhasctt@gmail.com",
-      "category": "8",
-      "id": "1733804187127"
-    },
-    {
-      "name": "Samuell Mascarenhas",
-      "interests": "Software Developer apaixonado em utilizar as tecnologias em prol das comunidades.",
-      "address": "Belo Horizonte",
-      "phone": "31999999999",
-      "email": "mascarenhasctt@gmail.com",
-      "category": "3",
-      "id": "1733805007578"
     }
   ],
   "ongs": [
     {
-      "orgName": "ONG",
-      "email": "ong@gmail.com",
-      "phone": "319999999999",
-      "socialMedia": "a",
-      "description": "sss",
-      "category": "saúde",
-      "address": "bh",
-      "password": "senha123",
-      "id": "c33e"
-    },
-    {
-      "orgName": "ONG PROJETO",
-      "phone": "319999999999",
-      "email": "ongprojeto@gmail.com",
-      "socialMedia": "@ong",
-      "description": "projeto",
-      "category": "saúde",
-      "address": "bh",
-      "password": "senha12345",
-      "id": "199f"
-    },
-    {
-      "id": "1733683058244",
-      "orgName": "Teste Nova Ong",
-      "phone": "31999999999",
-      "email": "novaongteste@gmail.com",
-      "socialMedia": "@novaong",
-      "description": "descrição da ong",
-      "category": "saúde",
-      "address": "Belo Horizonte",
-      "password": "novaong"
-    },
-    {
-      "id": "1733689112319",
-      "orgName": "Ong Gato feliz",
-      "phone": "31",
-      "email": "1@1",
-      "socialMedia": "1",
-      "description": "a",
-      "category": "animais",
-      "address": "rua urupes",
-      "password": "123"
-    },
-    {
-      "id": "1733791021240",
+      "id": "c33e",
       "orgName": "ONG 2",
-      "phone": "31999999999",
-      "email": "ongteste@gmail.com",
+      "description": "h",
       "socialMedia": "@ong",
-      "description": "teste",
-      "category": "Educação",
+      "category": "Saúde",
+      "address": "hg",
+      "phone": "31 99999-9999",
+      "email": "ongteste@gmail.com"
+    },
+    {
+      "id": "1733828075374",
+      "orgName": "Ong ajudar",
+      "phone": "31999999999",
+      "email": "ajudarong@gmail.com",
+      "socialMedia": "@ajudarong",
+      "description": "ong para ajudar pessoas.",
+      "category": "Direitos Humanos",
       "address": "Belo Horizonte",
-      "password": "nova"
+      "password": "minhasenha"
     }
   ],
   "ongsFavoritas": [
@@ -112,21 +60,21 @@
       "nome": "Casa dos Livros",
       "descricao": "Cultura, educação, lazer e arte. Vem, a casa é sua!",
       "imagem": "../../assets/img/casadoslivros.jpeg",
-      "link": "#"
+      "link": "https://www.instagram.com/casa.doslivros/profilecard/?igsh=MXZvaDMzMHVld3ZpdA=="
     },
     {
       "id": "2",
       "nome": "Ong Oportunidade",
       "descricao": "Cursos gratuitos para gerar Empregos.",
       "imagem": "../../assets/img/ongoportunidade.jpeg",
-      "link": "#"
+      "link": "https://www.instagram.com/ongoportunidade/profilecard/?igsh=MTZ6OWw0c3UxaXNjYg=="
     },
     {
       "id": "3",
       "nome": "Projeto Rumo Certo",
       "descricao": "Cultura, Esporte, Educação & Saúde",
       "imagem": "https://via.placeholder.com/300x200",
-      "link": "#"
+      "link": "https://www.instagram.com/projetorumocerto/profilecard/?igsh=aGVnOWN3YzdhMW9z"
     }
   ],
   "doacoes": [
@@ -157,7 +105,7 @@
       "idOng": "3",
       "valor": 13,
       "data": "2024-12-10",
-      "mensagem": "teste",
+      "mensagem": "Excelente causa!",
       "status": "pendente"
     },
     {
@@ -167,23 +115,13 @@
       "idOng": "2",
       "valor": 15,
       "data": "2024-12-10",
-      "mensagem": "teste2",
-      "status": "pendente"
-    },
-    {
-      "id": "e33d",
-      "idDoador": "1733805007578",
-      "nome": null,
-      "idOng": "3",
-      "valor": 43,
-      "data": "2024-12-10",
-      "mensagem": "teste",
+      "mensagem": "Continuem",
       "status": "pendente"
     }
   ],
   "donations": [
     {
-      "id": 1,
+      "id": "1",
       "doador": "João Silva",
       "valor": 150,
       "ong": "ONG A",
@@ -191,7 +129,7 @@
       "data": "2024-12-01"
     },
     {
-      "id": 2,
+      "id": "2",
       "doador": "Maria Oliveira",
       "valor": 200,
       "ong": "ONG B",
@@ -225,11 +163,13 @@
   "premios": [
     {
       "valor": 500,
-      "descricao": "Premio por doação excepcional"
+      "descricao": "Premio por doação excepcional",
+      "id": "3541"
     },
     {
       "valor": 300,
-      "descricao": "Premio por contribuição contínua"
+      "descricao": "Premio por contribuição contínua",
+      "id": "24ca"
     }
   ],
   "impacto": {
@@ -260,13 +200,32 @@
     {
       "ongId": "1",
       "avaliacao": "boa",
-      "comentario": "Gostei bastante da experiência."
+      "comentario": "Gostei bastante da experiência.",
+      "id": "2e1b"
     },
     {
       "id": "bd94",
       "ongId": "2",
       "avaliacao": "excelente",
       "comentario": "teste"
+    },
+    {
+      "id": "8f62",
+      "ongId": "1",
+      "avaliacao": "excelente",
+      "comentario": "teste"
+    },
+    {
+      "id": "6a77",
+      "ongId": "1",
+      "avaliacao": "regular",
+      "comentario": "teste"
+    },
+    {
+      "id": "a8f3",
+      "ongId": "1",
+      "avaliacao": "boa",
+      "comentario": "testee"
     }
   ],
   "midias": {
@@ -325,6 +284,11 @@
       "id": "5",
       "ong": "Caminho da Esperança",
       "feedback": "Sua doação foi fundamental para que pudéssemos alcançar novos objetivos. Graças a você, conseguimos expandir nossas ações e atender mais pessoas em situação de vulnerabilidade. Muito obrigado pelo seu apoio contínuo!"
+    },
+    {
+      "id": "1",
+      "ong": "ONG Desconhecida",
+      "feedback": "obrigado"
     }
   ],
   "historico": [
@@ -370,6 +334,7 @@
       "link": "/modulos/login/login.html"
     }
   ],
+  "stories": [],
   "posts": [
     {
       "category": "Politics",
