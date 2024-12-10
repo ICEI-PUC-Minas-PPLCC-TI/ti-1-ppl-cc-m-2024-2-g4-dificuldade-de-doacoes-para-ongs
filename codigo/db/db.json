@@ -1,82 +1,52 @@
 {
   "donors": [
     {
-      "name": "Samuell Mascarenhas",
-      "email": "s@gmail.com",
-      "phone": "319999999999",
-      "address": "bh",
-      "interests": "b",
-      "category": "s",
-      "password": "senha123",
-      "id": "98fb"
-    },
-    {
-      "name": "teste",
-      "email": "joao@example.com",
-      "phone": "319999999999",
-      "address": "bh",
-      "interests": "b",
-      "category": "saúde",
-      "password": "senha123",
-      "id": "b291"
-    },
-    {
-      "name": "teste",
-      "email": "teste@gmail.com",
-      "phone": "319999999999",
-      "address": "bh",
-      "interests": "b",
-      "category": "saúde",
-      "password": "senha1234",
-      "id": "bba2"
-    },
-    {
       "name": "Samuel de Jesus Fernandes Mascarenhas",
       "interests": "Software Developer apaixonado em utilizar as tecnologias em prol das comunidades.",
       "address": "Belo Horizonte",
       "phone": "31999999999",
       "email": "mascarenhasctt@gmail.com",
       "category": "8",
-      "id": "1733675490630"
+      "id": "1733675490630",
+      "password": "senha123",
+      "historico": [
+        {
+          "data": "2024-10-01",
+          "valor": "R$ 50,00",
+          "projeto": "Projeto A",
+          "id": "903d"
+        },
+        {
+          "data": "2024-09-15",
+          "valor": "R$ 100,00",
+          "projeto": "Projeto B",
+          "id": "5846"
+        },
+        {
+          "data": "2024-08-20",
+          "valor": "R$ 30,00",
+          "projeto": "Projeto C",
+          "id": "efcc"
+        }
+      ]
     },
     {
-      "name": "teste",
+      "name": "Samuel Mascarenhas",
       "interests": "Software Developer apaixonado em utilizar as tecnologias em prol das comunidades.",
       "address": "Belo Horizonte",
       "phone": "31999999999",
-      "email": "teste@gmail.com",
-      "category": "5",
-      "id": "1733676011528"
+      "email": "mascarenhasctt@gmail.com",
+      "category": "8",
+      "id": "1733804187127"
     },
     {
-      "id": "1733682456653",
-      "name": "Novo Teste de Usuario",
-      "email": "testeusuario@gmail.com",
-      "phone": "31999999999",
+      "name": "Samuell Mascarenhas",
+      "interests": "Software Developer apaixonado em utilizar as tecnologias em prol das comunidades.",
       "address": "Belo Horizonte",
-      "interests": "Essa é minha Bio, gostou?",
-      "category": "Cultura",
-      "password": "minhasenha123"
-    },
-    {
-      "id": "1733682830029",
-      "name": "Novo Teste de Usuario 2",
-      "email": "testeusuario2@gmail.com",
       "phone": "31999999999",
-      "address": "Belo Horizonte",
-      "interests": "Essa é minha Bio 2, gostou?",
-      "category": "Cultura",
-      "password": "senha12"
-    },
-    {
-      "id": "1733690220135",
-      "name": "David Cristhian ",
-      "email": "David@gmail.com",
-      "phone": "21",
-      "address": "r",
-      "interests": "pessoa",
-      "category": "animais",
-      "password": "123"
+      "email": "mascarenhasctt@gmail.com",
+      "category": "3",
+      "id": "1733805007578"
     }
   ],
   "ongs": [
@@ -123,47 +93,38 @@
       "category": "animais",
       "address": "rua urupes",
       "password": "123"
-    }
-  ],
-  "doadores": [
-    {
-      "id": "7063",
-      "nome": "Lucas Cabral",
-      "descricao": "",
-      "location": "",
-      "telefone": "",
-      "email": "",
-      "causa": "Selecionar"
     },
     {
-      "id": "5de5",
-      "nome": "Victor Rabelo",
-      "descricao": "Alberto Rodrigues",
-      "location": "Belo Horizonte",
-      "telefone": "31983129229",
-      "email": "lucascabralbicalho@gmail.com",
-      "causa": "6"
+      "id": "1733791021240",
+      "orgName": "ONG 2",
+      "phone": "31999999999",
+      "email": "ongteste@gmail.com",
+      "socialMedia": "@ong",
+      "description": "teste",
+      "category": "Educação",
+      "address": "Belo Horizonte",
+      "password": "nova"
     }
   ],
   "ongsFavoritas": [
     {
       "id": "1",
-      "nome": "ONG Favorita 1",
-      "descricao": "Descrição da ONG Favorita 1. Pode conter detalhes adicionais.",
-      "imagem": "../../assets/img/equipeOrg.jpg",
+      "nome": "Casa dos Livros",
+      "descricao": "Cultura, educação, lazer e arte. Vem, a casa é sua!",
+      "imagem": "../../assets/img/casadoslivros.jpeg",
       "link": "#"
     },
     {
       "id": "2",
-      "nome": "ONG Favorita 2",
-      "descricao": "Descrição da ONG Favorita 2. Pode conter detalhes adicionais.",
-      "imagem": "../../assets/img/ong2.jpg",
+      "nome": "Ong Oportunidade",
+      "descricao": "Cursos gratuitos para gerar Empregos.",
+      "imagem": "../../assets/img/ongoportunidade.jpeg",
       "link": "#"
     },
     {
       "id": "3",
-      "nome": "ONG Favorita 3",
-      "descricao": "Descrição da ONG Favorita 3. Pode conter detalhes adicionais.",
+      "nome": "Projeto Rumo Certo",
+      "descricao": "Cultura, Esporte, Educação & Saúde",
       "imagem": "https://via.placeholder.com/300x200",
       "link": "#"
     }
@@ -188,6 +149,36 @@
       "data": "2024-11-30",
       "mensagem": "Continuem com o ótimo trabalho.",
       "status": "concluída"
+    },
+    {
+      "id": "cc73",
+      "idDoador": "1733805007578",
+      "nome": null,
+      "idOng": "3",
+      "valor": 13,
+      "data": "2024-12-10",
+      "mensagem": "teste",
+      "status": "pendente"
+    },
+    {
+      "id": "411c",
+      "idDoador": "1733805007578",
+      "nome": null,
+      "idOng": "2",
+      "valor": 15,
+      "data": "2024-12-10",
+      "mensagem": "teste2",
+      "status": "pendente"
+    },
+    {
+      "id": "e33d",
+      "idDoador": "1733805007578",
+      "nome": null,
+      "idOng": "3",
+      "valor": 43,
+      "data": "2024-12-10",
+      "mensagem": "teste",
+      "status": "pendente"
     }
   ],
   "donations": [
@@ -211,26 +202,40 @@
   "ongsRecomendadas": [
     {
       "id": "1",
-      "nome": "ONG Recomendada 1",
-      "descricao": "Descrição da ONG Recomendada 1. Pode conter detalhes adicionais.",
+      "nome": "Ong Raio de Luz",
+      "descricao": "Há 25 anos transformando VIDAS",
       "imagem": "../../assets/img/equipeOrg.jpg",
-      "link": "#"
+      "link": "https://www.instagram.com/ongraiodeluz_oficial/profilecard/?igsh=cWdsa2Rmc2Q0cGp5"
     },
     {
       "id": "2",
-      "nome": "ONG Recomendada 2",
-      "descricao": "Descrição da ONG Recomendada 2. Pode conter detalhes adicionais.",
+      "nome": "Ong Amigos de Minas",
+      "descricao": "Ações que favoreçam o desenvolvimento social.",
       "imagem": "../../assets/img/ong2.jpg",
-      "link": "#"
+      "link": "https://www.instagram.com/amaresimples_ong/profilecard/?igsh=MXZhamFxaW85bHFydQ=="
     },
     {
       "id": "3",
-      "nome": "ONG Recomendada 3",
-      "descricao": "Descrição da ONG Recomendada 3. Pode conter detalhes adicionais.",
+      "nome": "Amar é Simples ONG",
+      "descricao": "Vem amar, se torne voluntario!",
       "imagem": "https://via.placeholder.com/300x200",
-      "link": "#"
+      "link": "https://www.instagram.com/ongamigosdeminas/profilecard/?igsh=Y21mN2sxamM0cDQ4"
     }
   ],
+  "premios": [
+    {
+      "valor": 500,
+      "descricao": "Premio por doação excepcional"
+    },
+    {
+      "valor": 300,
+      "descricao": "Premio por contribuição contínua"
+    }
+  ],
+  "impacto": {
+    "mensagem": "Com sua ajuda, conseguimos financiar 200 livros!",
+    "percentual": 75
+  },
   "ongsContribuidas": [
     {
       "id": "1",
@@ -249,6 +254,19 @@
       "nome": "ONG Contribuída 3",
       "descricao": "Texto de exemplo para a ONG Contribuída 3. Pode conter informações adicionais sobre o conteúdo.",
       "imagem": "https://via.placeholder.com/300x200"
+    }
+  ],
+  "feedback": [
+    {
+      "ongId": "1",
+      "avaliacao": "boa",
+      "comentario": "Gostei bastante da experiência."
+    },
+    {
+      "id": "bd94",
+      "ongId": "2",
+      "avaliacao": "excelente",
+      "comentario": "teste"
     }
   ],
   "midias": {
@@ -290,38 +308,23 @@
     },
     {
       "id": "2",
-      "ong": "ONG 2",
-      "feedback": "Saber que minha doação está ajudando a mudar vidas é o que mais me motiva a contribuir."
+      "ong": "Projeto Esperança",
+      "feedback": "A sua contribuição está fazendo uma diferença significativa. Graças à sua doação, conseguimos avançar em várias iniciativas importantes para a comunidade. Estamos muito gratos pelo seu apoio!"
     },
     {
       "id": "3",
-      "ong": "ONG 3",
-      "feedback": "A comunicação da ONG foi excelente. Recebi um e-mail de agradecimento logo após minha doação, o que foi muito apreciado."
+      "ong": "Rede de Cidadania",
+      "feedback": "A sua doação teve um impacto direto e positivo. Graças a você, conseguimos avançar com nossos projetos educacionais, proporcionando um futuro melhor para as crianças. Agradecemos profundamente!"
     },
     {
       "id": "4",
-      "ong": "ONG 4",
-      "feedback": "A minha experiência ao doar foi muito positiva. A plataforma é fácil de usar e me senti seguro durante todo o processo."
+      "ong": "Mãos Solidárias",
+      "feedback": "A sua doação foi essencial para a continuidade do nosso trabalho. Com seu apoio, conseguimos levar mais recursos para os nossos projetos de assistência social. Agradecemos muito por acreditar em nossa causa!"
     },
     {
       "id": "5",
-      "ong": "ONG 5",
-      "feedback": "Agradeço a transparência nas informações sobre para onde minha doação foi destinada. Isso me faz sentir mais confiante."
-    },
-    {
-      "id": "1",
-      "ong": "ONG Desconhecida",
-      "feedback": "teste"
-    },
-    {
-      "id": "1",
-      "ong": "ONG Desconhecida",
-      "feedback": "teste2"
-    },
-    {
-      "id": "2",
-      "ong": "ONG Desconhecida",
-      "feedback": "teste 2"
+      "ong": "Caminho da Esperança",
+      "feedback": "Sua doação foi fundamental para que pudéssemos alcançar novos objetivos. Graças a você, conseguimos expandir nossas ações e atender mais pessoas em situação de vulnerabilidade. Muito obrigado pelo seu apoio contínuo!"
     }
   ],
   "historico": [
@@ -347,39 +350,24 @@
   "projects": [
     {
       "id": "1",
-      "image": "/assets/img/projeto2.jpg",
-      "title": "Projeto Social",
+      "image": "/assets/img/casadoslivros.jpeg",
+      "title": "Casa dos Livros",
       "category": "Projeto Social",
-      "link": "portfolio-details.html"
+      "link": "/modulos/login/login.html"
     },
     {
       "id": "2",
-      "image": "/assets/img/ong1.jpg",
-      "title": "ONG",
-      "category": "Social",
-      "link": "portfolio-details.html"
+      "image": "/assets/img/ongoportunidade.jpeg",
+      "title": "Ong Oportunidade",
+      "category": "ONG",
+      "link": "/modulos/login/login.html"
     },
     {
       "id": "3",
       "image": "/assets/img/voluntariado.jpg",
       "title": "Voluntariado",
-      "category": "Social",
-      "link": "portfolio-details.html"
-    },
-    {
-      "id": "0e25",
-      "title": "Teste projeto",
-      "description": "teste",
-      "category": "Meio Ambiente",
-      "goal": 10000,
-      "image": "/assets/img/voluntariado.jpg",
-      "projectLeader": "teste",
-      "contact": "teste@gmail.com",
-      "location": "Belo Horizonte, Minas Gerais",
-      "startDate": "2024-12-08",
-      "endDate": "2024-12-18",
-      "ngoId": 1
-
+      "category": "Voluntariado",
+      "link": "/modulos/login/login.html"
     }
   ],
   "posts": [
@@ -414,37 +402,12 @@
       "id": "0ef8"
     }
   ],
-  "favorites": [
-    {
-      "id": "7d90",
-      "name": "Criança Esperança",
-      "description": "O Programa Criança Esperança, uma iniciativa da Rede Globo em parceria com a UNESCO desde 2004, compreende uma mobilização social que busca transformar o futuro de crianças e jovens em situação de vulnerabilidade social.",
-      "avaliacoes": []
-    },
-    {
-      "id": "cb43",
-      "name": "CIEDS",
-      "description": "O CIEDS (Centro Integrado de Estudos e Programas de Desenvolvimento Sustentável) é uma organização social sem fins lucrativos que desenvolve projetos e programas para o desenvolvimento social.",
-      "avaliacoes": []
-    }
-  ],
   "messages": [
     {
       "name": "a",
       "email": "a@gmail.com",
       "subject": "a",
       "message": "a",
-      "id": "1"
-    }
-  ],
-  "perfilDoador": [
-    {
-      "nome": "David Cristhian ",
-      "sobre": "Sou um entusiasta de tecnologia com uma paixão por design e criatividade. Minha formação em Técnico em Desenvolvimento de Sistemas, juntamente com minha atual graduação em Ciência da Computação, reflete meu compromisso com o aprendizado contínuo e a inovação no mundo digital.",
-      "localizacao": "Belo Horizonte, MG",
-      "telefone": "31999999999",
-      "email": "s@gmail.com",
-      "causa": "8",
       "id": "1"
     }
   ]

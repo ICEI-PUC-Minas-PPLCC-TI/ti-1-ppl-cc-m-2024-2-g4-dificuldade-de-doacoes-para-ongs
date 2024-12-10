@@ -14,7 +14,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
 
         if (donor) {
             alert('Login realizado com sucesso como doador!');
-            localStorage.setItem('donorId', donor.id);
+            localStorage.setItem('donorId', donor.id); // Salva o ID do doador no localStorage
             window.location.href = '../Tela_Painel_Doador_por_Samuel_Mascarenhas/painelDoador.html';
             return;
         } else {
@@ -29,7 +29,8 @@ document.getElementById('loginForm').addEventListener('submit', async function (
 
         if (ong) {
             alert('Login realizado com sucesso como ONG!');
-            window.location.href = '../Tela_Painel_Ongs_David_Cristhian_Vieira_Fonseca/telaPainel.html';
+            localStorage.setItem('loggedOngId', ong.id); // Salva o ID da ONG no localStorage
+            window.location.href = '../Painel_Ong/index.html'; // Redireciona para o painel da ONG
             return;
         }
 

@@ -95,10 +95,25 @@
         <textarea class="label-textarea" id="description" name="description" placeholder="Descrição do projeto social"
           required></textarea>
 
-        <span class="input-span-register">
-          <input type="text" id="category" name="category" placeholder="Nicho/Categoria" required>
-          <input type="text" id="address" name="address" placeholder="Endereço" required>
-        </span>
+      
+           <!-- Nicho/Categoria -->
+           <div class="mb-3">
+            <label for="orgCategory" class="form-label">Nicho/Categoria</label>
+            <select id="orgCategory" i class="form-select" required>
+                <option value="" disabled selected>Selecione uma categoria</option>
+                <option value="Educação">Educação</option>
+                <option value="Saúde">Saúde</option>
+                <option value="Meio Ambiente">Meio Ambiente</option>
+                <option value="Direitos Humanos">Direitos Humanos</option>
+                <option value="Animais">Animais</option>
+                <option value="Outros">Outros</option>
+            </select>
+        </div>
+        
+         
+      
+        <span class="input-span-register"><input type="text" id="address" name="address" placeholder="Endereço" required></span>
+        
 
         <span class="input-span-register">
           <input type="password" id="password" name="password" placeholder="Senha" required>

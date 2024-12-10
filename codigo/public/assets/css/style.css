@@ -1517,6 +1517,9 @@ section,
   transition: 0.3s;
   position: relative;
   z-index: 1;
+  width: 100%;
+  height: auto; /* A imagem vai manter as proporções */
+  object-fit: cover; /* Garantir que a imagem cubra o espaço sem distorcer */
 }
 
 .portfolio .portfolio-content .portfolio-info {

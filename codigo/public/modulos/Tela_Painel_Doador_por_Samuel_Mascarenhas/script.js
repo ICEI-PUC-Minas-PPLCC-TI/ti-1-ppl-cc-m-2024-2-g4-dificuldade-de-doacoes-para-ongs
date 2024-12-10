@@ -35,39 +35,29 @@ async function carregarInformacoes() {
     }
 
     try {
+        // Requisição para a API para buscar as informações do usuário logado, incluindo o histórico de doações
         const response = await fetch(`${API_URL}/${id}`);
         if (!response.ok) throw new Error("Erro ao carregar informações do doador.");
 
         const data = await response.json();
 
         // Atualizar painel de exibição
-        document.getElementById("nome").textContent = data.name || "Nome não disponível";
-        document.getElementById("desc").textContent = data.interests || "Descrição não disponível";
-        document.getElementById("loc").textContent = data.address || "Localização não disponível";
-        document.getElementById("total-doado").textContent = `R$ ${data.totalDoado || 0}`;
-        document.getElementById("doacoes-recorrentes").textContent = `R$ ${data.doacoesRecorrentes || 0}/mês`;
-        document.getElementById("nivel-badge").textContent = data.nivel || "Iniciante";
-        document.getElementById("nivel-desc").textContent = `Você está no nível ${data.nivel || "Iniciante"}. Continue contribuindo para subir de nível.`;
-
-        // Atualizar prêmios
-        const premiosContainer = document.getElementById("premios");
-        if (premiosContainer) {
-            premiosContainer.innerHTML = "";
-            (data.premios || []).forEach(premio => {
-                const premioDiv = document.createElement("div");
-                premioDiv.classList.add("premio");
-                premioDiv.innerHTML = `
-                    <h4>R$ ${premio.valor}</h4>
-                    <p>${premio.descricao}</p>
-                `;
-                premiosContainer.appendChild(premioDiv);
-            });
+        const nomeElement = document.getElementById("nome");
+        if (nomeElement) {
+            nomeElement.textContent = data.name || "Nome não disponível";
+        } else {
+            console.warn('Elemento "nome" não encontrado!');
         }
 
-        // Atualizar impacto
-        document.getElementById("impacto-msg").textContent = data.impacto?.mensagem || "Sem impacto disponível.";
-        document.getElementById("progresso-bar").value = data.impacto?.percentual || 0;
-        document.getElementById("progresso-desc").textContent = `Faltam ${100 - (data.impacto?.percentual || 0)}% para o próximo marco! Vamos lá!`;
+        const descElement = document.getElementById("desc");
+        if (descElement) {
+            descElement.textContent = data.interests || "Descrição não disponível";
+        }
+
+        const locElement = document.getElementById("loc");
+        if (locElement) {
+            locElement.textContent = data.address || "Localização não disponível";
+        }
 
         // Preencher o formulário de edição com as informações carregadas
         document.getElementById('name').value = data.name || "";
@@ -79,7 +69,57 @@ async function carregarInformacoes() {
 
         // Exibir imagem de perfil se houver
         if (data.profilePic) {
-            document.getElementById('profilePic').src = data.profilePic;
+            const profilePicElement = document.getElementById('profilePic');
+            if (profilePicElement) {
+                profilePicElement.src = data.profilePic;
+            }
+        }
+
+        // Verificar se 'historico' é um array e obter apenas o histórico do usuário logado
+        const historico = Array.isArray(data.historico) ? data.historico : [];
+        console.log("Histórico de Doações do Usuário:", historico);  // Log para verificar o histórico
+
+        // Limpar a lista de doações antes de adicionar as novas
+        const historicoListaElement = document.getElementById("historico-lista");
+        if (historicoListaElement) {
+            historicoListaElement.innerHTML = ''; // Limpar a lista
+        }
+
+        // Calcular o total doado e exibir cada doação na tabela
+        let totalDoado = 0;
+        historico.forEach(doacao => {
+            // Extraindo o valor de forma segura e convertendo para número
+            const valor = parseFloat(doacao.valor.replace("R$", "").replace(",", "."));
+            if (!isNaN(valor)) {
+                totalDoado += valor;
+            } else {
+                console.warn(`Valor inválido encontrado: ${doacao.valor}`);
+            }
+
+            // Criar uma nova linha para a tabela
+            const linha = document.createElement("tr");
+
+            // Criar e preencher as células para data, valor e projeto
+            const dataCell = document.createElement("td");
+            dataCell.textContent = doacao.data || "Data não disponível";
+            linha.appendChild(dataCell);
+
+            const valorCell = document.createElement("td");
+            valorCell.textContent = `R$ ${valor.toFixed(2)}`;
+            linha.appendChild(valorCell);
+
+            const projetoCell = document.createElement("td");
+            projetoCell.textContent = doacao.projeto || "Projeto não informado";
+            linha.appendChild(projetoCell);
+
+            // Adicionar a linha à tabela
+            historicoListaElement.appendChild(linha);
+        });
+
+        // Exibir o total doado
+        const totalDoadoElement = document.getElementById("total-doado");
+        if (totalDoadoElement) {
+            totalDoadoElement.textContent = `Total Doado: R$ ${totalDoado.toFixed(2)}`;
         }
 
     } catch (error) {
@@ -87,6 +127,77 @@ async function carregarInformacoes() {
         alert("Erro ao carregar informações do perfil.");
     }
 }
+
+
+
+
+// Carregar dados do db.json
+async function carregarDados() {
+    try {
+        // Fazendo a requisição para obter os dados do JSON
+        const response = await fetch('http://localhost:3001/');
+        if (!response.ok) {
+            throw new Error("Erro ao carregar dados: " + response.statusText);
+        }
+
+        const contentType = response.headers.get("Content-Type");
+        if (!contentType || !contentType.includes("application/json")) {
+            throw new Error("A resposta não é um JSON válido!");
+        }
+
+        const data = await response.json();
+
+        // Exibindo os prêmios dinamicamente no HTML
+        const premiosContainer = document.getElementById("premios");
+        if (premiosContainer) {
+            premiosContainer.innerHTML = ""; // Limpar conteúdo anterior
+
+            // Criar um card para cada prêmio no array
+            (data.premios || []).forEach(premio => {
+                const premioCard = document.createElement("div");
+                premioCard.classList.add("premio-card");
+
+                // Adicionando o conteúdo do prêmio ao card
+                premioCard.innerHTML = `
+                    <h4>R$ ${premio.valor}</h4>
+                    <p>${premio.descricao}</p>
+                `;
+
+                // Adicionando o card ao container de prêmios
+                premiosContainer.appendChild(premioCard);
+            });
+        }
+
+        // Exibindo o impacto dinâmicamente
+        const impactoContainer = document.querySelector(".impacto");
+        if (impactoContainer) {
+            impactoContainer.innerHTML = `
+                <p id="impacto-msg">${data.impacto.mensagem}</p>
+                <progress value="${data.impacto.percentual}" max="100" class="progresso" id="progresso-bar"></progress>
+                <p id="progresso-desc">${data.impacto.percentual}% do objetivo alcançado!</p>
+            `;
+        }
+    } catch (error) {
+        console.error("Erro ao carregar os dados:", error);
+    }
+}
+
+// Inicializa a página ao carregar
+document.addEventListener("DOMContentLoaded", function () {
+    carregarInformacoes();
+    carregarDados();
+
+    // Configurar modal de histórico
+    document.getElementById('abrir-modal').onclick = function () {
+        carregarHistorico();
+        document.getElementById('historicoModal').style.display = "block";
+    };
+
+    document.getElementById('fechar-modal').onclick = function () {
+        document.getElementById('historicoModal').style.display = "none";
+    };
+});
+
 
 
 // Função para salvar as informações editadas
@@ -133,58 +244,204 @@ async function salvarInformacoes() {
     }
 }
 
-// Inicializa a página ao carregar
-document.addEventListener("DOMContentLoaded", function () {
-    carregarInformacoes();
 
-    // Configurar modal de histórico
-    document.getElementById('abrir-modal').onclick = function () {
-        carregarHistorico();
-        document.getElementById('historicoModal').style.display = "block";
-    };
 
-    document.getElementById('fechar-modal').onclick = function () {
-        document.getElementById('historicoModal').style.display = "none";
-    };
-});
 
-// Função para carregar o histórico de doações
-async function carregarHistorico() {
-    const lista = document.getElementById('historico-lista');
-    lista.innerHTML = '';
 
-    try {
-        const response = await fetch(`${API_URL}/historico`);
-        if (!response.ok) throw new Error("Erro ao carregar histórico.");
-
-        const data = await response.json();
-
-        data.forEach(doacao => {
-            const linha = document.createElement('tr');
-            linha.innerHTML = `
-                <td>${doacao.data}</td>
-                <td>${doacao.valor}</td>
-                <td>${doacao.projeto}</td>
-            `;
-            lista.appendChild(linha);
-        });
-    } catch (error) {
-        console.error(error);
-        lista.innerHTML = '<tr><td colspan="3">Erro ao carregar o histórico.</td></tr>';
-    }
-}
 
 
 // -------------------
 
+document.addEventListener("DOMContentLoaded", function () {
+    const contribuidasCardsContainer = document.getElementById("contribuidas-cards-container");
 
-function enviarFeedback() {
-    const avaliacao = document.getElementById('avaliacao').value;
-    const comentario = document.getElementById('comentario-doador').value;
-    console.log(`Avaliação: ${avaliacao}`);
-    console.log(`Comentário: ${comentario}`);
-    // Aqui você pode enviar os dados para a API ou armazená-los conforme necessário
+    // Função para buscar e renderizar as ONGs contribuídas
+    function fetchAndRenderOngsContribuidas() {
+        fetch("http://localhost:3001/ongsContribuidas") // Endpoint do JSON Server
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Erro ao buscar ONGs contribuídas");
+                }
+                return response.json();
+            })
+            .then((ongsContribuidas) => {
+                contribuidasCardsContainer.innerHTML = ""; // Limpa o conteúdo existente
+
+                ongsContribuidas.forEach((ong) => {
+                    const cardHTML = `
+                        <div class="col-md-4 mb-4 d-flex justify-content-center">
+                            <div class="card">
+                                <img class="card-img-top" src="${ong.imagem}" alt="${ong.nome}">
+                                <div class="card-body">
+                                    <h5 class="card-title">${ong.nome}</h5>
+                                    <p class="card-text">${ong.descricao}</p>
+                                    <button class="btn-primary-4" onclick="abrirFormularioFeedback('${ong.id}')">Avaliar ONG</button>
+                                    <button class="btn-secondary-4" onclick="abrirFormularioDoacao('${ong.id}')">Doar Novamente</button>
+                                </div>
+                            </div>
+                        </div>`;
+                    contribuidasCardsContainer.innerHTML += cardHTML; // Adiciona o card ao contêiner
+                });
+            })
+            .catch((error) => console.error("Erro ao carregar ONGs contribuídas:", error));
+    }
+
+    // Função para abrir o formulário de doação
+    window.abrirFormularioDoacao = function(idOng) {
+        // Mostra o modal de doação
+        const modal = document.querySelector(".modal-doacao");
+        modal.style.display = "block";
+    
+        // Definir a ONG para a doação
+        document.getElementById("doar-novamente-btn").onclick = function () {
+            const valor = parseFloat(document.getElementById("valor-doacao").value);
+            const mensagem = document.getElementById("mensagem-doacao").value;
+    
+            if (isNaN(valor) || valor <= 0) {
+                alert("Por favor, insira um valor válido.");
+                return;
+            }
+    
+            if (!mensagem.trim()) {
+                alert("A mensagem é obrigatória.");
+                return;
+            }
+    
+            // Obter o ID do doador do localStorage
+            const doadorId = localStorage.getItem("donorId");
+            if (!doadorId) {
+                alert("Doador não encontrado.");
+                return;
+            }
+    
+            // Buscar o histórico de doações do doador
+            fetch(`http://localhost:3001/donors/${doadorId}`)
+                .then(response => response.json())
+                .then(doador => {
+                    const historicoAtualizado = [
+                        ...doador.historico,
+                        {
+                            data: new Date().toISOString().split('T')[0], // Data atual no formato YYYY-MM-DD
+                            valor: `R$ ${valor.toFixed(2)}`,
+                            projeto: `Doação para ONG ${idOng}`,
+                            id: generateUniqueId()
+                        }
+                    ];
+    
+                    // Atualizar o histórico do doador
+                    return fetch(`http://localhost:3001/donors/${doadorId}`, {
+                        method: 'PATCH',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            historico: historicoAtualizado
+                        })
+                    });
+                })
+                .then(() => {
+                    // Adicionar a doação à lista de doações
+                    return fetch("http://localhost:3001/doacoes", {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            idDoador: doadorId,
+                            nome: localStorage.getItem("donorName"),
+                            idOng: idOng,
+                            valor: valor,
+                            data: new Date().toISOString().split('T')[0],
+                            mensagem: mensagem,
+                            status: "pendente"
+                        })
+                    });
+                })
+                .then(() => {
+                    alert("Doação realizada com sucesso!");
+                    modal.style.display = "none"; // Fecha o modal após a doação ser registrada
+                    fetchAndRenderOngsContribuidas(); // Atualiza a lista de ONGs
+                    carregarHistorico(); // Atualiza o histórico de doações
+                })
+                .catch(error => {
+                    console.error("Erro ao processar a doação:", error);
+                    alert("Ocorreu um erro ao processar sua doação.");
+                });
+        }
+    };
+    
+    // Função para gerar um ID único para cada doação
+    function generateUniqueId() {
+        return Math.random().toString(36).substr(2, 9);
+    }
+    
+
+    // Função para fechar o modal de doação
+    document.querySelector(".close-doacao").onclick = function () {
+        const modal = document.querySelector(".modal-doacao");
+        modal.style.display = "none";
+    };
+
+    // Chama a função para buscar e renderizar as ONGs contribuídas
+    fetchAndRenderOngsContribuidas();
+});
+
+let ongSelecionadaId = null; // Variável para armazenar o ID da ONG selecionada
+
+// Função para abrir o formulário de feedback
+function abrirFormularioFeedback(ongId) {
+  ongSelecionadaId = ongId; // Salva o ID da ONG selecionada
+  const feedbackDiv = document.querySelector('.feedback');
+  feedbackDiv.style.display = 'block'; // Exibe o formulário de feedback
 }
+
+// Função para enviar o feedback
+function enviarFeedback() {
+  const avaliacao = document.getElementById('avaliacao').value;
+  const comentario = document.getElementById('comentario-doador').value;
+
+  if (!ongSelecionadaId) {
+    console.error("Erro: Nenhuma ONG selecionada.");
+    return;
+  }
+
+  // Dados do feedback
+  const feedback = {
+    ongId: ongSelecionadaId,
+    avaliacao,
+    comentario,
+  };
+
+  console.log("Feedback enviado:", feedback);
+
+  // Simulação de envio para a API
+  fetch(`http://localhost:3001/feedback`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(feedback),
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Erro ao enviar o feedback");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log("Feedback salvo com sucesso:", data);
+      fecharFormularioFeedback();
+    })
+    .catch((error) => {
+      console.error("Erro ao enviar o feedback:", error);
+    });
+}
+
+// Função para fechar o formulário
+function fecharFormularioFeedback() {
+  document.getElementById('FormFeedback').style.display = 'none';
+}
+
 
 
 // Função para abrir o modal
@@ -199,6 +456,7 @@ document.getElementById('fechar-modal').onclick = function () {
 
 
 // ------------------
+
 // Função para preencher o histórico de forma dinâmica
 async function carregarHistorico() {
     const lista = document.getElementById('historico-lista');
@@ -207,48 +465,48 @@ async function carregarHistorico() {
     lista.innerHTML = '';
 
     try {
-        // Fazendo a requisição ao endpoint correto
-        const response = await fetch('http://localhost:3001/historico');
+        // Fazendo a requisição ao endpoint correto para obter o histórico de doações
+        const response = await fetch('http://localhost:3001/doacoes');
         if (!response.ok) throw new Error(`Erro ao carregar dados: ${response.status} ${response.statusText}`);
 
         const data = await response.json();
 
         // Itera sobre os dados do histórico
-        data.forEach(doacao => {
+        for (const doacao of data) {
+            // Buscar o nome da ONG usando o idOng
+            const ongResponse = await fetch(`http://localhost:3001/ongs/${doacao.idOng}`);
+            
+            if (!ongResponse.ok) {
+                // Se a ONG não for encontrada, define um nome padrão
+                console.error(`Erro ao buscar ONG com id ${doacao.idOng}`);
+                var nomeOng = 'ONG não encontrada';
+            } else {
+                const ongData = await ongResponse.json();
+                nomeOng = ongData.orgName || 'Nome da ONG não disponível';
+            }
+
             const linha = document.createElement('tr');
             linha.innerHTML = `
                 <td>${doacao.data}</td>
-                <td>${doacao.valor}</td>
-                <td>${doacao.projeto}</td>
+                <td>R$ ${doacao.valor.toFixed(2)}</td>
+                <td>${nomeOng}</td>
             `;
             lista.appendChild(linha);
-        });
+        }
     } catch (error) {
         console.error('Erro ao carregar o histórico:', error);
         lista.innerHTML = '<tr><td colspan="3">Erro ao carregar o histórico</td></tr>';
     }
 }
 
+
+
+
 // 
 
-// Função para mostrar a div de feedback
-function mostrarFeedback() {
-    const feedbackDiv = document.querySelector('.feedback');
-    //feedbackDiv.style.display = 'block' || 'none'; // Exibe a div de feedback
 
 
-    // Alterna a visibilidade do formulário feedback
-    if (feedbackDiv.style.display === 'none' || feedbackDiv.style.display === '') {
-        feedbackDiv.style.display = 'block';  // Exibe o formulário
-    } else {
-        feedbackDiv.style.display = 'none';  // Oculta o formulário
-    }
-}
 
-// Função para fechar o formulário
-function fecharFormularioFeedback() {
-    document.getElementById('FormFeedback').style.display = 'none';  // Oculta o formulário
-}
 document.addEventListener("DOMContentLoaded", function () {
     const ongCardsContainer = document.getElementById("ong-cards-container");
 
@@ -323,44 +581,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fetchAndRenderOngsRecomendadas();
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const contribuidasCardsContainer = document.getElementById("contribuidas-cards-container");
 
-    // Função para buscar e renderizar as ONGs contribuídas
-    function fetchAndRenderOngsContribuidas() {
-        fetch("http://localhost:3001/ongsContribuidas") // Endpoint do JSON Server
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error("Erro ao buscar ONGs contribuídas");
-                }
-                return response.json();
-            })
-            .then((ongsContribuidas) => {
-                contribuidasCardsContainer.innerHTML = ""; // Limpa o conteúdo existente
-
-                ongsContribuidas.forEach((ong) => {
-                    const cardHTML = `
-                        <div class="col-md-4 mb-4 d-flex justify-content-center">
-                            <div class="card">
-                                <img class="card-img-top" src="${ong.imagem}" alt="${ong.nome}">
-                                <div class="card-body">
-                                    <h5 class="card-title">${ong.nome}</h5>
-                                    <p class="card-text">${ong.descricao}</p>
-                                    <a href="#FormFeedback">
-                                        <button type="button" class="btn btn-primary-2" onclick="mostrarFeedback()">Avaliar</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>`;
-                    contribuidasCardsContainer.innerHTML += cardHTML; // Adiciona o card ao contêiner
-                });
-            })
-            .catch((error) => console.error("Erro ao carregar ONGs contribuídas:", error));
-    }
-
-    // Chama a função para buscar e renderizar as ONGs contribuídas
-    fetchAndRenderOngsContribuidas();
-});
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -403,6 +624,12 @@ document.addEventListener("DOMContentLoaded", function () {
     fetchAndRenderMidias();
 });
 
+const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    slidesPerView: 1, // ajuste conforme necessário
+    slidesPerGroup: 1, // ajuste conforme necessário
+  });
+  
 
 document.addEventListener("DOMContentLoaded", function () {
     const feedbackContainer = document.getElementById("feedback-container");

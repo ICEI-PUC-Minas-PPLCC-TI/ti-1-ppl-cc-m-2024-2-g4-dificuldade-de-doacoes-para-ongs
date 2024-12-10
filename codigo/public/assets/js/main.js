@@ -279,7 +279,8 @@ fetch('http://localhost:3001/projects')
   .then(data => {
     console.log('Dados carregados:', data); // Verifique os dados no console
 
-    const projects = Array.isArray(data) ? data : []; // Verifique se data é um array
+    // Agora, 'data' já contém o array diretamente
+    const projects = Array.isArray(data) ? data : [];
 
     if (projects.length > 0) {
       const portfolioItemsContainer = document.getElementById('portfolio-items');
@@ -287,25 +288,40 @@ fetch('http://localhost:3001/projects')
       // Limpa o container antes de adicionar os novos cards
       portfolioItemsContainer.innerHTML = '';
 
+      // Define o mapeamento das categorias
+      const categoryMap = {
+        'Projeto Social': 'filter-app',
+        'Social': 'filter-app', // Mapeando 'Social' para 'filter-app'
+        'Voluntariado': 'filter-branding',
+        'ONG': 'filter-product', // Mapeando 'Meio Ambiente' para 'filter-product'
+      };
+
       projects.forEach(project => {
-        // Criação do card dinamicamente
-        const portfolioItem = document.createElement('div');
-        portfolioItem.classList.add('col-lg-4', 'col-md-6', 'portfolio-item', 'isotope-item', project.category);
+        // Obtenha a classe correta do filtro para a categoria
+        const filterClass = categoryMap[project.category] || ''; // Se não houver categoria, a classe será vazia
 
-        portfolioItem.innerHTML = `
-          <div class="portfolio-content h-100">
-            <a href="${project.image}" data-gallery="portfolio-gallery-app" class="glightbox">
-              <img src="${project.image}" class="img-fluid" alt="${project.title}">
-            </a>
-            <div class="portfolio-info">
-              <h4><a href="${project.link}" title="More Details">${project.title}</a></h4>
-              <a href="#">Read More</a>
+        if (filterClass) { // Só adicione a classe se ela não estiver vazia
+          // Criação do card dinamicamente
+          const portfolioItem = document.createElement('div');
+          portfolioItem.classList.add('col-lg-4', 'col-md-6', 'portfolio-item', 'isotope-item', filterClass);
+
+          portfolioItem.innerHTML = `
+            <div class="portfolio-content h-100">
+              <a href="${project.image}" data-gallery="portfolio-gallery-app" class="glightbox">
+                <img src="${project.image}" class="img-fluid" alt="${project.title}">
+              </a>
+              <div class="portfolio-info">
+                <h4><a href="${project.link}" title="More Details">${project.title}</a></h4>
+               
+              </div>
             </div>
-          </div>
-        `;
+          `;
 
-        // Adicionando o item ao container de portfolio
-        portfolioItemsContainer.appendChild(portfolioItem);
+          // Adicionando o item ao container de portfolio
+          portfolioItemsContainer.appendChild(portfolioItem);
+        } else {
+          console.warn(`Categoria não mapeada para o projeto "${project.title}". A classe não será adicionada.`);
+        }
       });
 
       // Inicializa o Isotope para aplicar o layout e filtro
@@ -337,7 +353,6 @@ fetch('http://localhost:3001/projects')
   .catch(error => {
     console.error('Erro ao carregar os dados do db.json:', error);
   });
-
 
 
 // ****

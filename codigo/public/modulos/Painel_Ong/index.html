@@ -99,7 +99,7 @@
                 <!-- Conteúdo das Abas -->
                 <div id="publishedProjects" class="tab-content active">
                     <h3>Projetos</h3>
-                    <ul id="publishedProjectsContainer"></ul> <!-- Altere o ID para publishedProjectsContainer -->
+                    <ul id="publishedProjectsContainer"></ul> 
                 </div>
                 <div id="createProjects" class="tab-content">
                     <h3>Criar Projetos</h3>
@@ -202,7 +202,7 @@
                     <form id="updateProfileForm">
 
                         <!-- Campo Oculto para o ID da ONG -->
-                        <input type="hidden" id="orgId" value="<!-- ID da ONG será inserido aqui dinamicamente -->">
+                        <input type="hidden" id="orgId">
                     
                         <!-- Nome da ONG -->
                         <div class="mb-3">
@@ -219,7 +219,7 @@
                         <!-- Redes Sociais -->
                         <div class="mb-3">
                             <label for="orgSocialMedia" class="form-label">Redes Sociais</label>
-                            <input type="url" id="orgSocialMedia" class="form-control" placeholder="URL do perfil (Ex: https://instagram.com/suaong)">
+                            <input type="text" id="orgSocialMedia" class="form-control" placeholder="URL do perfil (Ex: https://instagram.com/suaong)">
                         </div>
                     
                         <!-- Nicho/Categoria -->
@@ -245,7 +245,7 @@
                         <!-- Número de Contato -->
                         <div class="mb-3">
                             <label for="orgPhone" class="form-label">Número de Contato</label>
-                            <input type="tel" id="orgPhone" class="form-control" placeholder="(XX) XXXXX-XXXX" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
+                            <input type="text" id="orgPhone" class="form-control" placeholder="(XX) XXXXX-XXXX" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
                         </div>
                     
                         <!-- E-mail para Contato -->

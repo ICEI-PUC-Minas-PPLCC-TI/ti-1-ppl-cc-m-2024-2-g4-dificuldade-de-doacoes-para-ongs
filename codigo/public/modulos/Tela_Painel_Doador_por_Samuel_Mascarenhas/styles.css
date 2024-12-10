@@ -903,10 +903,35 @@ h6 {
     transition: all ease-in-out .3s;
 }
 
-.btn-primary-2:hover {
+.btn-primary-2:hover, .btn-primary-3:hover {
     background-color: #008374;
     transition: all ease-in-out .3s;
     color: #fff;
+}
+.btn-primary-3 {
+    background-color: #01433c;
+    border: none;
+    width: 50%;
+    color: #fff;
+    padding: 10px;
+    transition: all ease-in-out .3s;
+}
+.btn-primary-4{
+    background-color: #008374;
+    border: none;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    transition: all ease-in-out .3s;
+}
+.btn-secondary-4 {
+    margin-top: 20px;
+    background-color: #00b6a1;
+    border: none;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    transition: all ease-in-out .3s;
 }
 
 .card {
@@ -1149,11 +1174,65 @@ h6 {
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+.btn2 {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #008374;
+    color: white;
+    text-decoration: none;
+
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover, .btn2:hover {
     background-color: #007BB5;
     color: #fff;
 }
+/* Modal oculto por padrão */
+.modal-doacao {
+    display: none; /* Impede que o modal apareça ao recarregar a página */
 
+}
+
+.modal-content-doacao {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+.header-doar-modal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#doar-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+#doar-form label{
+    font-weight: 700px;
+    color: #008374;
+    text-align: left;
+}
+#doar-form input, textarea{
+    width: 100%;
+    border: solid 1px #01433c49;
+    padding: 8px;
+    border-radius: 8px;
+}
+.close-doacao {
+    font-size: 35px;
+    
+    cursor: pointer;
+}
+.close-doacao:hover{
+    color: #008374;
+}
 
 /* Feedback do Doador */
 .feedback {
