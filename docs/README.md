@@ -324,10 +324,6 @@ Relação de ferramentas empregadas pelo grupo durante o projeto.
 | Protótipo Interativo        | Trello     | [trello](https://trello.com/b/3KU3k8bd/trabalho-interdisciplinar-g4)   |
 |                             |            |                                                    |
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Liste as ferramentas empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível. Inclua itens como: (1) Editor de código, (2) )ferramentas de comunicação, (3) )ferramentas de diagramação, (4) )plataformas de hospedagem, entre outras.
-
 ## Gerenciamento do Projeto
 
 Divisão de papéis no grupo e apresentação da estrutura da ferramenta de controle de tarefas (Kanban).
@@ -357,12 +353,6 @@ Divisão de papéis no grupo e apresentação da estrutura da ferramenta de cont
 O vídeo a seguir traz uma apresentação do problema que a equipe está tratando e a proposta de solução. ⚠️ EXEMPLO ⚠️
 
 [![Vídeo do projeto](images/video.png)](https://www.youtube.com/embed/70gGoFyGeqQ)
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> O video de apresentação é voltado para que o público externo possa conhecer a solução. O formato é livre, sendo importante que seja apresentado o problema e a solução numa linguagem descomplicada e direta.
->
-> Inclua um link para o vídeo do projeto.
 
 ## Funcionalidades
 
