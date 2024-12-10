@@ -391,36 +391,408 @@ Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
 
 Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.Info
 
-##### Estrutura de Dados - Contatos   ⚠️ EXEMPLO ⚠️
+##### Estrutura de Dados - Ongs 
 
-Contatos da aplicação
+Ongs da aplicação
 
 ```json
   {
-    "id": 1,
-    "nome": "Leanne Graham",
-    "cidade": "Belo Horizonte",
-    "categoria": "amigos",
-    "email": "Sincere@april.biz",
-    "telefone": "1-770-736-8031",
-    "website": "hildegard.org"
-  }
-  
+      "id": "c33e",
+      "orgName": "ONG 2",
+      "description": "h",
+      "socialMedia": "@ong",
+      "category": "Saúde",
+      "address": "hg",
+      "phone": "31 99999-9999",
+      "email": "ongteste@gmail.com"
+    },
+    {
+      "id": "1733828075374",
+      "orgName": "Ong ajudar",
+      "phone": "31999999999",
+      "email": "ajudarong@gmail.com",
+      "socialMedia": "@ajudarong",
+      "description": "ong para ajudar pessoas.",
+      "category": "Direitos Humanos",
+      "address": "Belo Horizonte",
+      "password": "minhasenha"
+    }
 ```
 
-##### Estrutura de Dados - Usuários  ⚠️ EXEMPLO ⚠️
+##### Estrutura de Dados - Ongs Favoritas  
 
-Registro dos usuários do sistema utilizados para login e para o perfil do sistema
+Modelo de Registro das Ongs favoritas do sistema utilizados para Ilustrar as Ongs que o usuário colocou como favoritas.
 
 ```json
-  {
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    email: "admin@abc.com",
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    login: "admin",
-    nome: "Administrador do Sistema",
-    senha: "123"
-  }
+  "ongsFavoritas": [
+    {
+      "id": "1",
+      "nome": "Casa dos Livros",
+      "descricao": "Cultura, educação, lazer e arte. Vem, a casa é sua!",
+      "imagem": "../../assets/img/casadoslivros.jpeg",
+      "link": "https://www.instagram.com/casa.doslivros/profilecard/?igsh=MXZvaDMzMHVld3ZpdA=="
+    },
+    {
+      "id": "2",
+      "nome": "Ong Oportunidade",
+      "descricao": "Cursos gratuitos para gerar Empregos.",
+      "imagem": "../../assets/img/ongoportunidade.jpeg",
+      "link": "https://www.instagram.com/ongoportunidade/profilecard/?igsh=MTZ6OWw0c3UxaXNjYg=="
+    },
+    {
+      "id": "3",
+      "nome": "Projeto Rumo Certo",
+      "descricao": "Cultura, Esporte, Educação & Saúde",
+      "imagem": "https://via.placeholder.com/300x200",
+      "link": "https://www.instagram.com/projetorumocerto/profilecard/?igsh=aGVnOWN3YzdhMW9z"
+    }
+  ],
+```
+
+##### Estrutura de Dados - Doações 
+
+Modelo de doações do sistema utilizados para ilustrar a estrutura de doações que um usuário doador irá enviar quando realizar uma doação.
+
+```json
+  "doacoes": [
+    {
+      "id": "1",
+      "idDoador": "98fb",
+      "nome": "Samuell",
+      "idOng": "c33e",
+      "valor": 50,
+      "data": "2024-12-01",
+      "mensagem": "Espero que ajude no projeto.",
+      "status": "concluída"
+    },
+    {
+      "id": "2",
+      "idDoador": "b291",
+      "nome": "Samuel",
+      "idOng": "199f",
+      "valor": 100,
+      "data": "2024-11-30",
+      "mensagem": "Continuem com o ótimo trabalho.",
+      "status": "concluída"
+    },
+    {
+      "id": "cc73",
+      "idDoador": "1733805007578",
+      "nome": null,
+      "idOng": "3",
+      "valor": 13,
+      "data": "2024-12-10",
+      "mensagem": "Excelente causa!",
+      "status": "pendente"
+    },
+    {
+      "id": "411c",
+      "idDoador": "1733805007578",
+      "nome": null,
+      "idOng": "2",
+      "valor": 15,
+      "data": "2024-12-10",
+      "mensagem": "Continuem",
+      "status": "pendente"
+    }
+  ],
+```
+
+##### Estrutura de Dados - Donations 
+
+Modelo de vínculo (Associação) de doações do sistema com Ongs cadastradas utilizados para ilustrar a estrutura de doações com vínculo.
+
+```json
+  "donations": [
+    {
+      "id": "1",
+      "doador": "João Silva",
+      "valor": 150,
+      "ong": "ONG A",
+      "utilizacao": "Compra de materiais escolares",
+      "data": "2024-12-01"
+    },
+    {
+      "id": "2",
+      "doador": "Maria Oliveira",
+      "valor": 200,
+      "ong": "ONG B",
+      "utilizacao": "Alimentação para animais",
+      "data": "2024-12-02"
+    }
+  ],
+```
+
+##### Estrutura de Dados - Ongs Recomendadas
+
+Modelo de recomendação Ongs para usuários.
+
+```json
+  "ongsRecomendadas": [
+    {
+      "id": "1",
+      "nome": "Ong Raio de Luz",
+      "descricao": "Há 25 anos transformando VIDAS",
+      "imagem": "../../assets/img/equipeOrg.jpg",
+      "link": "https://www.instagram.com/ongraiodeluz_oficial/profilecard/?igsh=cWdsa2Rmc2Q0cGp5"
+    },
+    {
+      "id": "2",
+      "nome": "Ong Amigos de Minas",
+      "descricao": "Ações que favoreçam o desenvolvimento social.",
+      "imagem": "../../assets/img/ong2.jpg",
+      "link": "https://www.instagram.com/amaresimples_ong/profilecard/?igsh=MXZhamFxaW85bHFydQ=="
+    },
+    {
+      "id": "3",
+      "nome": "Amar é Simples ONG",
+      "descricao": "Vem amar, se torne voluntario!",
+      "imagem": "https://via.placeholder.com/300x200",
+      "link": "https://www.instagram.com/ongamigosdeminas/profilecard/?igsh=Y21mN2sxamM0cDQ4"
+    }
+  ],
+```
+
+##### Estrutura de Dados - Prêmios
+
+Modelo de recompensa gerado por doações feitas pelo doador.
+
+```json
+  "premios": [
+    {
+      "valor": 500,
+      "descricao": "Premio por doação excepcional",
+      "id": "3541"
+    },
+    {
+      "valor": 300,
+      "descricao": "Premio por contribuição contínua",
+      "id": "24ca"
+    }
+  ],
+```
+
+##### Estrutura de Dados - Impacto
+
+Modelo de mensagem de Ong para doador.
+
+```json
+  "impacto": {
+    "mensagem": "Com sua ajuda, conseguimos financiar 200 livros!",
+    "percentual": 75
+  },
+```
+
+##### Estrutura de Dados - Feedback
+
+Modelo de mensagem feedback relacionada ao doador.
+
+```json
+  "feedback": [
+    {
+      "ongId": "1",
+      "avaliacao": "boa",
+      "comentario": "Gostei bastante da experiência.",
+      "id": "2e1b"
+    },
+    {
+      "id": "bd94",
+      "ongId": "2",
+      "avaliacao": "excelente",
+      "comentario": "teste"
+    },
+    {
+      "id": "8f62",
+      "ongId": "1",
+      "avaliacao": "excelente",
+      "comentario": "teste"
+    },
+    {
+      "id": "6a77",
+      "ongId": "1",
+      "avaliacao": "regular",
+      "comentario": "teste"
+    },
+    {
+      "id": "a8f3",
+      "ongId": "1",
+      "avaliacao": "boa",
+      "comentario": "testee"
+    }
+  ],
+```
+
+##### Estrutura de Dados - Mídias
+
+Modelo de mídias para imagens e vídeos.
+
+```json
+  "midias": {
+    "fotos": [
+      {
+        "id": 1,
+        "src": "../../assets/img/ong1.jpg",
+        "alt": "Foto do Projeto 1"
+      },
+      {
+        "id": 2,
+        "src": "../../assets/img/ong2.jpg",
+        "alt": "Foto do Projeto 2"
+      },
+      {
+        "id": 3,
+        "src": "../../assets/img/ong3.jpg",
+        "alt": "Foto do Projeto 3"
+      }
+    ],
+    "videos": [
+      {
+        "id": 1,
+        "src": "../../assets/videos/video1.mp4",
+        "type": "video/mp4"
+      },
+      {
+        "id": 2,
+        "src": "../../assets/videos/video2.mp4",
+        "type": "video/mp4"
+      }
+    ]
+  },
+```
+
+##### Estrutura de Dados - Feedbacks
+
+Modelo de feedbacks relacionados a Ongs para doadores.
+
+```json
+  "feedbacks": [
+    {
+      "id": "1",
+      "ong": "Casa dos Livros",
+      "feedback": "Agradecemos imensamente a sua contribuição para o nosso projeto. Com sua doação, conseguimos comprar materiais educativos para as crianças, que já estão utilizando no nosso novo curso. Continuamos precisando de sua ajuda para expandir ainda mais o projeto. Muito obrigado!"
+    },
+    {
+      "id": "2",
+      "ong": "Projeto Esperança",
+      "feedback": "A sua contribuição está fazendo uma diferença significativa. Graças à sua doação, conseguimos avançar em várias iniciativas importantes para a comunidade. Estamos muito gratos pelo seu apoio!"
+    },
+    {
+      "id": "3",
+      "ong": "Rede de Cidadania",
+      "feedback": "A sua doação teve um impacto direto e positivo. Graças a você, conseguimos avançar com nossos projetos educacionais, proporcionando um futuro melhor para as crianças. Agradecemos profundamente!"
+    },
+    {
+      "id": "4",
+      "ong": "Mãos Solidárias",
+      "feedback": "A sua doação foi essencial para a continuidade do nosso trabalho. Com seu apoio, conseguimos levar mais recursos para os nossos projetos de assistência social. Agradecemos muito por acreditar em nossa causa!"
+    },
+    {
+      "id": "5",
+      "ong": "Caminho da Esperança",
+      "feedback": "Sua doação foi fundamental para que pudéssemos alcançar novos objetivos. Graças a você, conseguimos expandir nossas ações e atender mais pessoas em situação de vulnerabilidade. Muito obrigado pelo seu apoio contínuo!"
+    },
+    {
+      "id": "1",
+      "ong": "ONG Desconhecida",
+      "feedback": "obrigado"
+    }
+  ],
+```
+
+##### Estrutura de Dados - Histórico
+
+Modelo de histórico de doações.
+
+```json
+  "historico": [
+    {
+      "data": "2024-10-01",
+      "valor": "R$ 50,00",
+      "projeto": "Projeto A",
+      "id": "903d"
+    },
+    {
+      "data": "2024-09-15",
+      "valor": "R$ 100,00",
+      "projeto": "Projeto B",
+      "id": "5846"
+    },
+    {
+      "data": "2024-08-20",
+      "valor": "R$ 30,00",
+      "projeto": "Projeto C",
+      "id": "efcc"
+    }
+  ],
+```
+
+##### Estrutura de Dados - Projetos
+
+Modelo de criação de projetos.
+
+```json
+  "projects": [
+    {
+      "id": "1",
+      "image": "/assets/img/casadoslivros.jpeg",
+      "title": "Casa dos Livros",
+      "category": "Projeto Social",
+      "link": "/modulos/login/login.html"
+    },
+    {
+      "id": "2",
+      "image": "/assets/img/ongoportunidade.jpeg",
+      "title": "Ong Oportunidade",
+      "category": "ONG",
+      "link": "/modulos/login/login.html"
+    },
+    {
+      "id": "3",
+      "image": "/assets/img/voluntariado.jpg",
+      "title": "Voluntariado",
+      "category": "Voluntariado",
+      "link": "/modulos/login/login.html"
+    }
+  ],
+```
+
+##### Estrutura de Dados - Posts
+
+Modelo de criação de posts na plataforma.
+
+```json
+  "posts": [
+    {
+      "category": "Politics",
+      "image": "assets/img/blog/closeup-diverse-people-joining-their-hands.jpg",
+      "title": "Em ano eleitoral, ONG referência em projetos vira bode expiatório de interesse político",
+      "url": "https://contato.org.br/em-ano-eleitoral-ong-referencia-em-projetos-vira-bode-expiatorio-de-interesse-politico/",
+      "author": "Ong Contato",
+      "authorImage": "assets/img/blog/logo-conta-to.png",
+      "date": "2024-08-08",
+      "id": "1191"
+    },
+    {
+      "category": "Education",
+      "image": "assets/img/blog/colorful-paper-chains-still-life.jpg",
+      "title": "Educação é caminho para transformação que queremos no Brasil",
+      "url": "https://www.amigosdobem.org/educacao-e-caminho-para-transformacao-que-queremos-no-brasil/",
+      "author": "Amigos do Bem",
+      "authorImage": "assets/img/blog/Novo-LOGO-01.webp",
+      "date": "2024-10-16",
+      "id": "0666"
+    },
+    {
+      "category": "News",
+      "image": "assets/img/blog/portrait-volunteers-who-organized-donations-charity.jpg",
+      "title": "A Importância das ONGs no Brasil: Promovendo Mudanças Sociais e Transformações Positivas",
+      "url": "https://blog.eporamor.org.br/a-importancia-das-ongs-no-brasil-promovendo-mudancas-sociais-e-transformacoes-positivas/",
+      "author": "ONG é por Amor",
+      "authorImage": "assets/img/blog/logo-blog-ong-e-por-amor.png",
+      "date": "2024-03-17",
+      "id": "0ef8"
+    }
+  ],
 ```
 
 > ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
