@@ -352,7 +352,8 @@ Divisão de papéis no grupo e apresentação da estrutura da ferramenta de cont
 
 O vídeo a seguir traz uma apresentação do problema que a equipe está tratando e a proposta de solução. ⚠️ EXEMPLO ⚠️
 
-[![Vídeo do projeto](images/video.png)](https://www.youtube.com/embed/70gGoFyGeqQ)
+[![Vídeo do projeto](images/video.png)](https://youtu.be/wOqnaJuW0Vo?si=gxnemzLR2SJB8R90)
+
 
 ## Funcionalidades
 
