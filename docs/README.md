@@ -356,30 +356,284 @@ O vídeo a seguir traz uma apresentação do problema que a equipe está tratand
 
 ## Funcionalidades
 
-Esta seção apresenta as funcionalidades da solução.Info
+Esta seção apresenta as funcionalidades do Painel de Controle respectivo ao usuário do tipo "Doador"
 
-##### Funcionalidade 1 - Cadastro de Contatos ⚠️ EXEMPLO ⚠️
+##### Funcionalidade 1 - Gerenciamento de Perfil
 
-Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
+Permite a inclusão, leitura, alteração e exclusão de informações pré cadastradas
 
-* **Estrutura de dados:** [Contatos](#ti_ed_contatos)
+* **Estrutura de dados:** [Donors](#ti_ed_donors)
 * **Instruções de acesso:**
   * Abra o site e efetue o login
-  * Acesse o menu principal e escolha a opção Cadastros
-  * Em seguida, escolha a opção Contatos
+  * Após o site carregar seu perfil, clique no botão "Editar Informações"
+  * Em seguida, edite as informações que considerar pertinente
 * **Tela da funcionalidade**:
 
-![Tela de Funcionalidade](images/exemplo-funcionalidade.png)
+![Painel de Controle (Doador) - Perfil](https://github.com/user-attachments/assets/caeaed56-a6e1-4177-ab6b-471c81aa53ea)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários quanto aos administradores da solução.
->
-> Inclua, para cada funcionalidade, itens como: (1) titulos e descrição da funcionalidade; (2) Estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.
+![Painel de Controle (Doador) - Editar Perfil](https://github.com/user-attachments/assets/c0695861-20f7-43db-8736-2236e1b6073a)
+
+##### Funcionalidade 2 - Gerenciamento de Ongs Favoritas
+
+Permite a visualização da respectiva ong que selecionar e realizar doações imediatas
+
+* **Estrutura de dados:** [ongsFavoritas](#ti_ed_ongsFavoritas)
+* **Instruções de acesso:**
+  * Abra o site e efetue o login
+  * Após o site carregar seu perfil, vá ate a seção de "Ongs Favoritas"
+  * Em seguida, clique em "Ver detalhes" para acesso as perfis das respectivas ONG favoritada
+  * Ou, clique em "Doar" para realizar uma doação simples e objetiva.
+   
+* **Tela da funcionalidade**:
+  
+![Painel de Controle (Doador) - Ongs Favoritas](https://github.com/user-attachments/assets/084be224-3d24-4910-af3d-fdfa25a00a51)
+
+
+##### Funcionalidade 3 - Recomendações de Ongs
+
+Permite a visualização de Ongs e projetos sociais recomendadas
+
+* **Estrutura de dados:** [ongsRecomendadas](#ti_ed_ongsRecomendadas)
+* **Instruções de acesso:**
+  * Abra o site e efetue o login
+  * Após o site carregar seu perfil, vá ate a seção de "Recomendações"
+  * Em seguida, clique em "Ver detalhes" para acesso as perfis das respectivas ONG recomendadas
+
+   
+* **Tela da funcionalidade**:
+
+![Painel de Controle (Doador) - Recomendações de ONG](https://github.com/user-attachments/assets/a3ee8874-6b4b-47a4-8eb8-17671b2db92d)
+
+
+##### Funcionalidade 5 - Ongs em Destaques
+
+Permite a visualização de Ongs e projetos sociais em destaques
+
+* **Estrutura de dados:** [ongsDestaques](#ti_ed_ongsRecomendadas)
+* **Instruções de acesso:**
+  * Abra o site e efetue o login
+  * Após o site carregar seu perfil, vá ate a seção de "ONGs em destaque"
+  * Em seguida, clique em "Ver detalhes" para acesso as perfis das respectivas ONG em destaque
+
+   
+* **Tela da funcionalidade**:
+
+![Painel de Controle (Doador) - Destaques de Ongs](https://github.com/user-attachments/assets/13a4801a-496b-4f12-b835-127553eb48ac)
+
+
+##### Funcionalidade 6 - Dashboard Doador
+
+Permite a visualização e acompanhar o impacto de suas doações e seu progresso, acessar relatorios de contribuições, acessar ongs e projetos que contribuiu anteriormente, realizar avaliações e encaminhar feedbacks, realizar doações de forma direta e objetiva, acompanhar midias em tempo real dos projetos que contribuiu, acompanhar progresso das causas especificas que teve seu apoio e visualizar os feedbacks de agradecimentos das ongs e projetos que teve seu apoio.
+
+* **Estrutura de dados:** [ongsContribuidas](#ti_ed_ngsContribuidas)
+* * * **Estrutura de dados:** [feedback](#ti_ed_feedback)
+  * * **Estrutura de dados:** [midias](#ti_ed_midias)
+    * * **Estrutura de dados:** [feedbacks](#ti_ed_feedbacks)
+      *  * * **Estrutura de dados:** [historico](#ti_ed_historico)
+           *  * * **Estrutura de dados:** [impacto](#ti_ed_impacto)
+          
+* **Instruções de acesso:**
+  * Abra o site e efetue o login
+  * Após o site carregar seu perfil, vá ate a seção de "Dashboard"
+  * Em seguida, visualize seu nivel dentro da plataforma e o impacto das suas doações
+  * Na seção "Resumo das Contribuições" clique em "Ver Historico Completo" e visualize seu historico de doações
+  * Em seguida, na seção de "Projetos e ONGs que Você Contribuiu" visualize as Ongs que você ja contribuiu, clique em "Avaliar" para realizar uma avaliação da respectiva ong selecionada, depois clique em "Doar Novamente" para realizar uma doação rapida e intuitiva
+  * Na seção "Fotos e Vídeos do Projeto" visualize as midias dos projetos que você apoia
+  * Na seção "Progresso do projeto" acompanhe e visualize o andamento de causas especificas que teve seu apoio
+  * Na seção "Feedback da ONG" acompanhe os agradecimentos e informações registradas pelas ONGs 
+
+   
+* **Tela da funcionalidade**:
+
+![Painel de Controle (Doador)  - Painel de Doador](https://github.com/user-attachments/assets/1658fe02-d3fa-44f6-9fa6-84e784f46f44)
+
+![Painel de Controle (Doador) - Painel de doador pt 2](https://github.com/user-attachments/assets/e38b25d7-7a06-4a1d-a17b-2f2f9968c097)
+
+![Painel de Controle (Doador) - Painel de doador pt 2 1](https://github.com/user-attachments/assets/35c6aceb-8a96-4c85-bbe0-c4eeba566c90)
+
+![Painel de Controle (Doador) - Painel de doador pt 3](https://github.com/user-attachments/assets/652d1db9-cd4f-47a7-b74a-aee821109b3f)
+
+![Painel de Controle (Doador) - Painel de doador pt 3 1](https://github.com/user-attachments/assets/e6b4b49d-c0dc-4337-8317-e180234dbf1d)
+
+![Painel de Controle (Doador) - Painel de doador pt 3 2](https://github.com/user-attachments/assets/f3d4da11-c7ae-40e2-9a05-963f90ba2f2c)
+
+![Painel de Controle (Doador) - Painel de doador pt 4](https://github.com/user-attachments/assets/f836032a-36f2-4bc8-b735-dad748e149d3)
+
+![Painel de Controle (Doador) - Painel de doador pt 5](https://github.com/user-attachments/assets/ce2eef45-d5db-42ad-8f2e-2bf63b963e1d)
+
+
+## Funcionalidades
+
+Esta seção apresenta as funcionalidades do Painel de Controle respectivo ao usuário do tipo "ONG"
+
+##### Funcionalidade 1 - Exibição de Projetos cadastrados
+
+Permite leitura e visualização dos projetos cadastrados 
+
+* **Estrutura de dados:** [projects](#ti_ed_projects)
+* **Instruções de acesso:**
+  * Abra o site e efetue o login
+  * Após o site carregar seu perfil, visualize cards de todos projetos já cadastrados
+ 
+* **Tela da funcionalidade**:
+
+![Painel de controle (ONG) - Projetos](https://github.com/user-attachments/assets/951f4869-4de0-469a-999d-ca40af6f7c79)
+
+
+##### Funcionalidade 2 - Criar Projetos
+
+Permite a inclusão de novos projetos
+
+* **Estrutura de dados:** [projects](#ti_ed_projects)
+* **Instruções de acesso:**
+  * Abra o site e efetue o login
+  * Após o site carregar seu perfil, clique na opção "Criar Projetos" presente no menu de navegação
+  * Em seguida, preencha todos os campos presentes para fins de registrar informações sobre o novo projeto, por fim clique no botão "Publicar Projeto"
+ 
+* **Tela da funcionalidade**:
+
+![Painel de controle (ONG) - Criar Projetos](https://github.com/user-attachments/assets/3cf576da-8838-4395-ae6e-bbb621c3edba)
+
+
+##### Funcionalidade 3 - Visualizar Doações e Enviar Feedbacks
+
+Permite a visualização das doações realizadas pelos doadores e encaminhar feedbacks para os mesmo
+
+* **Estrutura de dados:** [doacoes](#ti_ed_doacoes)
+ * **Estrutura de dados:** [feedbacks](#ti_ed_feedbacks)
+* **Instruções de acesso:**
+  * Abra o site e efetue o login
+  * Após o site carregar seu perfil, clique na opção "Visualizar" presente no menu de navegação
+  * Em seguida, visualize as doações realizadas
+  * Em seguida, selecione uma das doações e clique no botão "Enviar Mensagem" e escreva um feedback e encaminhe a mensagem que desejar
+ 
+* **Tela da funcionalidade**:
+
+![Painel de controle (ONG) - Visualizar Doações](https://github.com/user-attachments/assets/1b22a57e-1d70-4a6f-951e-f0520c755a04)
+
+
+##### Funcionalidade 4 - Visualizar Doadores
+
+Permite a visualização de dados de contatos dos doadores vinculado a ong
+
+* **Estrutura de dados:** [doners](#ti_ed_doners)
+
+* **Instruções de acesso:**
+  * Abra o site e efetue o login
+  * Após o site carregar seu perfil, clique na opção "Doadores" presente no menu de navegação
+  * Em seguida, visualize as informações dos respectivos doadores da Ong
+
+ 
+* **Tela da funcionalidade**:
+
+![Painel de controle (ONG) - Visualizar Doadores](https://github.com/user-attachments/assets/f0c76ff3-c68d-4b6c-88b3-5487204dd2db)
+
+
+##### Funcionalidade 5 - Postar Historias de Sucesso
+
+Permite postar historias de sucesso
+
+* **Estrutura de dados:** [stories](#ti_ed_stories)
+
+* **Instruções de acesso:**
+  * Abra o site e efetue o login
+  * Após o site carregar seu perfil, clique na opção "Postar Histórias" presente no menu de navegação
+  * Em seguida, preencha os campos necessários, posteriormente clique em "Postar"
+  * Caso deseje, clique em "Compartilhar no Facebook" ou "Compartilhar no Twitter" para realizar um post nas redes sociais
+
+ 
+* **Tela da funcionalidade**:
+
+![Painel de controle (ONG) - Postar Historias](https://github.com/user-attachments/assets/6e242279-9c24-449a-8315-6e7f6b3e98d5)
+
+
+##### Funcionalidade 6 - Gerar e baixar Relatórios
+
+Permite postar gerar relatórios e fazer o download em pdf
+
+* **Estrutura de dados:** [donations](#ti_ed_donations)
+
+* **Instruções de acesso:**
+  * Abra o site e efetue o login
+  * Após o site carregar seu perfil, clique na opção "Relatórios" presente no menu de navegação
+  * Em seguida, clique em "Gerar Relatório", para gerar e visualizar relatorios
+  * Em seguida, clique em "Baixar Relatório em PDF"
+
+ 
+* **Tela da funcionalidade**:
+
+![Painel de controle (ONG) - Relatorios de Impacto](https://github.com/user-attachments/assets/5d0123db-b49d-483a-86f8-1b9170ce0055)
+
+
+##### Funcionalidade 6 -  Gerenciar e editar Perfil
+
+Permite a inclusão, leitura, alteração e exclusão de informações pré cadastradas
+
+* **Estrutura de dados:** [ongs](#ti_ed_ongs)
+
+* **Instruções de acesso:**
+  * Abra o site e efetue o login
+  * Após o site carregar seu perfil, clique na opção "Gerenciar Perfil" presente no menu de navegação
+  * Em seguida, altere os campos que deseja editar
+  * Em seguida, clique em "Atualizar"
+
+ 
+* **Tela da funcionalidade**:
+
+![Painel de controle (ONG) - gerenciar perfil](https://github.com/user-attachments/assets/e3921de3-4250-4264-93e5-29da28943c21)
+
 
 ## Estruturas de Dados
 
 Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.Info
+
+##### Estrutura de Dados - Doadores 
+
+Ongs da aplicação
+
+```json
+  {
+      "name": "Samuel de Jesus Fernandes Mascarenhas",
+      "interests": "Software Developer apaixonado em utilizar as tecnologias em prol das comunidades.",
+      "address": "Belo Horizonte",
+      "phone": "31999999999",
+      "email": "mascarenhasctt@gmail.com",
+      "category": "8",
+      "id": "1733675490630",
+      "password": "senha123",
+      "historico": [
+        {
+          "data": "2024-10-01",
+          "valor": "R$ 50,00",
+          "projeto": "Projeto A",
+          "id": "903d"
+        },
+        {
+          "data": "2024-09-15",
+          "valor": "R$ 100,00",
+          "projeto": "Projeto B",
+          "id": "5846"
+        },
+        {
+          "data": "2024-08-20",
+          "valor": "R$ 30,00",
+          "projeto": "Projeto C",
+          "id": "efcc"
+        }
+      ]
+    },
+    {
+      "id": "1733828075374",
+      "orgName": "Ong ajudar",
+      "phone": "31999999999",
+      "email": "ajudarong@gmail.com",
+      "socialMedia": "@ajudarong",
+      "description": "ong para ajudar pessoas.",
+      "category": "Direitos Humanos",
+      "address": "Belo Horizonte",
+      "password": "minhasenha"
+    }
+```
 
 ##### Estrutura de Dados - Ongs 
 
